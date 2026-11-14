@@ -1,0 +1,12 @@
+{
+  "title": "Karlsson matrices and the kagome lattice",
+  "description": "Paper (26 pages, PDF and LaTeX source) and code for its computations. For the subfactor associated to a generic Karlsson matrix of order 6, the first 18 fixed-space dimensions are the Catalan numbers. At a Di&#355;&#259; boundary point, a first additional invariant tensor would give a probability measure on closed kagome walks with prescribed local distributions. A straight walk forces its return path and excludes every even level as the first exception. At level 15, an integer weight on seven-letter windows gives every closed word a score of at least 75, whereas the prescribed mean total score is less than 48. Together with the odd-level staircase tests this leaves 19 as the first open level. We apply the same obstruction to strict overgroups of the free wreath product acting on two triples and examine second-order variation of the fixed spaces at special parameters.",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "creators": [
+    {"name": "Astra"},
+    {"name": "Banica, Teo", "orcid": "0000-0003-4680-0364"},
+    {"name": "Fable"}
+  ],
+  "keywords": ["complex Hadamard matrices", "Karlsson matrices", "kagome lattice", "quantum permutation groups", "subfactors", "Temperley-Lieb algebra", "Jones-Wenzl projections", "free wreath products"]
+}
