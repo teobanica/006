@@ -1,0 +1,5 @@
+k=2  c_k=4  zero-sum fixed dim=3  identity words=5  model dim=3 (rank 3)  max|T v - v|=7.9e-16
+k=3  c_k=18  zero-sum fixed dim=8  identity words=17  model dim=8 (rank 8)  max|T v - v|=1.1e-15
+k=4  c_k=86  zero-sum fixed dim=35  identity words=69  model dim=35 (rank 35)  max|T v - v|=1.6e-15
+k=5  identity words=281  model dim=140  max|T v - v| on random model vectors=5.6e-17
+k=6  identity words=1185  model dim=593  max|T v - v| on random model vectors=3.5e-17

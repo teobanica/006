@@ -1,0 +1,18 @@
+classes 7751763
+closed words 928353697
+minimum integer score 75
+first minimizer (base 5, encoded as an integer) 0
+block 1/125, block size 5097, cumulative columns 611
+block 2/125, block size 4307, cumulative columns 1159
+block 3/125, block size 4307, cumulative columns 1707
+block 50/125, block size 184, cumulative columns 12555
+block 100/125, block size 3, cumulative columns 13726
+trial columns 13775
+Gram squared error numerator 203476620826111440
+weighted trace numerator 2972688176165630
+energy numerator 117663772
+trial mean 15645727242977/4982162063360
+absolute error at most 323093/20000000
+reference mean in [3.1241942676, 3.1565035676] (display rounded)
+rational upper bound for 15 times mean 737166202844712123/15569256448000000
+Verified: min score = 75 and 15 times reference mean < 48.

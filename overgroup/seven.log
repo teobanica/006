@@ -1,0 +1,21 @@
+level 3: 17 identity words; l = 1, d_l = 5, mu = 1/5, k mu = 3/5; cyclic score on identity words: min 0, max 3
+   dim L_3 = 1 (unknowns 8, equations 15)
+   form S - k mu on L_3: 1 pivots, 1 positive, smallest 259.2
+   time 0.0s
+level 4: 69 identity words; l = 2, d_l = 19, mu = 2/5, k mu = 8/5; cyclic score on identity words: min 2, max 4
+   score > k mu on all identity words: no first extra tensor at level 4 (no linear algebra needed)
+   dim L_4 = 8 (unknowns 35, equations 84)
+   form S - k mu on L_4: 8 pivots, 8 positive, smallest 243.083
+   time 0.0s
+level 5: 281 identity words; l = 2, d_l = 19, mu = -18/95, k mu = -18/19; cyclic score on identity words: min 0, max 6
+   score > k mu on all identity words: no first extra tensor at level 5 (no linear algebra needed)
+   dim L_5 = 19 (unknowns 140, equations 425)
+   form S - k mu on L_5: 19 pivots, 19 positive, smallest 4582.82
+   time 0.1s
+level 6: 1185 identity words; l = 3, d_l = 71, mu = -124/285, k mu = -248/95; cyclic score on identity words: min -4, max 0
+   dim L_6 = 66 (unknowns 593, equations 2094)
+   form S - k mu on L_6: 66 pivots, 66 positive, smallest 3031.26
+   time 2.7s
+level 7: 5097 identity words; l = 3, d_l = 71, mu = -7326/6745, k mu = -51282/6745; cyclic score on identity words: min 0, max 78
+   score > k mu on all identity words: no first extra tensor at level 7 (no linear algebra needed)
+   time 0.3s

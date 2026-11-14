@@ -1,0 +1,9 @@
+level 14: mu = -3120/10744501, k mu = -4.065e-03; identity words with a negative window: 8, minimal score 0  (1s)
+level 16: mu = -2911/37412900, k mu = -1.245e-03; identity words with a negative window: 8, minimal score 0  (5s)
+level 18: mu = -43456/2084377905, k mu = -3.753e-04; identity words with a negative window: 8, minimal score 0  (28s)
+level 12: mu = -209/192855, k mu = -1.300e-02; all identity words: 9287825, minimal score 0  (283s)
+level 20: mu = -40545/7257909769, k mu = -1.117e-04; identity words with a negative window: 8, minimal score 0  (166s)
+level 4: identity words with a negative window: 8, minimal score 0
+level 6: identity words with a negative window: 8, minimal score 0
+level 8: identity words with a negative window: 8, minimal score 0
+level 10: identity words with a negative window: 8, minimal score 0
