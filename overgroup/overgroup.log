@@ -1,0 +1,14 @@
+level 3: 17 identity words, dim L_3 = 1, mu = 1/5, form S - 3 mu on L_3: pivots ['1296/5']  -> OK
+level 4: table zigzag on 2-letter words (16 nonzero weights), d_2 = 19, mu = -1/5, k mu = -4/5; all identity words examined: 69, minimal score 0  -> OK  (0s)
+level 5: table of the paper on 2-letter words (12 nonzero weights), d_2 = 19, mu = -18/95, k mu = -18/19; all identity words examined: 281, minimal score 0  -> OK  (0s)
+level 6: table zigzag on 3-letter words (16 nonzero weights), d_3 = 71, mu = -16/285, k mu = -32/95; all identity words examined: 1185, minimal score 0  -> OK  (0s)
+level 7: table of the paper on 3-letter words (60 nonzero weights), d_3 = 71, mu = -7326/6745, k mu = -51282/6745; all identity words examined: 5097, minimal score 0  -> OK  (0s)
+level 8: table zigzag on 4-letter words (16 nonzero weights), d_4 = 265, mu = -15/994, k mu = -60/497; all identity words examined: 22325, minimal score 0  -> OK  (1s)
+level 9: table of the paper on 4-letter words (24 nonzero weights), d_4 = 265, mu = -738/26341, k mu = -6642/26341; all identity words examined: 99209, minimal score 0  -> OK  (2s)
+level 10: table zigzag on 5-letter words (16 nonzero weights), d_5 = 989, mu = -224/55385, k mu = -448/11077; all identity words examined: 446225, minimal score 0  -> OK  (11s)
+level 11: table of the paper on 5-letter words (96 nonzero weights), d_5 = 989, mu = -6485642/383430355, k mu = -6485642/34857305; all identity words examined: 2027257, minimal score 0  -> OK  (53s)
+level 12: table zigzag on 6-letter words (16 nonzero weights), d_6 = 3691, mu = -209/192855, k mu = -836/64285; with a negative window, identity words examined: 8, minimal score 0  -> OK  (0s)
+all levels verified
+level 13: table of the paper on 6-letter words (48 nonzero weights), d_6 = 3691, mu = -56605389850/13750187888437, k mu = -56605389850/1057706760649; with a negative window, identity words examined: 688, minimal score 0  -> OK  (18s)
+level 14: table zigzag on 7-letter words (16 nonzero weights), d_7 = 13775, mu = -3120/10744501, k mu = -43680/10744501; with a negative window, identity words examined: 8, minimal score 0  -> OK  (1s)
+all levels verified

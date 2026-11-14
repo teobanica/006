@@ -1,0 +1,8 @@
+level 5: windows of 2 letters, 8 words of weight -1, 4 of weight 2; 40 identity words starting with a window of weight -1; minimal score 0; scores: {0: 32, 3: 8}  (0s)
+level 9: windows of 4 letters, 16 words of weight -1, 8 of weight 2; 160 identity words starting with a window of weight -1; minimal score 0; scores: {0: 80, 1: 64, 3: 16}  (0s)
+level 13: windows of 6 letters, 32 words of weight -1, 16 of weight 2; 688 identity words starting with a window of weight -1; minimal score 0; scores: {0: 256, 1: 384, 3: 48}  (0s)
+level 17: windows of 8 letters, 64 words of weight -1, 32 of weight 2; 2960 identity words starting with a window of weight -1; minimal score 0; scores: {0: 880, 1: 1920, 3: 160}  (0s)
+level 21: windows of 10 letters, 128 words of weight -1, 64 of weight 2; 12656 identity words starting with a window of weight -1; minimal score 0; scores: {0: 3136, 1: 8960, 3: 560}  (0s)
+level 25: windows of 12 letters, 256 words of weight -1, 128 of weight 2; 53760 identity words starting with a window of weight -1; minimal score 0; scores: {0: 11424, 1: 40320, 3: 2016}  (1s)
+level 29: windows of 14 letters, 512 words of weight -1, 256 of weight 2; 227040 identity words starting with a window of weight -1; minimal score 0; scores: {0: 42240, 1: 177408, 3: 7392}  (6s)
+level 33: windows of 16 letters, 1024 words of weight -1, 512 of weight 2; 954096 identity words starting with a window of weight -1; minimal score 0; scores: {0: 157872, 1: 768768, 3: 27456}  (58s)

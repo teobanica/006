@@ -1,0 +1,7 @@
+level 6 sector 0: f=25, a_min=0.8141621327, a_max=6.936166
+level 6 sector 1: f=16, a_min=1.0067428202, a_max=5.249017
+level 6 sector 2: f=20, a_min=1.1834104587, a_max=5.564833
+level 6 sector 3: f=17, a_min=0.9139655183, a_max=6.209099
+level 6 sector 4: f=20, a_min=1.1834104587, a_max=5.564833
+level 6 sector 5: f=16, a_min=1.0067428203, a_max=5.249017
+LEVEL 6: f=114, a_min=0.8141621327, smallest: [0.814162 0.913966 1.       1.006743 1.006743 1.102184]  [1556 s]
