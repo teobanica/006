@@ -1,0 +1,21 @@
+half-angle tangents 1, 1, 2
+   p = 73: i -> 27, sqrt3 -> 21, phases z_1, z_2, z_3, z_4 -> (21, 7, 14, 26); H Hbar^t = 6: True; 552 nonzero profile sums, components of sizes [6, 30]
+   p = 97: i -> 22, sqrt3 -> 10, phases z_1, z_2, z_3, z_4 -> (17, 40, 44, 11); H Hbar^t = 6: True; 552 nonzero profile sums, components of sizes [6, 30]
+   p = 229: i -> 107, sqrt3 -> 71, phases z_1, z_2, z_3, z_4 -> (85, 97, 28, 90); H Hbar^t = 6: True; 552 nonzero profile sums, components of sizes [6, 30]
+   p = 241: i -> 64, sqrt3 -> 56, phases z_1, z_2, z_3, z_4 -> (147, 100, 76, 111); H Hbar^t = 6: True; 552 nonzero profile sums, components of sizes [6, 30]
+   p = 277: i -> 60, sqrt3 -> 130, phases z_1, z_2, z_3, z_4 -> (269, 104, 33, 42); H Hbar^t = 6: True; 552 nonzero profile sums, components of sizes [6, 30]
+   p = 337: i -> 148, sqrt3 -> 45, phases z_1, z_2, z_3, z_4 -> (320, 119, 39, 121); H Hbar^t = 6: True; 552 nonzero profile sums, components of sizes [6, 30]
+half-angle tangents 1/2, 1/3, 2
+   p = 181: i -> 19, sqrt3 -> 33, phases z_1, z_2, z_3, z_4 -> (87, 31, 38, 69); H Hbar^t = 6: True; 696 nonzero profile sums, components of sizes [6, 30]
+   p = 241: i -> 64, sqrt3 -> 56, phases z_1, z_2, z_3, z_4 -> (147, 1, 95, 52); H Hbar^t = 6: True; 636 nonzero profile sums, components of sizes [6, 30]
+   p = 997: i -> 161, sqrt3 -> 343, phases z_1, z_2, z_3, z_4 -> (527, 97, 246, 369); H Hbar^t = 6: True; 696 nonzero profile sums, components of sizes [6, 30]
+   p = 1153: i -> 140, sqrt3 -> 34, phases z_1, z_2, z_3, z_4 -> (342, 366, 267, 384); H Hbar^t = 6: True; 696 nonzero profile sums, components of sizes [6, 30]
+   p = 1201: i -> 49, sqrt3 -> 538, phases z_1, z_2, z_3, z_4 -> (519, 329, 555, 78); H Hbar^t = 6: True; 696 nonzero profile sums, components of sizes [6, 30]
+   p = 1609: i -> 523, sqrt3 -> 244, phases z_1, z_2, z_3, z_4 -> (96, 292, 764, 38); H Hbar^t = 6: True; 696 nonzero profile sums, components of sizes [6, 30]
+half-angle tangents 3, 2/5, 1/4
+   p = 157: i -> 28, sqrt3 -> 72, phases z_1, z_2, z_3, z_4 -> (51, 78, 42, 28); H Hbar^t = 6: True; 696 nonzero profile sums, components of sizes [6, 30]
+   p = 277: i -> 60, sqrt3 -> 130, phases z_1, z_2, z_3, z_4 -> (78, 103, 132, 84); H Hbar^t = 6: True; 696 nonzero profile sums, components of sizes [6, 30]
+   p = 313: i -> 25, sqrt3 -> 83, phases z_1, z_2, z_3, z_4 -> (252, 115, 3, 131); H Hbar^t = 6: True; 696 nonzero profile sums, components of sizes [6, 30]
+   p = 337: i -> 148, sqrt3 -> 45, phases z_1, z_2, z_3, z_4 -> (130, 71, 27, 14); H Hbar^t = 6: True; 696 nonzero profile sums, components of sizes [6, 30]
+   p = 349: i -> 136, sqrt3 -> 165, phases z_1, z_2, z_3, z_4 -> (147, 125, 88, 172); H Hbar^t = 6: True; 696 nonzero profile sums, components of sizes [6, 30]
+   p = 373: i -> 104, sqrt3 -> 131, phases z_1, z_2, z_3, z_4 -> (357, 44, 111, 72); H Hbar^t = 6: True; 696 nonzero profile sums, components of sizes [6, 30]

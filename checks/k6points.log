@@ -1,0 +1,4 @@
+base point (0, 0, 1): 34 Haagerup values; all 12th roots of unity: False; values h with h^2 = (-13-3i sqrt3)/14: 2
+base point (0, 4, 1): 12 Haagerup values; all 12th roots of unity: True; values h with h^2 = (-13-3i sqrt3)/14: 0
+base point (0, 2, 1): 34 Haagerup values; all 12th roots of unity: True; values h with h^2 = (-13-3i sqrt3)/14: 0
+curve theta -> K_6(theta, pi/2, 0), theta = a pi/36, a = 1..71: c_2 = 4 except at a = [36], where c_2 = [6]

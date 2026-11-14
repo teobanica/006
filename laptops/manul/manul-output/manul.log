@@ -1,0 +1,115 @@
+[11:53:09 |   0.0 min] start; numpy 2.0.2, python 3.9.6. Second order coefficients, order 8 families at Dita points.
+[11:53:09 |   0.0 min] base point M81: |H0| - 1 = 2.2e-16, H0 H0^* - N = 8.9e-16
+[11:53:09 |   0.0 min] M81, level 3, sector 0: 0 fixed vectors (0 s)
+[11:53:10 |   0.0 min] M81, level 3, sector 1: 1 fixed vectors (0 s)
+[11:53:10 |   0.0 min] M81, level 3, sector 1: a_min = 5.6250000209, a_max = 5.625000, fixed check 3.1e-11, T' check 7.3e-18, 0 s
+[11:53:10 |   0.0 min] M81, level 3, sector 2: 1 fixed vectors (0 s)
+[11:53:10 |   0.0 min] M81, level 3, sector 2: a_min = 5.6249999965, a_max = 5.625000, fixed check 2.8e-11, T' check 5.2e-18, 0 s
+[11:53:10 |   0.0 min] M81 LEVEL 3: f = 2, a_min = 5.6249999965, smallest values [5.625, 5.625]
+[11:53:12 |   0.0 min] M81, level 4, sector 0: 6 fixed vectors (2 s)
+[11:53:13 |   0.1 min] M81, level 4, sector 0: a_min = 3.7785160745, a_max = 19.525715, fixed check 4.3e-11, T' check 1.5e-17, 4 s
+[11:53:16 |   0.1 min] M81, level 4, sector 1: 1 fixed vectors (2 s)
+[11:53:16 |   0.1 min] M81, level 4, sector 1: a_min = 12.4999999988, a_max = 12.500000, fixed check 2.7e-11, T' check 8.6e-18, 2 s
+[11:53:18 |   0.1 min] M81, level 4, sector 2: 4 fixed vectors (2 s)
+[11:53:19 |   0.2 min] M81, level 4, sector 2: a_min = 5.9549150286, a_max = 11.545085, fixed check 5.1e-11, T' check 8.4e-18, 3 s
+[11:53:21 |   0.2 min] M81, level 4, sector 3: 1 fixed vectors (2 s)
+[11:53:21 |   0.2 min] M81, level 4, sector 3: a_min = 12.4999999912, a_max = 12.500000, fixed check 2.5e-11, T' check 8.1e-18, 2 s
+[11:53:21 |   0.2 min] M81 LEVEL 4: f = 12, a_min = 3.7785160745, smallest values [3.778516, 4.809974, 5.954915, 5.954915, 8.315962, 10.248331]
+[11:53:47 |   0.6 min] M81, level 5, sector 0: 7 fixed vectors (25 s)
+[11:54:04 |   0.9 min] M81, level 5, sector 0: a_min = 5.6249999989, a_max = 15.000000, fixed check 4.1e-11, T' check 1.2e-17, 43 s
+[11:54:31 |   1.4 min] M81, level 5, sector 1: 8 fixed vectors (26 s)
+[11:54:51 |   1.7 min] M81, level 5, sector 1: a_min = 5.2205219976, a_max = 17.409706, fixed check 3.7e-11, T' check 8.6e-18, 46 s
+[11:55:17 |   2.1 min] M81, level 5, sector 2: 8 fixed vectors (26 s)
+[11:55:37 |   2.5 min] M81, level 5, sector 2: a_min = 4.2914873985, a_max = 16.777426, fixed check 3.8e-11, T' check 1.1e-17, 46 s
+[11:56:02 |   2.9 min] M81, level 5, sector 3: 8 fixed vectors (26 s)
+[11:56:22 |   3.2 min] M81, level 5, sector 3: a_min = 4.2914874005, a_max = 16.777426, fixed check 4.3e-11, T' check 1.0e-17, 46 s
+[11:56:48 |   3.6 min] M81, level 5, sector 4: 8 fixed vectors (26 s)
+[11:57:08 |   4.0 min] M81, level 5, sector 4: a_min = 5.2205219982, a_max = 17.409706, fixed check 3.9e-11, T' check 9.2e-18, 46 s
+[11:57:08 |   4.0 min] M81 LEVEL 5: f = 39, a_min = 4.2914873985, smallest values [4.291487, 4.291487, 5.220522, 5.220522, 5.625, 7.476019]
+[11:57:08 |   4.0 min] base point K82: |H0| - 1 = 0.0e+00, H0 H0^* - N = 2.9e-16
+[11:57:08 |   4.0 min] K82, level 3, sector 0: 0 fixed vectors (0 s)
+[11:57:09 |   4.0 min] K82, level 3, sector 1: 1 fixed vectors (0 s)
+[11:57:09 |   4.0 min] K82, level 3, sector 1: a_min = 1.1250000013, a_max = 1.125000, fixed check 2.9e-11, T' check 9.1e-19, 0 s
+[11:57:09 |   4.0 min] K82, level 3, sector 2: 1 fixed vectors (0 s)
+[11:57:09 |   4.0 min] K82, level 3, sector 2: a_min = 1.1249999999, a_max = 1.125000, fixed check 2.8e-11, T' check 2.1e-18, 0 s
+[11:57:09 |   4.0 min] K82 LEVEL 3: f = 2, a_min = 1.1249999999, smallest values [1.125, 1.125]
+[11:57:11 |   4.0 min] K82, level 4, sector 0: 6 fixed vectors (2 s)
+[11:57:13 |   4.1 min] K82, level 4, sector 0: a_min = 0.7557032147, a_max = 3.905143, fixed check 4.1e-11, T' check 9.4e-18, 4 s
+[11:57:15 |   4.1 min] K82, level 4, sector 1: 1 fixed vectors (2 s)
+[11:57:15 |   4.1 min] K82, level 4, sector 1: a_min = 2.5000000025, a_max = 2.500000, fixed check 3.4e-11, T' check 6.9e-18, 2 s
+[11:57:17 |   4.1 min] K82, level 4, sector 2: 6 fixed vectors (2 s)
+[11:57:19 |   4.2 min] K82, level 4, sector 2: a_min = 1.1909830049, a_max = 5.000000, fixed check 5.2e-11, T' check 3.3e-16, 4 s
+[11:57:21 |   4.2 min] K82, level 4, sector 3: 1 fixed vectors (2 s)
+[11:57:21 |   4.2 min] K82, level 4, sector 3: a_min = 2.4999999972, a_max = 2.500000, fixed check 3.2e-11, T' check 8.2e-18, 2 s
+[11:57:21 |   4.2 min] K82 LEVEL 4: f = 14, a_min = 0.7557032147, smallest values [0.755703, 0.961995, 1.190983, 1.190983, 1.663192, 2.049666]
+[11:57:47 |   4.6 min] K82, level 5, sector 0: 9 fixed vectors (25 s)
+[11:58:09 |   5.0 min] K82, level 5, sector 0: a_min = 1.1250000000, a_max = 6.000000, fixed check 4.6e-11, T' check 2.8e-16, 48 s
+[11:58:35 |   5.4 min] K82, level 5, sector 1: 10 fixed vectors (26 s)
+[11:59:01 |   5.9 min] K82, level 5, sector 1: a_min = 1.0441043991, a_max = 5.827254, fixed check 4.0e-11, T' check 3.3e-16, 52 s
+[11:59:27 |   6.3 min] K82, level 5, sector 2: 10 fixed vectors (26 s)
+[11:59:52 |   6.7 min] K82, level 5, sector 2: a_min = 0.8582974798, a_max = 5.547746, fixed check 4.3e-11, T' check 2.4e-16, 51 s
+[12:00:18 |   7.1 min] K82, level 5, sector 3: 10 fixed vectors (26 s)
+[12:00:43 |   7.6 min] K82, level 5, sector 3: a_min = 0.8582974801, a_max = 5.547746, fixed check 3.8e-11, T' check 2.4e-16, 51 s
+[12:01:09 |   8.0 min] K82, level 5, sector 4: 10 fixed vectors (26 s)
+[12:01:34 |   8.4 min] K82, level 5, sector 4: a_min = 1.0441044004, a_max = 5.827254, fixed check 3.7e-11, T' check 2.9e-16, 51 s
+[12:01:34 |   8.4 min] K82 LEVEL 5: f = 49, a_min = 0.8582974798, smallest values [0.858297, 0.858297, 1.044104, 1.044104, 1.125, 1.495204]
+[12:01:34 |   8.4 min] base point F82: |H0| - 1 = 0.0e+00, H0 H0^* - N = 7.8e-17
+[12:01:34 |   8.4 min] F82, level 3, sector 0: 1 fixed vectors (0 s)
+[12:01:34 |   8.4 min] F82, level 3, sector 0: a_min = 1.4999999382, a_max = 1.500000, fixed check 2.7e-11, T' check 4.7e-18, 0 s
+[12:01:34 |   8.4 min] F82, level 3, sector 1: 2 fixed vectors (0 s)
+[12:01:35 |   8.4 min] F82, level 3, sector 1: a_min = 1.8749999973, a_max = 1.875000, fixed check 2.9e-11, T' check 8.5e-18, 0 s
+[12:01:35 |   8.4 min] F82, level 3, sector 2: 2 fixed vectors (0 s)
+[12:01:35 |   8.4 min] F82, level 3, sector 2: a_min = 1.8749999999, a_max = 1.875000, fixed check 3.1e-11, T' check 5.7e-18, 0 s
+[12:01:35 |   8.4 min] F82 LEVEL 3: f = 5, a_min = 1.4999999382, smallest values [1.5, 1.875, 1.875, 1.875, 1.875]
+[12:01:37 |   8.5 min] F82, level 4, sector 0: 12 fixed vectors (2 s)
+[12:01:40 |   8.5 min] F82, level 4, sector 0: a_min = 1.1955086132, a_max = 4.735412, fixed check 5.8e-11, T' check 1.3e-17, 5 s
+[12:01:42 |   8.6 min] F82, level 4, sector 1: 4 fixed vectors (2 s)
+[12:01:43 |   8.6 min] F82, level 4, sector 1: a_min = 1.5000000016, a_max = 3.250000, fixed check 4.7e-11, T' check 1.1e-17, 3 s
+[12:01:46 |   8.6 min] F82, level 4, sector 2: 9 fixed vectors (2 s)
+[12:01:48 |   8.6 min] F82, level 4, sector 2: a_min = 1.7499999971, a_max = 3.250000, fixed check 4.5e-11, T' check 1.4e-17, 4 s
+[12:01:50 |   8.7 min] F82, level 4, sector 3: 4 fixed vectors (2 s)
+[12:01:51 |   8.7 min] F82, level 4, sector 3: a_min = 1.5000000004, a_max = 3.250000, fixed check 3.8e-11, T' check 1.2e-17, 3 s
+[12:01:51 |   8.7 min] F82 LEVEL 4: f = 29, a_min = 1.1955086132, smallest values [1.195509, 1.266078, 1.266078, 1.5, 1.5, 1.75]
+[12:02:18 |   9.1 min] F82, level 5, sector 0: 23 fixed vectors (27 s)
+[12:03:16 |  10.1 min] F82, level 5, sector 0: a_min = 1.7500000002, a_max = 4.343070, fixed check 6.7e-11, T' check 1.6e-17, 85 s
+[12:03:42 |  10.6 min] F82, level 5, sector 1: 24 fixed vectors (26 s)
+[12:04:43 |  11.6 min] F82, level 5, sector 1: a_min = 1.7530736757, a_max = 4.723779, fixed check 6.4e-11, T' check 1.6e-17, 87 s
+[12:05:10 |  12.0 min] F82, level 5, sector 2: 24 fixed vectors (27 s)
+[12:06:10 |  13.0 min] F82, level 5, sector 2: a_min = 1.7235966054, a_max = 4.966387, fixed check 5.3e-11, T' check 1.7e-17, 87 s
+[12:06:36 |  13.4 min] F82, level 5, sector 3: 24 fixed vectors (26 s)
+[12:07:36 |  14.5 min] F82, level 5, sector 3: a_min = 1.7235966048, a_max = 4.966387, fixed check 7.6e-11, T' check 1.6e-17, 86 s
+[12:08:03 |  14.9 min] F82, level 5, sector 4: 24 fixed vectors (26 s)
+[12:09:03 |  15.9 min] F82, level 5, sector 4: a_min = 1.7530736760, a_max = 4.723779, fixed check 6.6e-11, T' check 1.6e-17, 87 s
+[12:09:03 |  15.9 min] F82 LEVEL 5: f = 119, a_min = 1.7235966048, smallest values [1.723597, 1.723597, 1.723597, 1.723597, 1.75, 1.753074]
+[12:13:34 |  20.4 min] M81, level 6, sector 0: 36 fixed vectors (271 s)
+[12:28:23 |  35.2 min] M81, level 6, sector 0: a_min = 4.3999342792, a_max = 37.016193, fixed check 8.7e-11, T' check 3.4e-16, 1160 s
+[12:32:56 |  39.8 min] M81, level 6, sector 1: 20 fixed vectors (272 s)
+[12:41:11 |  48.0 min] M81, level 6, sector 1: a_min = 7.2115601143, a_max = 27.752636, fixed check 4.2e-11, T' check 1.0e-17, 768 s
+[12:45:44 |  52.6 min] M81, level 6, sector 2: 32 fixed vectors (273 s)
+[12:59:00 |  65.8 min] M81, level 6, sector 2: a_min = 4.6042325837, a_max = 26.785208, fixed check 7.6e-11, T' check 2.4e-16, 1069 s
+[13:03:35 |  70.4 min] M81, level 6, sector 3: 20 fixed vectors (275 s)
+[13:11:52 |  78.7 min] M81, level 6, sector 3: a_min = 7.3079744176, a_max = 25.492952, fixed check 4.9e-11, T' check 1.0e-17, 772 s
+[13:16:27 |  83.3 min] M81, level 6, sector 4: 32 fixed vectors (275 s)
+[13:29:39 |  96.5 min] M81, level 6, sector 4: a_min = 4.6042325844, a_max = 26.785208, fixed check 8.6e-11, T' check 1.4e-16, 1067 s
+[13:34:10 | 101.0 min] M81, level 6, sector 5: 20 fixed vectors (271 s)
+[13:42:25 | 109.3 min] M81, level 6, sector 5: a_min = 7.2115601128, a_max = 27.752636, fixed check 4.5e-11, T' check 9.9e-18, 766 s
+[13:42:25 | 109.3 min] M81 LEVEL 6: f = 160, a_min = 4.3999342792, smallest values [4.399934, 4.604233, 4.604233, 4.837754, 5.240588, 5.240588]
+[13:56:08 | 123.0 min] K82, level 6, sector 0: 42 fixed vectors (823 s)
+[14:13:31 | 140.4 min] K82, level 6, sector 0: a_min = 0.8983748943, a_max = 7.403229, fixed check 4.3e-11, T' check 2.8e-16, 1867 s
+[14:18:05 | 144.9 min] K82, level 6, sector 1: 28 fixed vectors (274 s)
+[14:29:40 | 156.5 min] K82, level 6, sector 1: a_min = 1.4423120228, a_max = 6.750775, fixed check 8.0e-11, T' check 3.0e-16, 969 s
+[14:34:11 | 161.0 min] K82, level 6, sector 2: 40 fixed vectors (271 s)
+[14:50:37 | 177.5 min] K82, level 6, sector 2: a_min = 0.9276494397, a_max = 7.091866, fixed check 1.4e-10, T' check 2.8e-16, 1257 s
+[14:55:10 | 182.0 min] K82, level 6, sector 3: 28 fixed vectors (273 s)
+[15:06:41 | 193.5 min] K82, level 6, sector 3: a_min = 1.4615948843, a_max = 7.207572, fixed check 7.3e-11, T' check 3.1e-16, 964 s
+[15:11:18 | 198.2 min] K82, level 6, sector 4: 40 fixed vectors (277 s)
+[15:27:50 | 214.7 min] K82, level 6, sector 4: a_min = 0.9276494397, a_max = 7.091866, fixed check 2.1e-10, T' check 2.6e-16, 1269 s
+[15:32:22 | 219.2 min] K82, level 6, sector 5: 28 fixed vectors (272 s)
+[15:43:53 | 230.7 min] K82, level 6, sector 5: a_min = 1.4423120229, a_max = 6.750775, fixed check 7.6e-11, T' check 2.5e-16, 963 s
+[15:43:53 | 230.7 min] K82 LEVEL 6: f = 206, a_min = 0.8983748943, smallest values [0.898375, 0.927649, 0.927649, 0.981504, 1.053056, 1.053056]
+[16:15:30 | 262.3 min] F82, level 6, sector 0: 107 fixed vectors (1897 s)
+[17:15:00 | 321.8 min] F82, level 6, sector 0: a_min = 1.3471747248, a_max = 8.652919, fixed check 3.8e-11, T' check 2.9e-17, 5467 s
+[17:28:40 | 335.5 min] F82, level 6, sector 1: 82 fixed vectors (820 s)
+[18:08:19 | 375.2 min] F82, level 6, sector 1: a_min = 1.7445212779, a_max = 6.912158, fixed check 1.2e-10, T' check 3.0e-17, 3199 s
+[18:40:40 | 407.5 min] F82, level 6, sector 2: 104 fixed vectors (1941 s)
+[18:53:09 | 420.0 min] 7 hours reached, stopping. Results so far are in manul/manul-output/manul.json

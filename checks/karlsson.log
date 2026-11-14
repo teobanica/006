@@ -1,0 +1,11 @@
+(1) L is a complex Hadamard matrix: True
+    theta = 1e-02: max |K_6(theta, 0, pi/6) - L| = 4.03e-02
+    theta = 1e-03: max |K_6(theta, 0, pi/6) - L| = 4.02e-03
+    theta = 1e-04: max |K_6(theta, 0, pi/6) - L| = 4.02e-04
+    theta = 1e-05: max |K_6(theta, 0, pi/6) - L| = 4.02e-05
+(2) max |L - formula of the paper| = 6.7e-16
+    max |relabeled L - F_2 x_Q F_3| = 1.4e-15
+(3) k = 2: c_k = 4, zero-sum fixed dimension 3, word model dimension 3, max |T v - v| on the model = 6.8e-16
+(3) k = 3: c_k = 18, zero-sum fixed dimension 8, word model dimension 8, max |T v - v| on the model = 1.1e-15
+(3) k = 4: c_k = 86, zero-sum fixed dimension 35, word model dimension 35, max |T v - v| on the model = 1.7e-15
+(4) z_2^2 + conj = -1.857142857143 (-13/7 = -1.857142857143); nonzero exponents |n_0|, |n_1| <= 40 with 3 equal monomials: []

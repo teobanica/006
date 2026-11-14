@@ -1,0 +1,29 @@
+[18:44:11 |   0.0 min] start; numpy 2.5.4, python 3.14.10. Second order coefficients, K_6 at its Dita point, levels 5 and 7.
+[18:44:11 |   0.0 min] base point check: |H0| - 1 = 3.6e-14, H0 H0^* - N = 1.4e-13
+[18:44:15 |   0.1 min] level 5, sector 0: 5 fixed vectors (5 s)
+[18:44:16 |   0.1 min] level 5, sector 0: a_min = 0.9999999990, a_max = 4.280776, fixed check 2.1e-11, 6 s
+[18:44:21 |   0.2 min] level 5, sector 1: 6 fixed vectors (5 s)
+[18:44:23 |   0.2 min] level 5, sector 1: a_min = 1.4507134469, a_max = 3.281049, fixed check 2.1e-11, 6 s
+[18:44:27 |   0.3 min] level 5, sector 2: 6 fixed vectors (5 s)
+[18:44:29 |   0.3 min] level 5, sector 2: a_min = 1.2682372544, a_max = 3.046405, fixed check 2.3e-11, 6 s
+[18:44:33 |   0.4 min] level 5, sector 3: 6 fixed vectors (5 s)
+[18:44:35 |   0.4 min] level 5, sector 3: a_min = 1.2682372548, a_max = 3.046405, fixed check 2.2e-11, 6 s
+[18:44:39 |   0.5 min] level 5, sector 4: 6 fixed vectors (5 s)
+[18:44:41 |   0.5 min] level 5, sector 4: a_min = 1.4507134469, a_max = 3.281049, fixed check 2.3e-11, 6 s
+[18:44:41 |   0.5 min] LEVEL 5: f = 29, a_min = 0.9999999990, smallest values [1.0, 1.268237, 1.268237, 1.346832, 1.346832, 1.444313]
+[19:01:24 |  17.2 min] level 7, sector 0: 59 fixed vectors (1003 s)
+[19:14:40 |  30.5 min] level 7, sector 0: a_min = 1.0384554754, a_max = 8.106496, fixed check 3.4e-11, 1799 s
+[19:31:37 |  47.4 min] level 7, sector 1: 60 fixed vectors (1017 s)
+[19:45:13 |  61.0 min] level 7, sector 1: a_min = 1.0107680722, a_max = 6.590528, fixed check 2.3e-11, 1834 s
+[20:01:58 |  77.8 min] level 7, sector 2: 60 fixed vectors (1004 s)
+[20:15:11 |  91.0 min] level 7, sector 2: a_min = 1.0197378687, a_max = 6.420108, fixed check 2.4e-11, 1798 s
+[20:31:48 | 107.6 min] level 7, sector 3: 60 fixed vectors (997 s)
+[20:44:54 | 120.7 min] level 7, sector 3: a_min = 1.1707398340, a_max = 6.636483, fixed check 2.7e-11, 1783 s
+[21:01:34 | 137.4 min] level 7, sector 4: 60 fixed vectors (1000 s)
+[21:14:40 | 150.5 min] level 7, sector 4: a_min = 1.1707398341, a_max = 6.636483, fixed check 2.3e-11, 1786 s
+[21:31:17 | 167.1 min] level 7, sector 5: 60 fixed vectors (997 s)
+[21:44:29 | 180.3 min] level 7, sector 5: a_min = 1.0197378685, a_max = 6.420108, fixed check 2.4e-11, 1789 s
+[22:01:09 | 197.0 min] level 7, sector 6: 60 fixed vectors (999 s)
+[22:14:23 | 210.2 min] level 7, sector 6: a_min = 1.0107680726, a_max = 6.590528, fixed check 2.8e-11, 1794 s
+[22:14:23 | 210.2 min] LEVEL 7: f = 419, a_min = 1.0107680722, smallest values [1.010768, 1.010768, 1.019738, 1.019738, 1.038455, 1.124274]
+[22:14:23 | 210.2 min] all done.

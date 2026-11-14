@@ -1,0 +1,6 @@
+n=2 m=3 level 1: TL 1, FC 1, FC-TL 0, after linear 0
+n=2 m=3 level 2: TL 2, FC 3, FC-TL 1, after linear 0
+n=2 m=3 level 3: TL 5, FC 11, FC-TL 6, after linear 0  => C_k = TL_k
+n=2 m=3 level 4: TL 14, FC 45, FC-TL 31, after linear 3, 96 forms, min sum q(w,w)^2 = 5.568e-01  => C_k = TL_k
+n=2 m=3 level 5: TL 42, FC 196, FC-TL 154, after linear 4, 1175 forms, min sum q(w,w)^2 = 1.731e+00  => C_k = TL_k
+Killed

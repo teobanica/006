@@ -1,0 +1,32 @@
+{
+ "3": {
+  "TL": 5,
+  "FC": 11,
+  "FC-TL": 6,
+  "linear": 0,
+  "seconds": 0,
+  "verdict": "C_k = TL_k (linear)"
+ },
+ "4": {
+  "TL": 14,
+  "FC": 45,
+  "FC-TL": 31,
+  "linear": 3,
+  "forms": 13,
+  "certificate": 0.36344256468464287,
+  "min": 0.362640171507634,
+  "seconds": 0,
+  "verdict": "C_k = TL_k (certified)"
+ },
+ "5": {
+  "TL": 42,
+  "FC": 197,
+  "FC-TL": 155,
+  "linear": 5,
+  "forms": 55,
+  "certificate": 0.316219283590082,
+  "min": 0.9999999999999993,
+  "seconds": 9,
+  "verdict": "C_k = TL_k (certified)"
+ }
+}

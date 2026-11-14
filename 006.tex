@@ -1,0 +1,1141 @@
+\documentclass[11pt,a4paper]{amsart}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage{amssymb,amsmath,booktabs,array}
+\usepackage{tikz,needspace,etoolbox}
+\usepackage{cite}
+\usepackage[colorlinks=true,linkcolor=black,urlcolor=black,citecolor=magenta]{hyperref}
+\hypersetup{pdftitle={Karlsson matrices and the kagome lattice},pdfauthor={Astra, Banica and Fable}}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem*{thmA}{Theorem A}
+\newtheorem*{thmB}{Theorem B}
+\newtheorem*{thmC}{Theorem C}
+\newcommand{\guardstatement}[1]{\BeforeBeginEnvironment{#1}{\par\begin{samepage}}\AfterEndEnvironment{#1}{\end{samepage}}}
+\forcsvlist{\guardstatement}{theorem,proposition,corollary,lemma,definition,conjecture,thmA,thmB,thmC}
+\newcommand{\T}{\mathbb T}
+\newcommand{\Cat}{\operatorname{Cat}}
+\newcommand{\Fix}{\operatorname{Fix}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\TL}{\mathrm{TL}}
+\newcommand{\score}{\operatorname{score}}
+\newcommand{\arx}[1]{\href{https://arxiv.org/pdf/#1}{arXiv:#1}}
+\renewcommand{\authors}[1]{\let\authors\empty\author{#1}}
+\title{Karlsson matrices and the kagome lattice}
+\authors{Astra, Banica and Fable}
+\setcounter{tocdepth}{1}
+\setcounter{MaxMatrixCols}{30}
+\raggedbottom
+\linespread{1.045}
+\setlength{\parskip}{2pt plus .5pt}
+\setlength{\emergencystretch}{1em}
+\begin{document}
+\subjclass[2020]{46L37 (05B20, 46L65)}
+\keywords{Complex Hadamard matrix, quantum permutation group, subfactor, kagome lattice}
+\begin{abstract}
+For the subfactor associated to a generic Karlsson matrix of order 6, the first 18 fixed-space dimensions are the Catalan numbers. We obtain this from the quantum group of a Di\c t\u a limit. A first additional invariant tensor for a quantum $2$-transitive overgroup of this group would give a probability measure on closed walks on the kagome lattice with prescribed local distributions. At every even level a straight walk forces its return path and rules out such a measure. At odd levels a family of staircase tests and a 7-letter certificate at level 15 exclude further first occurrences. The least remaining level is 19. We also give an application to free wreath products and examine the second-order variation of the fixed spaces at special parameters.
+\end{abstract}
+\maketitle
+{\hypersetup{linkcolor=magenta}\tableofcontents}
+
+\section*{Introduction}
+
+How much of a subfactor can one read in a $6\times6$ matrix? A complex Hadamard matrix $H$ has entries of modulus one and mutually orthogonal rows. Write $U=H/\sqrt N$ and let $\Delta$ be the diagonal algebra in $M_N(\mathbb C)$. Popa's observation is that $\Delta$ and $U\Delta U^*$ are orthogonal for the normalized trace: a minimal projection of either algebra has trace $1/N$ and its product with any minimal projection of the other has trace $1/N^2$ \cite{pop}. These 2 algebras give a commuting square. Iterating it produces a subfactor of index $N$, whose higher relative commutants remember relations among the entries of $H$ \cite{ni,jon}.
+
+There is a second way to enter the same tower. Divide one row of $H$ by another and project onto the line spanned by the quotient. The resulting $N\times N$ array of projections is a magic unitary. Its quantum group $G_H\subset S_N^+$ has fixed-space dimensions
+\[
+ c_k(H)=\dim\Fix(u^{\otimes k})
+\]
+which give the higher relative commutant dimensions in the convention of \cite{bo}. For $N\geq4$ the noncrossing partitions already supply $\Cat_k$ linearly independent vectors at every level $k$. One can therefore ask for the first relation particular to $H$: what is the first $k$ for which $c_k(H)>\Cat_k$? If there is no such $k$, Tannaka duality gives $G_H=S_N^+$. Following \cite{bo}, we call such a matrix \emph{wild}. Already at fixed order 6 we do not know whether a generic Karlsson matrix is wild.
+
+Order 6 is where the regular classification offers a choice of directions. Here regularity means that the orthogonality of each pair of rows can be explained by breaking its quotient into rotated prime cycles. At length 6 this means 3 opposite pairs or 2 equilateral triangles. Up to equivalence the list consists of 2 Fourier deformation families, the Haagerup family and the isolated Tao matrix \cite{bbs,gt}. In \cite{gt} this cycle description is pursued in orders 7 and 8. Another possibility is to stay at 6 and vary the matrix beyond the cycle condition. The 3 positive-dimensional families on the order-6 list all occur in the Karlsson family or its limiting charts. The Tao matrix lies outside it \cite{kar,bo}. Thus several rather different explanations of orthogonality can be approached in a single 3-parameter family.
+
+In Karlsson's original parametrization \cite{kar}, the 9 Hadamard blocks of order 2 can be read directly from a dephased matrix. Write $a,b,c,d$ for its 4 interior blocks and $z_1,\ldots,z_4$ for the phases on its border. Then
+\[
+ K_6=\left(\begin{array}{cc|cc|cc}
+ 1&1&1&1&1&1\\
+ 1&-1&z_1&-z_1&z_2&-z_2\\ \hline
+ 1&z_3&a_{11}&a_{12}&b_{11}&b_{12}\\
+ 1&-z_3&a_{21}&a_{22}&b_{21}&b_{22}\\ \hline
+ 1&z_4&c_{11}&c_{12}&d_{11}&d_{12}\\
+ 1&-z_4&c_{21}&c_{22}&d_{21}&d_{22}
+ \end{array}\right)
+\]
+Call the upper left block $F_2$, the other 2 blocks in the first row of blocks $Z_1,Z_2$, and those below $F_2$ in the first column $Z_3,Z_4$. 2 real angles $\theta,\phi$ determine a pair of matrices $A,B$. In Karlsson's notation,
+\[
+ A=\begin{pmatrix} A_{11}&A_{12}\\ \bar A_{12}&-\bar A_{11}\end{pmatrix},
+ \qquad B=-F_2-A
+\]
+with
+\[
+ \begin{gathered}
+ A_{11}=-\tfrac12+\tfrac{i\sqrt3}{2}(\cos\theta+e^{-i\phi}\sin\theta),\\
+ A_{12}=-\tfrac12+\tfrac{i\sqrt3}{2}(-\cos\theta+e^{i\phi}\sin\theta).
+ \end{gathered}
+\]
+The 4 interior blocks are now given, in reading order, by
+\[
+ (a,b,c,d)=\tfrac12\big(Z_3AZ_1,\ Z_3BZ_2,\ Z_4BZ_1,\ Z_4AZ_2\big)
+\]
+The third free parameter is the argument of $z_1$. Requiring the interior entries to have modulus one gives 2 M\"obius maps, one for $A$ and one for $B$. On the regular chart these maps determine $z_2^2,z_3^2,z_4^2$ from $z_1^2$. Choosing the other square roots merely exchanges rows or columns within the indicated pairs. Section~\ref{sec:karlsson} gives the maps explicitly. A \emph{regular parameter} here means a point of this coordinate chart. Row-cycle regularity is a property of the matrix itself.
+
+We shall use the alternative parametrization of \cite[Section~7]{bo}. Let $K_{ij}$ be the $2\times2$ blocks of $K_6$, now indexed by $i,j=0,1,2$. Extract the factors $X_i=K_{i0}F_2^{-1}$ and $Y_j=K_{0j}$ from the left and right. What remains in each block is a power of a single unitary matrix:
+\[
+ K_{ij}=X_i\Omega^{ij}Y_j,\qquad I+\Omega+\Omega^2=0
+\]
+The dictionary is $A=F_2\Omega$ and $B=F_2\Omega^2$. On the 3-parameter family the eigenvalues of $\Omega$ are $\omega=e^{2\pi i/3}$ and $\bar\omega$. Diagonalizing $\Omega$ therefore reveals 2 scalar arrays $(\omega^{ij})$ and $(\bar\omega^{ij})$, the Fourier matrix of order 3 and its conjugate. This is the reason for using the second parametrization here: it exhibits the 2 Fourier factors whose behavior we can follow to the Di\c t\u a boundary.
+
+Why use this particular family to look for wildness? The computations of \cite{bo} found the Catalan values through level 9 at sampled Karlsson parameters. Yet the same family approaches deformations of $F_2\otimes F_3$ at which the quantum group preserves a partition into 2 triples. At such a point the indicator of the partition is already an extra tensor at level 2. Nicoara's intermediate subfactor for Di\c t\u a-type matrices is an operator-algebraic manifestation of this block structure \cite{ni}. The generic Karlsson action has just 2 orbitals, the diagonal and its complement, so the triple partition disappears. What survives from the boundary is the action of its quantum group on potential higher tensors. This is the feature of the family that we exploit.
+
+\begin{thmA}
+On a dense open set of regular Karlsson parameters the first 18 fixed-space dimensions agree with those of $S_6^+$. In order they are
+\[
+\begin{gathered}
+1,\ 2,\ 5,\ 14,\ 42,\ 132,\ 429,\\
+1430,\ 4862,\ 16796,\ 58786,\ 208012,\ 742900,\ 2674440,\\
+9694845,\ 35357670,\ 129644790,\ 477638700 .
+\end{gathered}
+\]
+\end{thmA}
+
+The passage from a special point to generic parameters involves an inclusion of quantum groups. Fixed vectors at nearby parameters can be chosen to converge along a subsequence. Their limits still satisfy the relations of the planar algebra and hence determine a quantum group. It contains the group of the special point and has the generic fixed-space dimensions. In our application the group at the special point is the generic Di\c t\u a group $D$ of $F_2\otimes_QF_3$, in its action on 2 triples. The group obtained in the limit has 2 orbitals. Thus we are led to a question about all overgroups of $D$ that have lost its partition.
+
+\begin{thmB}
+Let $D\subset G\subset S_6^+$ and suppose that $c_2(G)=2$. If there is a first level $k$ at which $c_k(G)>\Cat_k$, then
+\[
+ k\equiv3\pmod4,\quad k\geq19,
+ \qquad\text{or}\qquad
+ k\equiv1\pmod4,\quad k\geq37 .
+\]
+\end{thmB}
+
+The kagome lattice takes its name from a pattern in Japanese bamboo basket weaving \cite{mek}. There is a simple way to draw it on a honeycomb. Mark the midpoint of every edge, then join the 3 midpoints around each vertex. Each honeycomb vertex contributes a triangle and each honeycomb face leaves a hexagonal opening. In graph theory this is the line graph of the honeycomb. The same construction gives several ways into the literature.
+
+\smallskip
+\noindent\emph{Planar loops.} The kagome graph is also the medial graph of the honeycomb and of its triangular dual. At a 4-valent medial vertex there are 2 ways to pair the strands without a crossing. Baxter, Kelland and Wu used these pairings to express the Potts partition function on the honeycomb or triangular lattice as a loop sum on kagome, with weight $\sqrt q$ for each closed loop in the $q$-state model \cite{bkw}. This gives a direct point of contact with subfactors: at $q=6$ a contractible loop has the same value $\sqrt6$ as a Temperley--Lieb circle at index 6. In our construction the extra datum on a walk is its word in 2 rotations.
+
+\smallskip
+\noindent\emph{Dimers.} One can instead select edges so that every kagome vertex belongs to exactly one selected edge. These perfect matchings are the close-packed dimer configurations. Wang and Wu computed their free energy for weights depending on the 3 edge directions. In their infinite-lattice model the connected correlation between 2 dimers vanishes exactly at separations of 2 lattice spacings or more \cite{ww}.
+
+\smallskip
+\noindent\emph{Flat bands.} Put alternating values $+1,-1$ around one hexagon and zero elsewhere. At each adjacent exterior vertex the 2 contributions cancel, while at a vertex of the hexagon the sum over neighbors is $-2$ times the value there. Thus a single hexagon supports an eigenfunction of the adjacency operator. Its translates are the compactly supported states of the familiar kagome flat band \cite{bwb}. The hexagon outlined in Figure~\ref{fig:introkagome} supports just such a state.
+
+\smallskip
+\noindent\emph{Magnetism.} 3 Ising spins taking the values $\pm1$ cannot be opposite on all 3 edges of a triangle. This elementary obstruction underlies the frustrated kagome antiferromagnet. Sy\^ozi's early work concerns the Ising model \cite{syozi}. A quantum realization occurs in herbertsmithite, where magnetic copper ions in each kagome layer carry spin $1/2$ \cite{norman}.
+
+At the Di\c t\u a boundary, Fourier analysis on each triple supplies a character of order 3 and its inverse. Denote the 2 resulting generators by $a,b$. Their action can be drawn using rotations of $120^\circ$ about 2 points in the plane. Mark the midpoint between the centers and follow its images under successive products. The 4 nontrivial letters move to the 4 neighbors of the current vertex. A fifth letter, the sign distinguishing the triples, leaves the walker in place. Figure~\ref{fig:introkagome} shows the triangular and hexagonal faces traced by these 4 letters.
+
+\begin{figure}[htb]
+\centering
+\begin{tikzpicture}[x=1.25cm,y=1.25cm,line join=round]
+\definecolor{kagline}{RGB}{111,127,133}
+\definecolor{kagblue}{RGB}{31,88,118}
+\definecolor{kagred}{RGB}{157,73,42}
+\begin{scope}
+\clip (-5.2,-2.64) rectangle (5.2,2.64);
+\foreach \j in {-3,...,3}{
+  \foreach \i in {-5,...,5}{
+    \pgfmathsetmacro{\kx}{2*\i+\j}
+    \pgfmathsetmacro{\ky}{sqrt(3)*\j}
+    \begin{scope}[shift={(\kx,\ky)}]
+      \draw[kagline,line width=.52pt] (0,0)--(1,0)--(.5,.8660254)--cycle;
+      \draw[kagline,line width=.52pt] (0,0)--(-1,0)--(-.5,-.8660254)--cycle;
+      \foreach \v in {(0,0),(1,0),(.5,.8660254)} \fill[kagline] \v circle (.85pt);
+    \end{scope}
+  }
+}
+\filldraw[fill=kagblue!16,draw=kagblue,line width=1.1pt] (0,0)--(1,0)--(.5,.8660254)--cycle;
+\filldraw[fill=kagred!17,draw=kagred,line width=1.1pt] (0,0)--(-1,0)--(-.5,-.8660254)--cycle;
+\draw[black,line width=1.45pt] (0,0)--(1,0)--(1.5,-.8660254)--(1,-1.7320508)--(0,-1.7320508)--(-.5,-.8660254)--cycle;
+\node[text=kagblue] at (.5,.29) {$a$};
+\node[text=kagred] at (-.5,-.29) {$b$};
+\node at (.5,-.8660254) {$(ab)^3$};
+\fill[black] (0,0) circle (2pt);
+\end{scope}
+\end{tikzpicture}
+\caption{The kagome walk based at the black vertex. The 2 shaded triangles give $a^3=b^3=1$. Alternating the 2 generators follows the outlined hexagon and gives $(ab)^3=1$.}\label{fig:introkagome}
+\end{figure}
+
+A first extra unit tensor would assign a probability to each closed word of its length. A short window of that word has a prescribed distribution, read from a rectangular Jones--Wenzl projection. This leaves 2 ways to compute the expected score of any local weight: take its mean against that projection, or count it along actual closed walks. At even length a sufficiently long straight segment forces the entire return, and the 2 computations disagree. At length 15 a table of integer weights on 7-letter windows gives a particularly simple contradiction. Every closed word has total score at least $75$, whereas its required expectation is less than $48$. 16 and 18 follow from the even-level argument, and 17 from a staircase walk. The first length still available is 19.
+
+There is also a generation consequence. Let $K$ be the quantum automorphism group of the graph made of 2 disjoint triangles. Its invariant tensors encode the partition into the 2 triples. Adjoining to $K$ any Hadamard quantum group with 2 orbitals destroys that partition.
+\begin{thmC}
+Let $H$ have order 6 and $c_2(H)=2$. For
+\[
+ G=\langle G_H,S_3^+\wr_*S_2^+\rangle
+\]
+we have $c_k(G)=\Cat_k$ for $k\leq18$, and any first extra tensor satisfies the restrictions of Theorem B.
+\end{thmC}
+
+We begin with the fixed spaces and the limit argument. We then pass successively to Fourier words, to walks in the plane, and to the local inequalities on those walks. After proving Theorem B we identify the particular Karlsson limit needed for Theorem A and apply the same result to free wreath products. The last section studies what more can be seen by retaining the direction of approach to a special matrix. There the distinction between an exact identity for a quadratic form and numerical information about eigenvalue branches is essential.
+
+\section{Hadamard fixed spaces and generation}\label{sec:witness}
+
+\subsection{From a matrix to fixed tensors}
+Let $H\in M_N(\T)$ satisfy $HH^*=N I$. Write $V=\mathbb C^N$, with basis $e_1,\ldots,e_N$. The vector and projection associated to 2 rows are
+\[
+ h_{ij}(a)=H_{ia}\bar H_{ja},\qquad P_{ij}=\frac1N h_{ij}h_{ij}^* .
+\]
+Fixing $i$ and varying $j$ gives an orthogonal basis of $V$, as does fixing $j$ and varying $i$. Hence the entries of $P=(P_{ij})$ are projections, orthogonal in each row and column, with every row and column summing to $I$.
+
+These are the defining relations on the fundamental matrix $u=(u_{ij})$ of the quantum permutation group $S_N^+$. The homomorphism $\pi_H$ given by $u_{ij}\mapsto P_{ij}$ therefore exists. Its Hopf image \cite{bb1} is the smallest compact quantum subgroup through which the model factors:
+\[
+ C(S_N^+)\longrightarrow C(G_H)\longrightarrow M_N(\mathbb C).
+\]
+Throughout, a subgroup of $S_N^+$ comes with its action on these $N$ points. An inclusion of 2 such groups compares their fixed spaces in the same tensor powers of $V$.
+
+For a quantum subgroup $G$, write $C_k(G)=\Fix(u^{\otimes k}|_G)$ and $c_k(G)=\dim C_k(G)$. With $h$ the Haar state and $\chi=\sum_i u_{ii}$, averaging $u^{\otimes k}$ gives the orthogonal projection onto $C_k(G)$. Its trace yields
+\[
+ c_k(G)=h(\chi^k).
+\]
+For $G_H$ these spaces form the planar algebra of the Hadamard subfactor \cite{bbs}; see also \cite[Section 2]{bo} and the planar algebra formalism of \cite{jon}. Multiplication of coordinates, summation over an index and insertion of a free index are among its planar operations. We will use them on explicit tensors.
+
+A finite matrix that detects the fixed space will be useful when $H$ varies. With $\tr=\Tr/N$ on $M_N(\mathbb C)$, put
+\[
+ (T_k(H))_{i_1\ldots i_k,j_1\ldots j_k}
+     =\tr(P_{i_1j_1}\cdots P_{i_kj_k}).
+\]
+This is the partial trace of the unitary $(\mathrm{id}\otimes\pi_H)(u^{\otimes k})$. Its $1$-eigenspace is $C_k(G_H)$ \cite[Sections 2--3]{bo}. Indeed equality in the contraction estimate on a unit vector $v$ means that this unitary fixes each $v\otimes e_a$; this is precisely the fixed-vector condition of the model and hence of its Hopf image. In the Hadamard case $T_k$ is also positive, by its Gram matrix formula in \cite{bo}. The equations $(1-T_k)v=0$ consequently have continuous coefficients, real analytic on an analytic family of matrices.
+
+\subsection{What an additional tensor records}
+For a noncrossing partition $p$ of the cyclically ordered positions $1,\ldots,k$, form the vector
+\[
+ \xi_p=\sum_{i_1,\ldots,i_k} e_{i_1}\otimes\cdots\otimes e_{i_k},
+\]
+where the indices agree on every block of $p$. Different blocks may receive the same index. The vectors $\xi_p$ span $C_k(S_N^+)$, and for $N\geq4$ form a basis \cite[Section 2]{bo}. We write $\TL_k$ for this space, using the usual correspondence between noncrossing partitions and the shaded Temperley--Lieb diagrams. In particular
+\[
+ \dim\TL_k=\Cat_k=\frac1{k+1}\binom{2k}{k},\qquad
+ \TL_k\subset C_k(G)\quad(G\subset S_N^+).
+\]
+At level 2 the 2 vectors are the constant function on ordered pairs and the indicator of the diagonal. Having exactly these invariants is quantum $2$-transitivity. A transitive action preserving 2 or more nontrivial blocks has a third invariant, the indicator that the 2 indices belong to the same block. In our example this tensor records the division of the 6 points into triples.
+
+For comparison, a classical permutation group fixes the crossing tensor at level 4, with indices $i_1=i_3$ and $i_2=i_4$. It is independent of the noncrossing tensors for $N\geq4$; this follows, for instance, by evaluating partition vectors on tuples realizing each equality pattern. A Fourier matrix gives another elementary comparison. Its row quotients are characters of the underlying finite abelian group, and $G_{F_N}=\mathbb Z_N$ acts by translations. Translating the first index of a tuple to zero leaves $N^{k-1}$ choices of the remaining indices, so $c_k(F_N)=N^{k-1}$. It is the equality with the Catalan values at \emph{every} level that characterizes $G_H=S_N^+$ by Tannaka duality. We call such an $H$ wild.
+
+\begin{definition}
+For a proper quantum subgroup $G\subset S_N^+$, $N\geq4$, its witness level $w(G)$ is the smallest $k$ for which $C_k(G)$ strictly contains $\TL_k$.
+\end{definition}
+
+Inclusion reverses at the level of tensors. If $G\subset G'$ then $C_k(G')\subset C_k(G)$. Thus a calculation giving $c_k(H)=\Cat_k$ for $k\leq r$ rules out every proposed overgroup of $G_H$ with witness level at most $r$. In particular it rules out intransitive actions at level one, nontrivial block systems and nontrivial orbital graphs at level 2, and classical actions by level 4. We do not know a bound on $w$ for all proper subgroups at a fixed order. For example, twisting the finite dihedral rotation groups inside $S_4^+\simeq SO_3^{-1}$ does not produce large witness levels: their 3-dimensional representation preserves an axis, so it already splits and $w=2$.
+
+For 2 quantum subgroups in the same action, the smallest group containing both satisfies
+\[
+ C_k(\langle G,K\rangle)=C_k(G)\cap C_k(K).
+\]
+Indeed the intersection of their tensor categories is again a tensor category and defines the generated group by Tannaka duality. This is another way the special group $D$ enters the problem: we seek the planar subalgebras of $C(D)$ whose level 2 is precisely $\TL_2$. The equality $\langle G_H,K\rangle=S_N^+$ for a given $K$ asks for the absence of extra vectors in the intersection at every level.
+
+\section{Limits and the first extra tensor}\label{sec:limits}
+
+\subsection{Specialization of the planar algebra}
+At a special parameter the multiplicity of the eigenvalue one can jump up. Upper semicontinuity by itself gives an upper bound on the generic dimensions in terms of the special ones. In the Di\c t\u a example that bound leaves many possible dimensions, starting at level 2. There is more information in the positions of the eigenspaces: their limits at different levels must be compatible with all the planar operations.
+
+Let $(H_q)_{q\in Q}$ be a real analytic family on a connected real analytic manifold. For each $k$ write $c_k^{gen}=\min_{q\in Q}c_k(H_q)$. This is attained off a proper real analytic subset: take the maximal nonvanishing minors of $1-T_k(q)$. A finite list of minima is therefore attained on a dense open set. All the minima are attained simultaneously on the intersection $Q_{gen}$ of these sets over $k$, a dense $G_\delta$ of full measure in local coordinates.
+
+\begin{theorem}\label{thm:limit}
+For every matrix $H_0$ in the closure of the family there exists a quantum subgroup $G_{lim}$ with
+\[
+ G_{H_0}\subset G_{lim}\subset S_N^+,
+ \qquad c_k(G_{lim})=c_k^{gen}\quad(k\geq1).
+\]
+In particular, if $c_2^{gen}=2$ and the only quantum $2$-transitive overgroup of $G_{H_0}$ in this action is $S_N^+$, then $G_{H_q}=S_N^+$ for every $q\in Q_{gen}$.
+\end{theorem}
+\begin{proof}
+Take a sequence of parameters in $Q_{gen}$ with matrices converging to $H_0$. At level $k$, their fixed spaces belong to the Grassmannian of $c_k^{gen}$-planes in $V^{\otimes k}$. This Grassmannian is compact. Extracting successive subsequences and taking a diagonal subsequence gives limiting spaces $P_k$ simultaneously at all levels.
+
+A vector in $P_k$ is the limit of fixed vectors along this subsequence. Apply any planar operation to such approximating vectors. The operation is continuous and the resulting vectors belong to the fixed spaces at its output level, so their limit lies in the corresponding $P_j$. The same argument applies to adjoints. The spaces $P_k$ contain the noncrossing vectors and form a planar subalgebra of the spin planar algebra. Equivalently, by bending strings they give the intertwiner spaces of a rigid tensor category. Reconstruction gives the desired $G_{lim}$ with $C_k(G_{lim})=P_k$ \cite{ba2,wo2}.
+
+Passing to the limit in $T_k(H_q)v_q=v_q$ gives $P_k\subset C_k(G_{H_0})$. By duality this is the inclusion $G_{H_0}\subset G_{lim}$. For the last assertion $G_{lim}$ is quantum $2$-transitive, hence is $S_N^+$ under the stated hypothesis. Every $q\in Q_{gen}$ has the same dimensions, and the inclusion of the noncrossing spaces is then equality at every level.
+\end{proof}
+
+The group $G_{lim}$ can be used without proving that different sequences produce the same embedded group. Its dimensions are prescribed, and every choice contains the group of the specified limit matrix. In particular, a result about all overgroups at the first $r$ levels transfers immediately to the generic dimensions at those levels.
+
+\subsection{Lowering a tensor}
+Identify a tensor in $V^{\otimes k}$ with its coefficients on the $k$-tuples of physical indices. Summation in one variable removes a leg. Multiplication of the functions at 2 adjacent positions merges the legs; in physical coordinates this means restricting the 2 indices to be equal. The adjoint operations insert a free index or repeat a leg. Each of these operations, together with cyclic rotation, is available in the noncrossing category.
+
+Let $r_l$ be the rectangular Jones--Wenzl space in $V^{\otimes l}$. It is the common kernel of the one-leg summations and the merges at consecutive positions $1,2$ through $l-1,l$. The annular lowest weight space $\Lambda_k$ has in addition the condition at positions $k,1$ (for $k\geq2$). Write $p_l$ for the orthogonal projection onto $r_l$ and $d_l$ for its ordinary dimension. The notation records 2 distinct arrangements of the legs: a linear interval for $r_l$ and the whole circle for $\Lambda_k$. The Jones--Wenzl description and minimality of $p_l$ in the rectangular intertwiner algebra are recalled in \cite[Section 9]{bo}.
+
+\begin{proposition}\label{prop:lw}
+Suppose $\TL\subset C\subset C(G_0)$ is a planar subalgebra and $C_j=\TL_j$ for $j<k$, $k\geq3$. Then
+\[
+ C_k\ominus\TL_k\ \subset\ C_k(G_0)\cap\Lambda_k .
+\]
+The space on the left is invariant under cyclic rotation. Contracting a tensor from this space with its adjoint over a complementary interval yields a Temperley--Lieb tensor whenever its output level is less than $k$. The same holds after a further merge of the 2 legs at the junction.
+\end{proposition}
+\begin{proof}
+Let $x\in C_k\ominus\TL_k$ and let $L$ sum a leg or merge adjacent legs. The vector $Lx$ lies in $C_{k-1}=\TL_{k-1}$. For any $y$ in that space, $L^*y\in\TL_k$, whence $\langle Lx,y\rangle=0$. It follows that $Lx=0$. Rotation preserves $C_k$ and $\TL_k$ unitarily, which gives the condition at the last junction as well. The contractions in the statement are compositions of tensor products, adjoints, caps and merges. Their outputs lie in $C$, and at the indicated levels $C$ is Temperley--Lieb.
+\end{proof}
+
+\subsection{What a short interval sees}
+Let $x$ be a unit vector in $C_k\ominus\TL_k$ at a first exceptional level $k$. Choose a cyclic interval of $l$ legs and rotate it to the front. Write its indices as $a$ and the remaining indices as $b$. The reduced density matrix of this interval has entries
+\[
+ \rho_l(a,a')=\sum_b x(a,b)\overline{x(a',b)} .
+\]
+It has trace one. In the planar picture the $b$ legs meet the legs of the adjoint copy in reverse order. The resulting nested contraction represents this matrix with $2l$ boundary legs. The conditions on $x$ within the interval show that $p_l\rho_lp_l=\rho_l$.
+
+\begin{lemma}\label{lem:marginal}
+At every cyclic interval of length $l$ with $2l<k$, a first extra unit tensor has reduced matrix
+\[
+ \rho_l=p_l/d_l .
+\]
+If $2l=k$, the 2 matrices have the same diagonal blocks at the last physical leg. In particular their expectations agree on every operator on the first $l-1$ legs tensored with a physically diagonal operator on the last leg.
+\end{lemma}
+\begin{proof}
+For $2l<k$, Proposition \ref{prop:lw} puts $\rho_l$ in the rectangular Temperley--Lieb endomorphism algebra. Its corner cut down by the minimal projection $p_l$ is one-dimensional. Taking the trace determines the scalar.
+
+For $2l=k$, let $E$ be Haar averaging onto the endomorphism algebra for $S_N^+$. This is the trace-preserving orthogonal projection in the Hilbert--Schmidt inner product. As $p_l$ is an intertwiner, the same corner and trace calculation gives $E(\rho_l)=p_l/d_l$. Join the 2 last physical indices, retaining one common index, and denote the resulting map by $M$. In coordinates,
+\[
+ (M\rho_l)(a,h,a')=\rho_l(ah,a'h).
+\]
+Here $a,a'$ have length $l-1$ and $h$ is a single physical index. Both $M$ and its adjoint are intertwiners for $S_N^+$, with outputs put in the usual reversed order. Writing $E_{2l-1}$ for Haar projection at the output gives $ME=E_{2l-1}M$. But $M\rho_l$ is fixed at level $2l-1<k$, hence already Temperley--Lieb. This proves $M\rho_l=M(p_l/d_l)$.
+\end{proof}
+
+For example, at level $k=5$ one knows the entire 2-leg matrix, at each of the 5 cyclic positions. At $k=4$ one knows its blocks with a common second index; an entry $\rho_2(ah,a'h')$ with $h\neq h'$ does not occur in the merged tensor. This difference accounts for the 2 types of local tests below. The classical crossing in $S_6$ provides a check: its component orthogonal to $\TL_4$ has these prescribed merged blocks, although its entire 2-leg matrix differs from $p_2/d_2$.
+
+\section{Fourier words and their local distributions}\label{sec:exact}
+
+\subsection{2 triples}
+Let $D$ denote the quantum group of a generic $F_2\otimes_Q F_3$. The group and its action on the 6 points are inputs from \cite[Sections 4.1--4.3]{bo}. For example, take the second row of the dephased parameter matrix to be $(1,p,1)$ with $p=(3+4i)/5$. Since $p+\bar p=6/5$ is not an algebraic integer, $p$ has infinite order. With $\alpha=p^2$, $\beta=1$, equality of the 3 powers in \cite[Theorem 4.6]{bo} requires the exponents $n,-m-n,m$ to coincide. It follows that $m=n=0$, giving the generic group. Here generic refers to this embedded group; its concrete parameter values can satisfy other relations.
+
+Index the 6 points by $(i,a)\in\mathbb Z_2\times\mathbb Z_3$. The space of functions of sum zero on these points has an orthogonal basis consisting of a sign and 4 characters. With $\omega=e^{2\pi i/3}$, they are
+\[
+ f_0(i,a)=(-1)^i,\qquad f_{j,c}(i,a)=[i=j]\omega^{ca}
+ \quad(j=0,1,\ c=1,-1).
+\]
+We give them digit names because a table later assigns a weight to, for example, the word $1323$.
+\begin{center}
+\begin{tabular}{cclc}
+\toprule
+letter & function & support & squared norm\\ \midrule
+0 & $f_0$ & both triples & 6\\
+1, 2 & $f_{0,1},f_{0,-1}$ & first triple & 3\\
+3, 4 & $f_{1,1},f_{1,-1}$ & second triple & 3\\ \bottomrule
+\end{tabular}
+\end{center}
+The constant function is omitted because each leg of a lowest weight tensor has sum zero. In tensor expansions and probability distributions we normalize the 5 functions to norm one. When multiplying functions or taking kernels we use the displayed unnormalized functions, so all structure constants are rational.
+
+The generic crossed coproduct description of $C(D)$ in \cite{bb3,bo} gives 2 conditions on the coefficients of a fixed tensor. On the summand corresponding to the identity of the outer $\mathbb Z_2$, a character letter contributes the element $c^{(j)}$ of the $j$-th copy of $\mathbb Z_3$; letter $0$ contributes the identity. The tensor product multiplies these elements in word order. To see the single-leg assertion, Fourier transform the 3 translation projections in the inner magic matrix: their character-weighted sums are exactly the group elements of the inner copy. On the other outer summand the triples are exchanged and $f_0$ changes sign. Consequently only words representing the identity can carry a nonzero fixed coefficient. If $F$ exchanges the triples, then
+\[
+ x_{F(w)}=(-1)^{\#0(w)}x_w .
+\]
+Here $F$ interchanges $1,3$ and $2,4$. Character conjugation, denoted by $J$, interchanges $1,2$ and $3,4$. Each preserves the set of identity words. We will often choose tables constant on the orbits of $F$ and $J$.
+
+\subsection{An identity test with 3 counters}
+The lattice coordinates of \cite[Theorem 4.3]{bo} give a short test of word membership. Start with state $d=0$ in $\mathbb Z_3$ and counters $n_0=n_1=n_2=0$. A pause $0$ changes nothing. At a letter $(j,c)$ put $e=d+c$ modulo 3. If $j=1$, add one to $n_d$ and subtract one from $n_e$. In either block set $d=e$. At the end,
+\[
+ w\text{ represents the identity}\quad\Longleftrightarrow\quad
+ d=0,\qquad (n_0,n_1,n_2)=(0,0,0).
+\]
+Indeed, the lattice coordinate records the difference of the departure and arrival counts at each state in each block. After a closed walk the sums of the 2 block contributions telescope, so the counters of just one block suffice.
+
+For example $13$ advances the state twice and is open. The word $14$ returns to its initial state but has counters $(-1,1,0)$: its second letter returns from state one to state zero in the second triple. The word $1432$ follows those steps by their inverses and resets the counters to zero. Another identity word, $111$, goes around a triangle. Inserting a pause anywhere leaves these answers unchanged. The digit $0$ thus represents a genuine Fourier vector in the tensor, even though it makes no step in the group.
+
+\subsection{A probability measure on words}
+Let $W_k$ denote the identity words of length $k$. For a first extra unit tensor $x$, the numbers $P(w)=|x_w|^2$ on normalized Fourier words give a probability measure supported on $W_k$. Define a reference distribution on windows of length $l$ by
+\[
+ \nu_l(v)=\frac{\langle p_lv,v\rangle}{d_l}.
+\]
+Its total mass is one by the trace of $p_l$. At a single letter, $p_1$ is the projection onto the 5-dimensional zero-sum space, so $\nu_1$ assigns mass $1/5$ to every letter. At 2 or more letters the merge conditions distinguish the words. In particular, if every adjacent pair is supported on different triples, its product vanishes and the normalized word already belongs to $r_l$. Its mass is the maximal possible one, $1/d_l$.
+
+For $2l<k$, Lemma \ref{lem:marginal} gives precisely $\nu_l$ as the distribution of each cyclic window of $l$ letters. For $2l=k$ we can read the first $l-1$ Fourier letters and use a physically diagonal observable on the last leg. One such observable is multiplication by $f_0$. Its compression to the zero-sum space is diagonal in the Fourier basis, with values
+\[
+ \varepsilon(0)=0,\quad \varepsilon(1)=\varepsilon(2)=1,\quad
+ \varepsilon(3)=\varepsilon(4)=-1.
+\]
+Indeed $f_0^2=1$ is constant, whereas $f_0 f_{j,c}=(-1)^j f_{j,c}$. Therefore a function $s(v,y)=b(v)\varepsilon(y)$ has a prescribed expectation even at half the full length.
+
+\begin{definition}
+An admissible table at level $k$ is a real weight $s$ on windows of length $l$ with $2l<k$, or a weight of the form $b(v)\varepsilon(y)$ when $2l=k$. Write
+\[
+ \mu(s)=\sum_v\nu_l(v)s(v),\qquad
+ \score_s(w)=\sum_{j=1}^k s(w_j\cdots w_{j+l-1}),
+\]
+where the indices are cyclic. A word certificate satisfies $\score_s(w)>k\mu(s)$ for every $w\in W_k$.
+\end{definition}
+A first extra tensor would give $\sum_w P(w)\score_s(w)=k\mu(s)$ for every admissible table. A certificate contradicts this equality. The useful situation will be $\mu(s)<0$ and $\score_s(w)\geq0$ on every closed word.
+
+There is a finite convexity explanation for the search. List the frequencies of the window patterns in each cyclic word, divided by $k$. For the chosen test functions the corresponding vector for $\nu_l$ must belong to the convex hull of these lists. If it is outside, a separating linear functional gives the desired weights. Conversely a convex combination inside the hull gives a measure with the tested averages; random cyclic rotation gives the same averages at each position. The full tensor has further conditions, including the annular merges and the phases of its coefficients. At level 3 those conditions will be needed.
+
+\section{Closed walks and the even levels}\label{sec:walks}
+
+The counter test is enough for a finite enumeration. A geometric realization explains why a single construction gives certificates at all even lengths. Associate to a nonzero letter the rotation
+\[
+ \varphi_{j,c}(z)=\omega^c z+j(1-\omega^c)
+\]
+around the point $j=0$ or $1$ in the plane. Put $\varphi_0=\mathrm{id}$. Thus the 2 letters in each triple give the 2 rotations through $120^\circ$ in opposite directions about the same center.
+
+\begin{proposition}\label{prop:walks}
+A word belongs to $W_k$ exactly when its rotations, composed in word order, give the identity transformation of the plane.
+\end{proposition}
+\begin{proof}
+After $t$ letters the linear part is $\omega^{d_t}$, where $d_t$ is the running character sum from the identity test. The translation part after the last letter is
+\[
+ \sum_{t:\,j_t=1}(\omega^{d_{t-1}}-\omega^{d_t})
+     = n_0+n_1\omega+n_2\omega^2 .
+\]
+The translation vanishes precisely when $n_0=n_1=n_2$, since $1+\omega+\omega^2=0$ is the only rational relation up to scalar. The counters sum to zero, so each is zero. Triviality of the linear part supplies the remaining condition $d_k=0$.
+\end{proof}
+
+The 2 rotations generate the triangle group $p3$ with presentation $a^3=b^3=(ab)^3=1$ \cite{cmo}. Its Cayley graph for the 2 generators and their inverses is the kagome lattice. The vertex representing a product $g$ may be drawn at $g(1/2)$. To see why the midpoint records the group element, use the translation formula in the proof: every translation part lies in $(1-\omega)\mathbb Z[\omega]$. An element with linear part $\omega^{\pm1}$ fixing $1/2$ would have translation $(1-\omega^{\pm1})/2$, which is outside this lattice. Thus the midpoint has trivial stabilizer. The triangles at the starting vertex are its orbits under rotations about zero and one; translating this local picture draws the whole graph.
+
+Let $P_t=\varphi_{w_1}\cdots\varphi_{w_t}(1/2)$. At a nonzero letter the displacement is
+\[
+ P_t-P_{t-1}=\frac{\sqrt3}{2}(-1)^{j+1}c\,i\omega^{d_{t-1}-c}.
+\]
+A pause has displacement zero. Name the 3 unoriented lines by $m\in\mathbb Z_3$, the direction of line $m$ being $i\omega^m$. At state $d$ the available 4 nonzero steps are the 2 signs on each of the 2 lines different from $d$. A step along line $m$ exchanges the other 2 states. From a given vertex each of the 4 steps specifies its letter uniquely.
+
+\subsection{Straight segments}
+2 letters alternate if both are nonzero and they belong to different triples. We call a word a zigzag if every consecutive pair alternates and the 2 characters in each pair are opposite. For example $1414$ is a zigzag. In the plane all its displacements coincide. Keeping the block alternation but choosing the same character at one junction turns the path by $60^\circ$. The following picture uses length-one steps and rotates the first line to be horizontal.
+
+\begin{center}
+\begin{tikzpicture}[x=.84cm,y=.84cm,>=stealth]
+\begin{scope}[xshift=0cm]
+\begin{scope}
+\clip (-.80,-1.40) rectangle (4.85,1.40);
+\draw[gray!53,thin] (-1.000,1.732)--(0.000,1.732);
+\draw[gray!53,thin] (-1.000,0.000)--(-0.500,-0.866);
+\draw[gray!53,thin] (-1.000,0.000)--(0.000,0.000);
+\draw[gray!53,thin] (0.000,1.732)--(0.500,0.866);
+\draw[gray!53,thin] (0.000,1.732)--(1.000,1.732);
+\draw[gray!53,thin] (-1.000,-1.732)--(-0.500,-0.866);
+\draw[gray!53,thin] (-1.000,-1.732)--(0.000,-1.732);
+\draw[gray!53,thin] (-0.500,-0.866)--(0.000,0.000);
+\draw[gray!53,thin] (-0.500,-0.866)--(0.000,-1.732);
+\draw[gray!53,thin] (0.000,0.000)--(0.500,0.866);
+\draw[gray!53,thin] (0.000,0.000)--(1.000,0.000);
+\draw[gray!53,thin] (0.500,0.866)--(1.000,1.732);
+\draw[gray!53,thin] (0.500,0.866)--(1.000,0.000);
+\draw[gray!53,thin] (1.000,1.732)--(2.000,1.732);
+\draw[gray!53,thin] (0.000,-1.732)--(1.000,-1.732);
+\draw[gray!53,thin] (1.000,0.000)--(1.500,-0.866);
+\draw[gray!53,thin] (1.000,0.000)--(2.000,0.000);
+\draw[gray!53,thin] (2.000,1.732)--(2.500,0.866);
+\draw[gray!53,thin] (2.000,1.732)--(3.000,1.732);
+\draw[gray!53,thin] (1.000,-1.732)--(1.500,-0.866);
+\draw[gray!53,thin] (1.000,-1.732)--(2.000,-1.732);
+\draw[gray!53,thin] (1.500,-0.866)--(2.000,0.000);
+\draw[gray!53,thin] (1.500,-0.866)--(2.000,-1.732);
+\draw[gray!53,thin] (2.000,0.000)--(2.500,0.866);
+\draw[gray!53,thin] (2.000,0.000)--(3.000,0.000);
+\draw[gray!53,thin] (2.500,0.866)--(3.000,1.732);
+\draw[gray!53,thin] (2.500,0.866)--(3.000,0.000);
+\draw[gray!53,thin] (3.000,1.732)--(4.000,1.732);
+\draw[gray!53,thin] (2.000,-1.732)--(3.000,-1.732);
+\draw[gray!53,thin] (3.000,0.000)--(3.500,-0.866);
+\draw[gray!53,thin] (3.000,0.000)--(4.000,0.000);
+\draw[gray!53,thin] (4.000,1.732)--(4.500,0.866);
+\draw[gray!53,thin] (4.000,1.732)--(5.000,1.732);
+\draw[gray!53,thin] (3.000,-1.732)--(3.500,-0.866);
+\draw[gray!53,thin] (3.000,-1.732)--(4.000,-1.732);
+\draw[gray!53,thin] (3.500,-0.866)--(4.000,0.000);
+\draw[gray!53,thin] (3.500,-0.866)--(4.000,-1.732);
+\draw[gray!53,thin] (4.000,0.000)--(4.500,0.866);
+\draw[gray!53,thin] (4.000,0.000)--(5.000,0.000);
+\draw[gray!53,thin] (4.500,0.866)--(5.000,1.732);
+\draw[gray!53,thin] (4.500,0.866)--(5.000,0.000);
+\draw[gray!53,thin] (4.000,-1.732)--(5.000,-1.732);
+\end{scope}
+\draw[->,line width=1.1pt] (0.000,0.000)--(0.850,0.000);
+\draw[->,line width=1.1pt] (1.000,0.000)--(1.850,0.000);
+\draw[->,line width=1.1pt] (2.000,0.000)--(2.850,0.000);
+\draw[->,line width=1.1pt] (3.000,0.000)--(3.850,0.000);
+\fill (0.000,0.000) circle (1.6pt);
+\fill (1.000,0.000) circle (1.6pt);
+\fill (2.000,0.000) circle (1.6pt);
+\fill (3.000,0.000) circle (1.6pt);
+\fill (4.000,0.000) circle (1.6pt);
+\node at (2,-1.70) {\small $1414$: straight};
+\end{scope}
+\begin{scope}[xshift=6.6cm]
+\begin{scope}
+\clip (-.80,-1.40) rectangle (4.85,1.40);
+\draw[gray!53,thin] (-1.000,1.732)--(0.000,1.732);
+\draw[gray!53,thin] (-1.000,0.000)--(-0.500,-0.866);
+\draw[gray!53,thin] (-1.000,0.000)--(0.000,0.000);
+\draw[gray!53,thin] (0.000,1.732)--(0.500,0.866);
+\draw[gray!53,thin] (0.000,1.732)--(1.000,1.732);
+\draw[gray!53,thin] (-1.000,-1.732)--(-0.500,-0.866);
+\draw[gray!53,thin] (-1.000,-1.732)--(0.000,-1.732);
+\draw[gray!53,thin] (-0.500,-0.866)--(0.000,0.000);
+\draw[gray!53,thin] (-0.500,-0.866)--(0.000,-1.732);
+\draw[gray!53,thin] (0.000,0.000)--(0.500,0.866);
+\draw[gray!53,thin] (0.000,0.000)--(1.000,0.000);
+\draw[gray!53,thin] (0.500,0.866)--(1.000,1.732);
+\draw[gray!53,thin] (0.500,0.866)--(1.000,0.000);
+\draw[gray!53,thin] (1.000,1.732)--(2.000,1.732);
+\draw[gray!53,thin] (0.000,-1.732)--(1.000,-1.732);
+\draw[gray!53,thin] (1.000,0.000)--(1.500,-0.866);
+\draw[gray!53,thin] (1.000,0.000)--(2.000,0.000);
+\draw[gray!53,thin] (2.000,1.732)--(2.500,0.866);
+\draw[gray!53,thin] (2.000,1.732)--(3.000,1.732);
+\draw[gray!53,thin] (1.000,-1.732)--(1.500,-0.866);
+\draw[gray!53,thin] (1.000,-1.732)--(2.000,-1.732);
+\draw[gray!53,thin] (1.500,-0.866)--(2.000,0.000);
+\draw[gray!53,thin] (1.500,-0.866)--(2.000,-1.732);
+\draw[gray!53,thin] (2.000,0.000)--(2.500,0.866);
+\draw[gray!53,thin] (2.000,0.000)--(3.000,0.000);
+\draw[gray!53,thin] (2.500,0.866)--(3.000,1.732);
+\draw[gray!53,thin] (2.500,0.866)--(3.000,0.000);
+\draw[gray!53,thin] (3.000,1.732)--(4.000,1.732);
+\draw[gray!53,thin] (2.000,-1.732)--(3.000,-1.732);
+\draw[gray!53,thin] (3.000,0.000)--(3.500,-0.866);
+\draw[gray!53,thin] (3.000,0.000)--(4.000,0.000);
+\draw[gray!53,thin] (4.000,1.732)--(4.500,0.866);
+\draw[gray!53,thin] (4.000,1.732)--(5.000,1.732);
+\draw[gray!53,thin] (3.000,-1.732)--(3.500,-0.866);
+\draw[gray!53,thin] (3.000,-1.732)--(4.000,-1.732);
+\draw[gray!53,thin] (3.500,-0.866)--(4.000,0.000);
+\draw[gray!53,thin] (3.500,-0.866)--(4.000,-1.732);
+\draw[gray!53,thin] (4.000,0.000)--(4.500,0.866);
+\draw[gray!53,thin] (4.000,0.000)--(5.000,0.000);
+\draw[gray!53,thin] (4.500,0.866)--(5.000,1.732);
+\draw[gray!53,thin] (4.500,0.866)--(5.000,0.000);
+\draw[gray!53,thin] (4.000,-1.732)--(5.000,-1.732);
+\end{scope}
+\draw[->,line width=1.1pt] (0.000,0.000)--(0.850,0.000);
+\draw[->,line width=1.1pt] (1.000,0.000)--(1.850,0.000);
+\draw[->,line width=1.1pt] (2.000,0.000)--(2.850,0.000);
+\draw[->,line width=1.1pt] (3.000,0.000)--(3.425,-0.736);
+\fill (0.000,0.000) circle (1.6pt);
+\fill (1.000,0.000) circle (1.6pt);
+\fill (2.000,0.000) circle (1.6pt);
+\fill (3.000,0.000) circle (1.6pt);
+\fill (3.500,-0.866) circle (1.6pt);
+\node at (2,-1.70) {\small $1413$: one turn};
+\end{scope}
+\end{tikzpicture}
+\end{center}
+
+Write $W^{-1}$ for $W$ read backwards with each nonzero character inverted. If the first half of a closed word has either shape above, the second half must be $W^{-1}$. The requirement that the walk stays on the kagome lattice is essential in the case with a turn.
+
+\begin{lemma}\label{lem:rigid}
+Let $Z$ be a zigzag of length $n\geq1$ and $y$ a letter alternating with its last letter. If $Zyu$ is an identity word with $|u|=n+1$, then $u=(Zy)^{-1}$.
+\end{lemma}
+\begin{proof}
+Normalize the step length to one. Let $e$ be the common step of $Z$ and $a$ the next step. If $a=e$, the displacement to be reversed has norm $n+1$. Equality in the triangle inequality forces $n+1$ steps equal to $-e$.
+
+Suppose that $a$ makes an angle of $60^\circ$ with $e$. Let $m$ be the line of $e$. The states along $Z$ alternate between the 2 states different from $m$. The character of $y$ now agrees with the last character of $Z$, so 2 successive increments in the same direction in $\mathbb Z_3$ bring the state to $m$. In particular, at the end of $Zy$ a step along $m$ is unavailable.
+
+The 6 possible unit directions lie in $\{\pm e,\pm a,\pm(a-e)\}$. Take the linear form with $\lambda(e)=\lambda(a)=1$. Its value on any allowed step or pause is at most one, with equality only on $e,a$. The return displacement has $\lambda$-value $-(n+1)$, so all $n+1$ return steps are $-e$ or $-a$. Their vector sum requires $n$ copies of $-e$ and one of $-a$. Since the first cannot be $-e$, their order is forced. Reversing $Zy$ indeed traces those steps; uniqueness of the letter for each step proves the assertion.
+\end{proof}
+
+\subsection{An obstruction at every even level}
+Let $k=2l\geq4$. On an $l$-letter window write $Z$ for its initial $l-1$ letters, $z$ for the last letter of $Z$, and $y$ for the final letter. Give the window weight
+\[
+ s(Z,y)=
+ \begin{cases}
+ \varepsilon(z)\varepsilon(y),& Z\text{ is a zigzag},\\
+ 0,&\text{otherwise}.
+ \end{cases}
+\]
+At length one, a zigzag consists of one nonzero letter. The factor $\varepsilon(y)$ makes this a permitted test on a half-length interval.
+
+\begin{theorem}\label{thm:even}
+Let $D\subset G\subset S_6^+$ with $c_2(G)=2$. If $k\geq4$ is even and $c_j(G)=\Cat_j$ for $j<k$, then $c_k(G)=\Cat_k$.
+\end{theorem}
+\begin{proof}
+First compute the sign of $\mu(s)$. Exactly 4 zigzags $Z$ of length $l-1$ are possible, one for each initial nonzero letter. There are 2 choices of $y$ in the other triple. For both, every merge in $(Z,y)$ vanishes: adjacent functions have disjoint support. The normalized tensor lies in $r_l$, giving $\nu_l(Z,y)=1/d_l$ and weight $-1$. The 2 choices of $y$ in the same triple as $z$ have weight $+1$. Their last merge is nonzero, so their projections have strictly smaller squared norm and $\nu_l(Z,y)<1/d_l$. A pause contributes zero. Summing these inequalities gives $\mu(s)<0$.
+
+It remains to count the signs around an identity word. If no window has negative weight, its cyclic score is nonnegative. Otherwise rotate the word to start with a negative window $W=Zy$. By Lemma \ref{lem:rigid} the whole word is $WW^{-1}$. For $l=2$ the block signs, up to simultaneous change of sign, are $1,-1,-1,1$. The 4 pair products sum to zero.
+
+For $l\geq3$ each junction between the halves has 2 adjacent letters in the same triple. A zigzag of length $l-1$ therefore lies within a single half. If $W$ is straight, each half contains 2 such prefixes: the first gives a negative window within the half, the second gives a positive window across the junction. If $W$ ends in a turn, the only zigzags of the required length are $Z$ in $W$ and $Z^{-1}$ in $W^{-1}$. The first is followed by $y$ and contributes $-1$. The second is followed across the junction by the first letter of $Z$ and contributes $+1$. Thus every word containing a negative window has score zero. Since $k\mu(s)<0$, the table excludes a first extra tensor.
+\end{proof}
+
+At $k=4$ the weight is simply the product of 2 block signs. Its reference mean is $-1/5$, and the word $1432$ above has cyclic score zero. At the next 4 even levels the exact means are
+\[
+ -\frac{16}{285},\qquad -\frac{15}{994},\qquad
+ -\frac{224}{55385},\qquad -\frac{209}{192855}.
+\]
+Their magnitudes can become small. The proof uses only their strict sign; no uniform lower bound is needed.
+
+\section{Odd levels and staircase walks}\label{sec:odd}
+
+For $k=2l+1$ the full $l$-letter distribution is prescribed. There is, however, an extra step available for the return. A walk can now pause or pass around a triangle, and the even-level weight no longer has the same counting proof. We first describe the exact finite calculation, beginning with the one case where the support of the Fourier coefficients alone is insufficient.
+
+\subsection{The first 3 odd tests}
+At $k=3$ take the one-letter weight $s(0)=1$, zero elsewhere. Its cyclic score counts the pauses and its reference mean is $1/5$. The word $111$ has score zero, so this table cannot give a strict inequality on every identity word. The tensor itself must also satisfy the annular merges. There are 17 identity words. On them impose the block interchange rule and the 3 cyclic merge equations, using the unnormalized Fourier functions. Their common solution space has dimension one. On this line the form $S-3/5$ with $S$ the sum of the 3 local operators has positive Gram pivot $1296/5$ in the integer basis of \texttt{overgroup.py}. Here and below scalar subtraction from an operator means subtraction of that scalar times the identity. The calculation admits a short description in coordinates. After the 2 triples are identified by the signed interchange, the 8 possible representatives are
+\[
+ 012,\ 021,\ 102,\ 111,\ 120,\ 201,\ 210,\ 222 .
+\]
+The word $000$ is killed by its odd interchange sign. Applying the multiplication rules below gives a generator of the merge kernel with coefficients
+\[
+ (-1,1,1,0,-1,-1,1,0).
+\]
+Every word in its support contains exactly one pause. Thus $S$ acts on this line as the identity, and its unit-vector expectation is $1$, whereas the prescribed value is $3/5$. This excludes level 3.
+
+Here is the multiplication table needed to reproduce the calculation. Denote the constant function by $1$. We have $f_0^2=1$, $f_0 f_{j,c}=(-1)^j f_{j,c}$, and products from different triples vanish. Within one triple,
+\[
+ f_{j,c} f_{j,b}=
+ \begin{cases}
+ f_{j,c+b},&c+b\ne0\text{ in }\mathbb Z_3,\\
+ (1+(-1)^j f_0)/2,&c+b=0.
+ \end{cases}
+\]
+For each cyclic pair replace the 2 letters by their product and set every resulting coefficient to zero. Clearing the factor 2 gives integer equations. If $B$ has independent kernel columns and $W$ is diagonal with entries the squared word norms, the form of a diagonal score on this space is
+\[
+ B^t W\operatorname{diag}\big(\score_s(w)-k\mu(s)\big)B.
+\]
+This construction keeps the calculation rational, despite the complex values of the individual functions.
+
+At $k=5$ give weight $2$ to the orbit of $12$ and $-1$ to the orbits of $13,14$. Throughout the tables an orbit is under simultaneous interchange of the triples and simultaneous character conjugation; the remaining entries have weight zero. A pair in one triple with opposite characters is a backtrack. Thus the score here has a short description:
+\[
+ 2\,\#\{\text{backtracks}\}
+      -\#\{\text{adjacent letters in different triples}\}.
+\]
+All pairs are read cyclically; a pause counts in neither term. The reference mean is $-18/95$. For instance the closed word $14320$ has one backtrack and 2 pairs in different triples, giving score zero. Enumeration by the counter test gives minimal score zero on all 281 identity words.
+
+The level-7 test uses triples of letters. The following table gives one representative of every nonzero orbit.
+\begin{center}\small
+\begin{tabular}{c|rrrrrrrr}
+pattern &013&014&102&111&123&124&130&131\\
+weight &$-3$&$-6$&24&15&6&9&$-9$&8\\ \midrule
+pattern &132&133&134&140&141&142&143&\\
+weight &$-15$&$-6$&3&$-6$&$-12$&$-9$&6&
+\end{tabular}
+\end{center}
+There are 5097 identity words of length 7. Summing the 7 weights on every such word gives minimum zero; the reference mean is $-7326/6745$. Together with the even-level theorem these calculations give the first 7 Catalan values.
+
+\subsection{How the rational means are evaluated}
+For a window of length $l$, let $B_0$ be a kernel basis for the $l-1$ rectangular merge equations on \emph{all} words. In unnormalized Fourier coordinates let $W$ again be the diagonal of squared norms. The rectangular projection has matrix
+\[
+ p_l=B_0(B_0^tWB_0)^{-1}B_0^tW .
+\]
+Its diagonal is unchanged by the diagonal change to normalized coordinates. Dividing it by $d_l$ gives $\nu_l$. Equivalently, for any diagonal $s$ one can take the smaller trace
+\[
+ \mu(s)=\frac1{d_l}\Tr\big((B_0^tWB_0)^{-1}B_0^tW
+                 \operatorname{diag}(s)B_0\big).
+\]
+The dimensions for $l=1,2,3$ are $5,19,71$; the Jones--Wenzl recurrence gives $d_0=1$, $d_1=5$, $d_{l+1}=4d_l-d_{l-1}$ at order 6 \cite[Section 9]{bo}. In particular the denominator is the dimension of the \emph{rectangular} space, even when the contradiction concerns an annular vector.
+
+For larger windows the word group makes this projection feasible. Group the words by their common state and counters. Multiplication of adjacent letters preserves the group element whenever the product is nonzero. For an inverse pair the output is a linear combination of the constant and the sign, both of degree the identity. Consequently the kernel and its Gram matrix split into rational blocks. To evaluate the expectation of a sparse table, only blocks meeting its support are needed. The program \texttt{jw.py} computes these diagonals with rational arithmetic.
+
+\smallskip\noindent\textit{A 2-letter calculation.}
+One can find the level-5 reference mean by hand. The words $13,14$ belong to $r_2$ and have mass $1/19$. To find the mass of $12$, work in its identity block. Its 5 orthonormal words in order are $00,12,21,34,43$. Up to a common scalar the 2 component rows of the merge in the constant and sign directions are
+\[
+ (1,1,1,1,1),\qquad (0,1,1,-1,-1).
+\]
+For instance the unnormalized product for $12$ is $(1+f_0)/2$, while $34$ gives $(1-f_0)/2$. After normalizing the word vectors the displayed rows are orthogonal and have squared lengths 5 and 4. The diagonal of their kernel projection at $12$ is $1-1/5-1/4=11/20$. Each orbit in the level-5 table has 4 members. Hence
+\[
+ \mu(s)=8\frac{11}{20\cdot19}-8\frac1{19}=-\frac{18}{95}.
+\]
+This is the smallest example in which the multiplicity of the local patterns in the rectangular projection decides the sign.
+
+There is an independent check on the passage from tensors to words at low levels. Before using the straight-walk table one can use a physically diagonal measurement at $k=4$: record pairs of distinct points in the same triple. The diagonal of $p_2/19$ vanishes on equal indices and is constant on the 30 ordered unequal pairs by permutation symmetry. 12 pairs are in the same triple, so the mean is $2/5$. At $k=6$ read 2 Fourier letters and the triple $h$ of the third physical index. Give weight $-2$ to the orbits of $(1,0;1),(1,4;0)$ and zero elsewhere, interchanging $h,1-h$ on block interchange. The block indicator compresses diagonally to the zero-sum functions: it has value $1/2$ on the sign and the usual support indicator on a character. These measurements are accessible by Lemma \ref{lem:marginal}.
+
+\begin{center}
+\begin{tabular}{rrcl}
+\toprule
+$k$ & identity words & reference mean & exact test on the candidate space\\ \midrule
+3 & 17 & $1/5$ & one positive pivot\\
+4 & 69 & $2/5$ & 8 positive pivots\\
+5 & 281 & $-18/95$ & minimum word score zero\\
+6 & 1185 & $-124/285$ & 66 positive pivots\\
+7 & 5097 & $-7326/6745$ & minimum word score zero\\ \bottomrule
+\end{tabular}
+\end{center}
+The independent script \texttt{seven.py} reproduces these entries. For the physical measurement at level 4 one evaluates the first 2 letters on the 12 indicated pairs, sums the squared norms over the other 2 legs, and sums over rotations. Equivalently, on the merge kernel the coincident pairs contribute zero, so the same-triple indicator gives the same form. Its Fourier compression is $(1+\varepsilon(a)\varepsilon(b))/2$, as used in \texttt{seven.py}. The pivots are checked after restriction to the annular kernel. The underlying word model was also compared numerically with the explicit parameter $p=(3+4i)/5$ up to level 6 by \texttt{wordmodel.py}.
+
+\subsection{The 3 remaining tables below 15}
+At levels 9, 11 and 13 the tables have window lengths 4, 5 and 6. We give all nonzero weights so that the proof can be checked independently of their discovery by linear programming.
+\begin{center}\small
+\begin{tabular}{c|rrrrrr}
+pattern &1323&1324&1413&1414&1412&1421\\
+weight &$-1$&$-1$&$-1$&$-1$&2&2
+\end{tabular}
+\end{center}
+At level 9 the negative entries have alternating letters and a straight middle pair. A positive entry ends with a backtrack and starts with a straight pair. Both descriptions include all images under the 2 symmetries.
+\begin{center}\small
+\begin{tabular}{c|rrrrrr}
+pattern & 01323 & 11323 & 12323 & 12324 & 12413 & 13142\\
+weight & $-1$ & $-1$ & $1$ & $1$ & $1$ & $-1$\\
+\midrule
+pattern & 13232 & 13234 & 13241 & 13242 & 13243 & 14102\\
+weight & $-1$ & $1$ & $-1$ & $-1$ & $1$ & $2$\\
+\midrule
+pattern & 14111 & 14130 & 14132 & 14133 & 14141 & 14142\\
+weight & $2$ & $-1$ & $-1$ & $-1$ & $-2$ & $-1$\\
+\midrule
+pattern & 14143 & 14201 & 14222 & 14231 & 14232 & 14242\\
+weight & $1$ & $2$ & $2$ & $-1$ & $-1$ & $2$\\
+\end{tabular}
+\end{center}
+The level-11 table already uses pauses. The following level-13 table is simpler, with only 2 distinct nonzero weights.
+\begin{center}\small
+\begin{tabular}{c|rrrrrr}
+pattern &132323&132324&132413&132414&141323&141324\\
+weight &$-1$&$-1$&$-1$&$-1$&$-1$&$-1$\\ \midrule
+pattern &141413&141414&141232&141241&142132&142141\\
+weight &$-1$&$-1$&2&2&2&2
+\end{tabular}
+\end{center}
+\begin{theorem}\label{thm:twelve}
+For $D\subset G\subset S_6^+$ with $c_2(G)=2$, we have $c_k(G)=\Cat_k$ for $1\leq k\leq14$.
+\end{theorem}
+\begin{proof}
+The group $D$ is transitive and $c_2(G)=2$ by hypothesis. Use induction, applying Theorem \ref{thm:even} at the even levels. The low-level tests above settle $3,5,7$. For $9,11,13$ the reference means and minimum scores of the displayed tables are as follows.
+\begin{center}
+\begin{tabular}{rrcr}
+\toprule
+$k$ & identity words & $\mu(s)$ & minimum score\\ \midrule
+9 & 99209 & $-738/26341$ & 0\\
+11 & 2027257 & $-6485642/383430355$ & 0\\
+13 & 42855281 & $-56605389850/13750187888437$ & 0\\ \bottomrule
+\end{tabular}
+\end{center}
+To check the entries, use the block computation of $p_l$ above and the identity test of Section \ref{sec:exact}. The program \texttt{overgroup.py} enumerates all closed words at levels 9 and 11. At 13 it suffices to fix a negative window at the beginning and enumerate completions to a closed word. Every closed word with a negative window has a rotation of this form; a word without one has nonnegative score. The all-pause word gives score zero in all 3 cases. The calculation uses integers and fractions. Thus $\score_s(w)\geq0>k\mu(s)$ and the induction closes.
+\end{proof}
+
+The program \texttt{certify.py} searches for a positive margin on the window statistics. Its companion \texttt{certify\_sparse.py} searches for weights with small total absolute value. At 13 \texttt{caracal.py} performs the search by meeting in the middle. Positive margins lead to a sparse table that can be rounded to integers. The exact verifier starts with the printed weights. For orientation, with $|s|\leq1$ the numerical optimization gives the following margins in the tested families:
+\begin{center}
+\begin{tabular}{c|rrrrrrrrr}
+$k$&4&5&6&7&8&9&10&11&13\\ \midrule
+margin&1.600&0.632&1.782&0.738&2.573&0.854&2.905&0.927&1.026
+\end{tabular}
+\end{center}
+At $4,6,8$ the optimizing procedure recovers the straight table or its mirror image. At 10 it gives a table involving one turn. At 3 the word marginal problem alone has optimum zero, in agreement with the use of the annular kernel.
+
+\subsection{Staircase windows}
+The tables at $5,9,13$ point to a construction at $k=4m+1$. Put $l=2m$ and number the adjacent pairs of an $l$-letter window by $1,\ldots,2m-1$. A pair is called straight if it alternates between the 2 triples and has opposite characters. Use the following table.
+\begin{itemize}
+\item Give weight $-1$ when all pairs alternate and the even-numbered pairs are straight.
+\item Give weight $2$ when the first pair is a backtrack, the remaining odd-numbered pairs are straight, and all even-numbered pairs alternate.
+\item Give weight zero to every other window.
+\end{itemize}
+At $m=1$ this recovers exactly the pair weights at length 5. In the computations a backtrack can also be placed at another odd position; the table displayed for level 13 uses the middle one. The family with the backtrack in the first position suffices throughout the following proof.
+
+\begin{proposition}\label{prop:stair}
+For $1\leq m\leq8$ a first extra tensor for a quantum $2$-transitive overgroup of $D$ cannot occur at level $4m+1$.
+\end{proposition}
+\begin{proof}
+There are $4\cdot2^m$ negative windows: choose the first letter in 4 ways, and at each odd pair choose either character in the other triple. Every even pair is forced. All these words already belong to $r_l$, since adjacent letters have disjoint supports, and hence each receives reference mass $1/d_l$. There are $4\cdot2^{m-1}$ positive windows, with a choice of character at each of the $m-1$ even pairs. The backtrack has nonzero product, so each such word has reference mass strictly less than $1/d_l$. Consequently
+\[
+ d_l\mu(s)<-4\cdot2^m+2\cdot4\cdot2^{m-1}=0 .
+\]
+This part holds for all $m$.
+
+For the cyclic score it suffices to check closed words starting with a negative window. For each fixed window split the remaining $2m+1$ letters into halves of length $m$ and $m+1$. Record the group element of each half by its endpoint and counters. A first half can be paired with precisely the second halves whose element is the inverse of the product of the window and the first half. This enumerates every required completion. For each completion add the weights at all $4m+1$ cyclic positions. The integer calculation in \texttt{staircase.py} gives the following counts, grouped by score.
+\begin{center}
+\begin{tabular}{rr|rrr}
+\toprule
+$k$&words starting with a negative window&score 0&score 1&score 3\\ \midrule
+ 5&40&32&0&8\\
+ 9&160&80&64&16\\
+13&688&256&384&48\\
+17&2960&880&1920&160\\
+21&12656&3136&8960&560\\
+25&53760&11424&40320&2016\\
+29&227040&42240&177408&7392\\
+33&954096&157872&768768&27456\\ \bottomrule
+\end{tabular}
+\end{center}
+The starting position here is marked; a cyclic word can contribute more than once when it has several negative windows. Rotation preserves its total score. Thus the table proves nonnegativity on all closed words in the 8 cases, and the negative reference mean gives the claim.
+\end{proof}
+
+The 8 counts in the last column agree with $8\binom{2m-2}{m-1}$. The geometric reason for the low scores is worth investigating. In a negative window the even pairs are straight, and the available nonstraight turns alternate in sign along the path when they occur; equivalently its steps lie in 2 adjacent directions. A supporting linear form takes value one on both. The window is therefore a geodesic and its return has only one step to spare. Uniform control of the cyclic scores of these returns would extend the staircase obstruction to the whole progression $4m+1$. The argument above supplies the uniform sign of the reference mean and the finite score checks.
+
+\subsection{The Le Banner certificate at level 15}\label{sec:lebanner}
+At levels 7 and 11 the finite tables use pauses and triangles. At 15 the search program \texttt{lebanner.py} used all 7-letter windows. Its separating table is larger, but the contradiction requires just 2 bounds.
+
+\begin{proposition}\label{prop:lebanner}
+There is an integer weight $s$ on 7-letter windows, with $|s|\leq32$, such that
+\[
+ \min_{w\in W_{15}}\score_s(w)=75,\qquad 15\mu(s)<48
+\]
+Consequently 15 cannot be a first extra level for a quantum $2$-transitive overgroup of $D$.
+\end{proposition}
+\begin{proof}
+The file \texttt{weights.txt} in the accompanying \texttt{code/overgroup/level15/} directory specifies $s$ by the least 7-digit word in each orbit under reversal, triple exchange and simultaneous character conjugation. There are $9\,891$ window orbits and $9\,764$ carry nonzero weight. The integer table was obtained by multiplying the weights of the numerical search by $32$ and rounding. We verify the resulting integers directly.
+
+For the minimum, encode each 15-letter word as a base-5 integer. For every supplied representative check the identity test of Section~\ref{sec:exact}, strict ordering of the list, and minimality among the $120$ images obtained from the 8 symmetries above and 15 rotations. These transformations preserve closure. In particular, reversing a word amounts to taking its inverse and conjugating all its characters. If $h$ transformations fix the word, it accounts for $120/h$ closed words. The sum of these orbit sizes agrees with a separate count: start with mass one at the identity state, propagate integer counts under the 5 letter transitions for 15 steps and read the count back at the identity. We obtain
+\[
+ 7\,751\,763\text{ orbits},\qquad 928\,353\,697\text{ closed words}
+\]
+The score is constant on each orbit. Summing the 15 cyclic weights on every representative gives minimum $75$, attained by the all-pause word since $s(0000000)=5$.
+
+For the mean write $P=p_7$, $d=d_7=13\,775$. On $(\mathbb C^6)^{\otimes7}$ let $A_j$ project leg $j$ onto the constants and let $D_j$ multiply by the indicator of equal physical indices at $j,j+1$. Their sum $H$, taken in the order
+\[
+ A_1,D_1,A_2,D_2,\ldots,D_6,A_7
+\]
+has kernel $\operatorname{ran}P$, by the one-leg and merge equations. Nonconsecutive projections commute. Consecutive projections $E,F$ have $\|EF\|=1/\sqrt6$, since averaging the equality indicator in the common leg gives $1/6$. Hence $EF+FE\geq-(E+F)/\sqrt6$, by applying Cauchy--Schwarz to $\langle Ev,Fv\rangle$. Each projection occurs in at most 2 consecutive pairs. Expanding $H^2$ and then applying the spectral theorem gives
+\[
+ H^2\geq(1-2/\sqrt6)H,\qquad H\geq (I-P)/6
+\]
+
+We use this gap to bound the reference mean by rational arithmetic. Put $Q=262144$ and let $f_w$ be the unnormalized Fourier tensor of a 7-letter word. In the basis $f_w/\sqrt{3^7}$ its Gram weight is $h_w=2^{\#0(w)}$. The verifier constructs $d$ trial columns $X_i=\sum_w B_{wi}f_w/(Q\sqrt{3^7})$. It proposes them by a floating-point eigensolve in each word-grading block and rounds to integers $B_{wi}$. With $R=XX^*$, $W=\operatorname{diag}(h_w)$, extend the diagonal weight operator $s$ by zero outside the zero-sum tensor product, and put
+\[
+ g=\|B^tWB-Q^2I\|_{F}^2,\qquad b=Q^2\Tr(sR),\qquad e=12Q^2\Tr(HR)
+\]
+All 3 are integers. To compute $e$, merge each neighboring pair by twice the pointwise multiplication table. Weight each resulting squared coefficient by $2^{\#0+\#\mathbf1}$, counting sign and constant letters in the 6-letter output, and sum over merge positions and columns. Doubling accounts for a factor $4$ and the ratio of the 2 base norms contributes $3$. The one-leg projections vanish on all trial columns.
+
+The gap implies $\Tr((I-P)R)\leq6\Tr(HR)$. Since $P$ has rank $d$ and $X$ has $d$ columns, expansion of the squared Frobenius norm gives
+\[
+ \|P-R\|_F^2\leq\|X^*X-I\|_F^2+12\Tr(HR)=g/Q^4+e/Q^2
+\]
+The rank of $P-R$ is at most $2d$. Its trace norm is thus at most $\sqrt{2d}\|P-R\|_F$. Using $\|s\|\leq32$ yields
+\[
+ \left|\mu(s)-\frac{b}{dQ^2}\right|
+ \leq32\sqrt{\frac{2}{d}\left(\frac{g}{Q^4}+\frac{e}{Q^2}\right)}
+\]
+In the recorded verification the integers were
+\[
+ g=203476620826111440,\quad b=2972688176165630,\quad e=117663772
+\]
+Substituting and rounding the error bound upwards gives
+\[
+ 15\mu(s)\leq\frac{737166202844712123}{15569256448000000}<48
+\]
+The verifier \texttt{lebanner-check.py} computes these bounds from the integer columns it actually obtains. Since $2\cdot7<15$, Lemma~\ref{lem:marginal} would force the expected score of a first extra tensor to equal $15\mu(s)$. Every closed word has score at least $75$, giving the contradiction.
+\end{proof}
+
+\begin{corollary}\label{cor:eighteen}
+For $D\subset G\subset S_6^+$ with $c_2(G)=2$, we have $c_k(G)=\Cat_k$ for $1\leq k\leq18$.
+\end{corollary}
+\begin{proof}
+Theorem~\ref{thm:twelve} covers the first 14 levels. Apply Proposition~\ref{prop:lebanner} at 15 and Theorem~\ref{thm:even} at 16. Proposition~\ref{prop:stair} gives 17, and Theorem~\ref{thm:even} gives 18. Together with the even-level theorem and the remaining cases of Proposition~\ref{prop:stair}, this proves Theorem B.
+\end{proof}
+
+\section{The Karlsson family}\label{sec:karlsson}
+
+To apply the overgroup theorem we need a family with 2 properties. Its generic action must have exactly 2 orbitals, and its closure must contain the distinguished action of $D$. The first property says that the triple partition disappears; the second specifies exactly which group acts at the boundary. We check the 2 properties at different parameters.
+
+\subsection{Choosing the boundary point}
+We use the block parametrization of \cite[Section~7]{bo}, with the angles and phases of Karlsson \cite{kar}. Write $F_2=\left(\begin{smallmatrix}1&1\\1&-1\end{smallmatrix}\right)$, $D_z=\operatorname{diag}(1,z)$, and put
+\[
+ \Lambda=\begin{pmatrix}
+ \cos\theta&e^{i\phi}\sin\theta\\ e^{-i\phi}\sin\theta&-\cos\theta
+ \end{pmatrix},\qquad
+ \Omega=-\tfrac12 I+\tfrac{i\sqrt3}{2}\Lambda .
+\]
+Since $\Lambda^2=I$, the 2 eigenvalues of $\Omega$ are $\omega,\bar\omega$, so $I+\Omega+\Omega^2=0$. With indices $i,j=0,1,2$, the blocks of the matrix are
+\[
+ (K_6)_{ij}=X_i\Omega^{ij}Y_j,\qquad
+ Y_j=D_{z_j}F_2,\quad X_0=I,\quad
+ X_i=\tfrac12 F_2D_{z_{i+2}}F_2\quad(i=1,2),
+\]
+where $z_0=1$, $z_1=e^{i\psi}$. The 3 other phases are specified by their squares. Set $A=F_2\Omega$, $B=F_2\Omega^2=-F_2-A$. In the following formula the entries within a $2\times2$ matrix are numbered from one:
+\[
+ M_X(z)=\frac{X_{12}^2 z-X_{11}^2}{\bar X_{11}^{\,2}z-\bar X_{12}^{\,2}},
+ \qquad
+ z_3^2=M_A(z_1^2),\quad z_4^2=M_B(z_1^2),
+ \quad z_2^2=M_A^{-1}(z_4^2).
+\]
+The regular chart is the domain on which these maps and the indicated inverse are defined. A degenerate point can have different one-sided limits; it matters which direction one takes.
+
+\begin{proposition}\label{prop:karlpoint}
+Along $(\theta,\phi,\psi)=(\theta,0,\pi/6)$ as $\theta\to0^+$ the Karlsson family has a limit equivalent to a $2\times3$ Di\c t\u a matrix with quantum group $D$.
+\end{proposition}
+\begin{proof}
+Put $q=z_1^2=(1+i\sqrt3)/2$. At zero we have $\Omega=\operatorname{diag}(\omega,\bar\omega)$. Substitution in the first 2 maps gives $z_3^2=z_4^2=1$. The quotient defining $z_2^2$ has both numerator and denominator zero there. To evaluate it set $a=A_{12}^2$, $b=A_{11}^2$ and let $n,d$ be the numerator and denominator of $M_B(q)$. Then
+\[
+ z_2^2=\frac{\bar a n-bd}{\bar b n-ad}.
+\]
+The first row needed for $A$ has expansion
+\[
+ A_{11}=\omega+\tfrac{i\sqrt3}{2}\theta+O(\theta^2),\qquad
+ A_{12}=\bar\omega+\tfrac{i\sqrt3}{2}\theta+O(\theta^2).
+\]
+Substitute these 2 entries and $B_{1j}=-1-A_{1j}$ into the quotient and take the ratio of the linear coefficients. The linear coefficients in the numerator and denominator are $6-4i\sqrt3$ and $-3+5i\sqrt3$, respectively. In particular the denominator has a simple zero. Taking the quotient, as in \texttt{k6limits.py}, gives
+\[
+ \beta=\lim z_2^2=\frac{-13-3i\sqrt3}{14},
+ \qquad \beta+\bar\beta=-\frac{13}{7}.
+\]
+The second identity proves that $\beta$ has infinite order, since the rational algebraic integers are integers.
+
+After exchanging rows if necessary we can take $z_3=z_4=1$, whence both outer left factors are identities. Number the inner positions of a block row and column by $s,t\in\mathbb Z_2$. The limit is
+\[
+ H_{is,jt}=\omega^{(-1)^sij}z_j^s(-1)^{st}.
+\]
+On relabeling rows by $(s,(-1)^si)$ and columns by $(t,j)$ this is $F_2\otimes_Q F_3$, with second parameter row $(1,z_1,z_2)$.
+
+It remains to identify its quantum group in this action. The prime-order calculation of \cite[Theorem 4.6]{bo} reduces the extra relations to equality of the 3 monomials
+\[
+ \alpha^{n_1}\beta^{n_2},\qquad
+ \alpha^{n_2}\beta^{n_0},\qquad
+ \alpha^{n_0}\beta^{n_1},\qquad \alpha=z_1^2 ,
+\]
+where $n_0+n_1+n_2=0$. Since $\alpha$ has order 6, any power of $\beta$ equal to a power of $\alpha$ must have exponent zero. The first equality gives $n_2=n_0$, and the second gives $n_0=n_1$. All 3 counters are therefore zero. The kernel adds no relation to the generic group, which proves the claim. The numerical matrices in \texttt{karlsson.py} also recover the relabeling and the limiting fixed spaces through level 4.
+\end{proof}
+
+\subsection{2 orbitals on the regular chart}
+For a single matrix $H$, consider the graph on ordered pairs of its row indices. Join $(i,j)$ to $(k,l)$ when
+\[
+ \sum_a H_{ia}\bar H_{ka}\bar H_{ja}H_{la}\ne0.
+\]
+The components are the orbitals: $T_2$ is bistochastic and its entries are proportional to the squared absolute values of these profile sums \cite[Section 2]{bo}. 2 diagonal pairs are always joined, and no diagonal pair is joined to an off-diagonal pair by Hadamard orthogonality. The issue is whether the remaining 30 vertices form a single component.
+
+In \cite[Section 7]{bo} this was checked exactly at the Haagerup point. An additional check within the regular chart uses the 3 half-angle tangents $(1,1,2)$. Reduce modulo 97, taking $i\mapsto22$ and $\sqrt3\mapsto10$. The 4 phases and the component sizes found by \texttt{orbitals.py} are
+\[
+ (z_1,z_2,z_3,z_4)=(17,40,44,11)\pmod {97},
+ \qquad 6,\ 30 .
+\]
+All denominators are invertible in this computation. Conjugation of a phase entry in the complex formula is implemented by its inverse. For instance, with these inverses the specialized matrix still satisfies $H\bar H^t=6I$.
+
+Here is the reason a surviving edge can be used. Work first over the ring of the rational parameters with $i,\sqrt3$ adjoined and the relevant denominators inverted. Adjoining square roots of the 3 specified phase squares gives a finite free algebra by the 3 monic quadratic equations. After tensoring with the complex numbers it is a product over the choices of signs, since all 3 phase squares are nonzero. The reduction above defines a homomorphism from this algebra to $\mathbb F_{97}$. Choose a spanning tree in each computed component and take the product of its edge sums over both trees. The product is nonzero modulo 97. It must therefore be nonzero on at least one complex choice of signs: freeness embeds the algebra in its characteristic-zero generic fiber. The signs change only row and column permutations, so the component sizes agree for every sign choice. It follows that $c_2=2$ here. The additional primes and points in \texttt{orbitals.py} give the same check.
+
+\subsection{Generic dimensions and the limit group}
+For a fixed $k$ the characteristic polynomial of $T_k$ is invariant under row permutations, which conjugate $T_k$, and column permutations, which leave it unchanged. Changing a square-root sign of $z_3,z_4$ exchanges the 2 rows of its block row; changing the sign of $z_2$ exchanges the columns of its block column. Hence the coefficients depend rationally on the 3 half-angle tangents on the regular chart. Explicitly one can average over all 8 signs; entries of $H$ have modulus one and their conjugates in $T_k$ can be written as inverses.
+
+Since $T_k$ is a positive contraction, $c_k$ is the multiplicity of one in this polynomial. The set where $c_k$ exceeds its minimum is the common zero locus of the appropriate coefficients of the expansion at one. After clearing denominators this is a proper algebraic subset in real coordinates. Each fixed finite list of minima is thus attained on a dense open set throughout the regular chart. For all levels at once the common locus is a dense $G_\delta$ of full measure. In particular generic parameters approach the path limit of Proposition \ref{prop:karlpoint}; locally the square roots can be chosen continuously, and equivalent sign choices give the same dimensions.
+
+Apply Theorem \ref{thm:limit} along such a sequence. The limiting group contains $D$, has 2 orbitals, and realizes all the generic dimensions. Corollary~\ref{cor:eighteen} therefore gives Theorem A. The restrictions of Theorem B apply to the sequence of generic dimensions at all levels. This also explains why knowing many fixed vectors at a \emph{different} boundary point does not spoil the argument: it only takes one suitable boundary action to constrain every generic dimension.
+
+\section{Free wreath products and generation}\label{sec:free}
+
+\subsection{An application of the overgroup theorem}
+A partition of $nm$ points into $m$ blocks of size $n$ is equivalently the graph $mK_n$, with one complete graph on each block. Assume $m,n\geq2$. Its quantum automorphism group is
+\[
+ K=G^+(mK_n)=S_n^+\wr_* S_m^+ .
+\]
+In this order of the factors the inner group acts on $n$ points and the outer group permutes the $m$ blocks. By \cite[Proposition 4.1]{bo} the group of a Di\c t\u a matrix with these outer and inner sizes is contained in $K$.
+
+At level 2 the fixed space of $K$ has basis given by the constant tensor, the diagonal indicator and the block indicator $E$. The 3 functions distinguish equal points, distinct points in the same block, and points in different blocks. The classical wreath product already acts transitively on each of these 3 relations, and all 3 tensors are fixed by $K$, so the dimension is exactly 3.
+
+The planar algebra of $K$ is the Fuss--Catalan algebra of the block inclusion \cite{bjo}. Its tensors are indexed by nested noncrossing partitions: the finer partition prescribes equality of indices, and the coarser partition prescribes equality of blocks. Adjoining $E$ to the noncrossing operations generates this algebra. Equivalently, a magic unitary preserving $E$ commutes with the adjacency of $mK_n$, so the largest subgroup that can preserve $E$ is $K$ itself. This gives a direct way to prove the needed orbit count for every strict overgroup.
+
+\begin{lemma}\label{lem:wreath}
+If $K\subsetneq G\subset S_{nm}^+$, then $c_2(G)=2$.
+\end{lemma}
+\begin{proof}
+We have $\TL_2\subset C_2(G)\subset C_2(K)$ with dimensions 2 and 3 at the ends. If $c_2(G)=3$, the 2 right-hand spaces coincide and $G$ preserves $E$. The universal property of $G^+(mK_n)$ gives $G\subset K$, a contradiction.
+\end{proof}
+\begin{corollary}\label{thm:wreath}
+Every strict overgroup of $S_3^+\wr_*S_2^+$ in $S_6^+$ satisfies the conclusions of Theorem B and has Catalan dimensions through level 18.
+\end{corollary}
+\begin{proof}
+Use the partition of the 6 points into 2 triples. The group $D$ is contained in the wreath product, and the lemma gives $c_2(G)=2$. Theorem B applies. In particular, if $c_2(H)=2$, the group $G_H$ cannot preserve the block indicator, so $\langle G_H,K\rangle$ strictly contains $K$. This proves Theorem C.
+\end{proof}
+
+\subsection{What the other block sizes suggest}
+In the classical setting the stabilizer of a nontrivial uniform partition is a maximal imprimitive subgroup of $S_{nm}$. The corresponding question for quantum permutations takes the following form.
+\begin{conjecture}\label{conj:fcmax}
+For $n,m\geq2$ the subgroup $S_n^+\wr_*S_m^+$ is maximal in $S_{nm}^+$.
+\end{conjecture}
+For a Hadamard matrix with $c_2=2$, this would imply $\langle G_H,K\rangle=S_{nm}^+$. In planar algebra terms one asks whether an algebra can lie strictly between Temperley--Lieb and Fuss--Catalan. By the lemma any intermediate algebra for a strict overgroup has 2-dimensional level 2. A classification of algebras generated by a 2-box \cite{bjo,bjl} thus leaves the possibility of a first generator at a higher level.
+
+The exploratory test starts with the vectors in the Fuss--Catalan space orthogonal to $\TL_k$. All lowerings of a first extra vector vanish by Proposition \ref{prop:lw}. In the surviving space impose the quadratic equations obtained by contracting 2 rotated copies of $x$, or copies of $x$ and $x^*$, down to level $<k$ and projecting perpendicular to Temperley--Lieb. In a real basis the real and imaginary components give real quadratic forms in the coordinates of $x$. A positive definite real combination of them would exclude every nonzero solution. Here the combination and the basis have been computed in floating point.
+
+The entries below give the triple consisting of the dimension of the Fuss--Catalan space, its excess dimension $\dim FC_k-\dim\TL_k$, and the number remaining after the linear conditions. The number on the next line of each block is the smallest eigenvalue of the numerical combination when survivors remain.
+\begin{center}\small
+\begin{tabular}{lrrrr}
+\toprule
+$(n,m)$ & level 3 & level 4 & level 5 & level 6\\ \midrule
+$(2,3),(3,2)$ & $11,6,0$ & $45,31,3$ & $196,154,4$ & $887,755,14$\\
+ & & .378 & .354 & .187\\[2pt]
+$(2,4),(4,2)$ & $11,6,0$ & $45,31,3$ & $197,155,5$ & \\
+ & & .363 & .316 & \\[2pt]
+$(3,3)$ & $12,7,1$ & $55,41,5$ & $271,229,14$ & \\
+ & .707 & .306 & .189 & \\ \bottomrule
+\end{tabular}
+\end{center}
+The data support the Catalan conclusion through 6 at sizes $(2,3),(3,2)$ and through 5 at the 3 remaining sizes. The 2 actions on 6 points correspond to different block systems; Corollary \ref{thm:wreath} uses the partition into 2 triples. The program \texttt{fcplanar.py}, with \texttt{fcmax.py} and \texttt{sdpcert.py}, searches for a combination of unit coefficient norm maximizing its smallest eigenvalue. It used $13,36,332$ forms at levels $4,5,6$ for $(2,3)$, $13,55$ at $4,5$ for $(2,4)$, and $3,23,309$ at $3,4,5$ for $(3,3)$. The last numbers count forms, not candidate vectors. A second test minimized the sum of squared forms on the unit sphere from 20 random starts, obtaining values between $0.21$ and $1$. Rigorous enclosures would be required to infer a theorem from these positive numerical margins.
+
+\subsection{Which boundary actions suffice?}
+The overgroup formulation suggests a stronger conjecture for a generic deformed Fourier matrix.
+\begin{conjecture}\label{conj:jordan}
+For $M,N\geq2$ the group of a generic $F_M\otimes_Q F_N$ is contained in no proper quantum $2$-transitive subgroup of $S_{MN}^+$.
+\end{conjecture}
+Since this group is contained in $S_N^+\wr_*S_M^+$, Lemma \ref{lem:wreath} shows that Conjecture \ref{conj:jordan} implies Conjecture \ref{conj:fcmax}. At order 6 the Karlsson limit theorem would then give generic wildness. A corresponding application at order 8 is suggested by $F_{8,2}$ along its line $a=1$; the generic boundary type and the orbit counts used for that comparison were identified numerically in \cite[Section 8]{bo}.
+
+Here are the earlier numerical tests on the boundary groups themselves. In each rotation sector of $C_k(G_0)\cap\Lambda_k$ the same positive-form procedure can be run after locating the space by block iteration. In the table the first entry is its dimension summed over rotation sectors, the second the smallest margin among the sectors tested.
+\begin{center}\small
+\begin{tabular}{lrrrrr}
+\toprule
+boundary group or matrix & 3 & 4 & 5 & 6 & 7\\ \midrule
+Fourier $\mathbb Z_6$ & $7,.408$ & $34,{<}0$ & & &\\
+generic $2\times3$ & $1,.707$ & $8,.184$ & $19,.354$ & $66,.131$ & $209,.059$\\
+$F_{8,2}(1,b)$ & $5,.500$ & $29,.050$ & $119,.114$ & &\\ \bottomrule
+\end{tabular}
+\end{center}
+The Fourier point is a useful control. The cyclic group of order 6 in its regular action lies in $PGL_2(5)$ acting on the 6 points of the projective line, a proper classical $2$-transitive overgroup. A fourth-level obstruction hence survives. In the full partition calculation for $S_6$ one can see it directly as the crossing orthogonalized against $\TL_4$. By comparison, for the generic $2\times3$ group the first 7 levels of the positive-form experiment were subsequently established in exact arithmetic by the word and kernel tests above.
+
+The generic parameters used here were $r=e^{0.4i}$ and $s=e^{1.9i}$: writing $g=e^{0.2i}$ gives $\alpha=g^4$, $\beta=g^{19}$ and the criterion of \cite[Theorem 4.6]{bo} gives trivial kernel. The programs \texttt{lwsector.py}, \texttt{sdpcert.py}, \texttt{jordan\_full.py} and \texttt{cheetah.py} work in rotation sectors. Their residuals for the approximate spaces were of order $10^{-10}$. At the Karlsson boundary point itself \texttt{k6cert.py} recovered the dimensions and margins of the generic $2\times3$ case through level 6. Contractions of $x$ against $x^*$ sufficed for these numerical tests; restricting the output solely to level 2 did not. At level 7 the original run in dimension $6^7$ used output levels at most 5. This is a different test from the length-3 integer table, which uses the full 6-leg marginal.
+
+\section{Perturbations at special matrices}\label{sec:pert}
+
+The limit argument discards the direction of the path once it has identified the boundary group. A second approach keeps that direction and asks how the eigenvalues issued from one begin to move. It can use a special matrix with a smaller quantum group than $D$. The trade-off is that it requires derivative information at each tensor level.
+
+\subsection{The derivative form and the moving eigenvectors}
+Let $H(\tau)$ be a real analytic path in a family with $H(0)=H_0$. Write $T_t(\tau)=T_t(H(\tau))$ and denote its restriction to the annular space $\Lambda_t$ by $\Psi_t(\tau)$. The planar intertwining relations make this space invariant \cite[Section 9]{bo}. Set
+\[
+ f_t(H_0)=\dim\big(C_t(G_{H_0})\cap\Lambda_t\big).
+\]
+This measures possible new fixed directions at level $t$. Noncrossing invariant tensors at $t\geq2$ have zero intersection with $\Lambda_t$: each noncrossing partition has a singleton or cyclically adjacent entries in the same block, so lies in the span of images of adjoint lowerings. At a first extra level Proposition \ref{prop:lw} places every additional vector in this space.
+
+Let $P$ be the projection onto the $1$-eigenspace of $\Psi_t(0)$. On its complement let $R$ be the inverse of $1-\Psi_t(0)$, extended by zero on $P$. Because the eigenvalues along a two-sided analytic path are bounded above by one, $P\Psi_t'(0)P=0$. In the cases below a one-sided chart is understood through its locally analytic phase branch at the limit. The eigenvalue branches from one have the form
+\[
+ \lambda_i(\tau)=1-a_i\tau^2+O(\tau^3),\qquad a_i\geq0 .
+\]
+The $a_i$ are the eigenvalues on $P$ of
+\[
+ -P\big(\tfrac12\Psi_t''(0)+\Psi_t'(0)R\Psi_t'(0)\big)P .
+\]
+Indeed the first derivative of an eigenvector in the complementary space is $R\Psi_t'(0)v$. Substituting it in the second-order equation gives the second term. If all $a_i>0$, then $f_t(H(\tau))=0$ for sufficiently small nonzero $\tau$. At a given level it is enough to find one such path to establish vanishing at generic parameters.
+
+\begin{proposition}\label{prop:second}
+Write $H(\tau)=H_0\circ\exp(i\tau\Phi+O(\tau^2))$ entrywise, with $\Phi$ real. Let $\delta$ be the derivative of the representation $\pi_\tau$ at zero. For every unit vector $v\in C_t(G_{H_0})$,
+\[
+ 1-\langle v,T_t(\tau)v\rangle=\tau^2 a(v)+O(\tau^3),\qquad
+ a(v)=\frac1{2N}\sum_{j=1}^N
+ \big\|(\mathrm{id}\otimes\delta)(u^{\otimes t})(v\otimes e_j)\big\|^2 .
+\]
+If $\Psi_t'(0)P=0$, the branch coefficients $a_i$ are the eigenvalues of $a$ restricted to $C_t(G_{H_0})\cap\Lambda_t$.
+\end{proposition}
+\begin{proof}
+Let $\Delta_i$ denote the diagonal matrix of the entries of the $i$-th row of $\Phi$. Differentiating the rank-one projection associated to the row quotient gives
+\[
+ \delta(u_{ij})=i[\Delta_i-\Delta_j,P_{ij}(0)] .
+\]
+Differentiating a product extends this prescription by the $\pi_0$-derivation rule. For $U_\tau=(\mathrm{id}\otimes\pi_\tau)(u^{\otimes t})$, unitarity gives the exact identity
+\[
+ 1-\mathop{\rm Re}\langle v,T_t(\tau)v\rangle
+  =\frac1{2N}\sum_j\|(U_\tau-I)(v\otimes e_j)\|^2 .
+\]
+Every term inside the norms vanishes at zero. Taking the quadratic coefficient gives the stated formula since $T_t$ is self-adjoint. With the additional derivative hypothesis the reduced-resolvent term vanishes, and the restriction of $-\Psi_t''(0)/2$ gives the asserted eigenvalues.
+\end{proof}
+
+The form $a$ measures the cost of keeping the vector fixed at its original position. The reduced resolvent allows the eigenvector to move. In particular a computation of $P\Psi_t'(0)P$ alone cannot decide whether the correction term vanishes. This matters when interpreting the tables below.
+
+There is also an algebraic reading of the derivative test. With $\psi_\tau=\tr\circ\pi_\tau$, the form is the compression of $-(\mathrm{id}\otimes\psi_0'')(u^{\otimes t})/2$. The second derivative can fail conditional positivity on the kernel of the counit. For instance, in the path $F_4^s$, $s=e^{i\tau}$, the element $b=u_{02}u_{20}$ has zero counit and $\psi_\tau(b^*b)=\cos^2(\tau)/4$, giving second derivative $-1/2$. Compressing to the original fixed vectors uses only the bi-invariant part $h_0*\psi_0''*h_0$, where $h_0$ is the Haar state of the special group.
+
+If $I_0$ is the Hopf ideal defining $G_{H_0}$, the entries of $u^{\otimes t}(v\otimes1)-v\otimes1$ belong to $I_0$. The derivation vanishes on $I_0^2$, since its product rule uses $\pi_0$ and $\pi_0$ vanishes on $I_0$. Thus only the quotient $I_0/I_0^2$ is involved. Strict positivity of $a$ on the annular fixed space is exactly injectivity of the linear map sending $v$ to the operator $e_j\mapsto(\mathrm{id}\otimes\delta)(u^{\otimes t})(v\otimes e_j)$. If both this injectivity and $\Psi_t'(0)P=0$ could be proved at every level, one could establish generic wildness with base points depending on $t$. A uniform lower bound on $a$ is unnecessary for that conclusion.
+
+\subsection{A finite limit of order 24}
+Take $(\theta,\phi,\psi)=(\theta,\pi/3,\pi/6)$. The one-sided limit, denoted by $H_{lim}$, is a different point from the generic Di\c t\u a limit used in Theorem A. After row permutation its parameter matrix is
+\[
+ Q=\begin{pmatrix}1&1&1\\1&q&q^2\end{pmatrix},\qquad q=e^{2\pi i/12}.
+\]
+All entries are twelfth roots of unity. The group is finite by \cite[Theorem 4.4]{bo}. The model computation in \texttt{group.py} gives 36 elements before taking the scalar identifications. 3 act as scalars on both outer blocks, giving dimension $36\cdot2/3=24$ for the crossed quotient. The moments obtained from this group are
+\[
+ 1,\ 4,\ 18,\ 88,\ 456,\ 2464,\ 13728 .
+\]
+The first 6 agree with the direct matrix count. In particular the fourth moment distinguishes this limit from the generic $2\times3$ one, which has fourth moment 86.
+
+With $\tau=\theta$ we compared the eigenvalues at $10^{-3}$ and $2\cdot10^{-3}$ using \texttt{pert.py} and \texttt{pert6.py}. The table distinguishes the number of branches seen by finite differences from the dimension of the original annular fixed space.
+\begin{center}
+\begin{tabular}{lrrrrr}
+\toprule
+level $t$&3&4&5&6&7\\ \midrule
+$f_t(H_{lim})$&1&10&29&114&419\\
+branches followed at 2 steps&1&10&29&114&---\\
+smallest reported quadratic value&1.500&.782&1.000&.814&1.011\\ \bottomrule
+\end{tabular}
+\end{center}
+The 2-step estimates agree to $10^{-4}$ in the recorded tests. At the base point the computations found no other eigenvalues above $0.99$. At level 7 the value comes from evaluating the derivative form in the 7 rotation sectors with \texttt{lyoto.py}. The full derivative on the fixed space was tested at levels 3 and 4, with residual of order $10^{-11}$. At higher levels the uncorrected form gives branch coefficients under the extra hypothesis of Proposition \ref{prop:second}.
+
+There are recognizable values in these data. The following formulas are identifications from floating point calculations in \texttt{exact.py} and \texttt{exact56.py}. At level 3 the value is close to $3/2$. At 4 the list is consistent with
+\[
+ 1,\ 1,\ 5/4,\ 9/4,\ 5/2,\ 5/2,\ 3
+\]
+and the 3 roots of $16x^3-104x^2+193x-95$, approximately $.7824,2.0949,3.6228$. The zeroth rotation sector at 5 gives candidates $1,2,2,(13\pm\sqrt{17})/4$; other sectors include candidates $(31\pm\sqrt5)/16$. At 6 and 7 the reported minima are $.81416$ and $1.01077$, the latter among 419 values. Across the 5 levels the maximum rises from $1.5$ to about $8.11$. These computations suggest a second-order loss of the extra fixed vectors along this path, beyond the exact conclusions already reached by the overgroup argument.
+
+\subsection{Other Karlsson directions}\label{sec:other}
+Measure the 3 angles in units of $\pi/6$. We write their integer coordinates as $(n_1,n_2,n_3)$. 3 points with $n_1=0$ illustrate the effect of the direction of approach. In the notation of Section \ref{sec:karlsson}, at $(0,4,1)$ the limiting value of $z_2^2$ is $(-1-i\sqrt3)/2$, with $z_3^2=z_4^2=1$. The limit has entries in the twelfth roots of unity and is finite by the same criterion. At $(0,0,1)$ the limiting $z_2^2$ has infinite order as proved above, and its group is $D$. Both points have $c_2,c_3,c_4=4,18,86$. The third choice $(0,2,1)$ gives the group of order 24 just discussed. Thus a short initial moment list need not distinguish a finite boundary group from an infinite one.
+
+The programs \texttt{kamaru.py} and \texttt{oncilla.py} compared the spectra of the form $a$ along the $\theta$ direction. At the first 2 points the computed spectra through 7 are proportional with factor $1.75$ to the reported precision; their minima are
+\begin{center}
+\begin{tabular}{lrrrrr}
+\toprule
+point&3&4&5&6&7\\ \midrule
+$(0,4,1)$&6&3.129&5.387&3.765&4.578\\
+$(0,0,1)$&10.5&5.476&9.428&6.589&8.012\\
+$(3,0,2)$&2&.768&1.186&.647&.875\\ \bottomrule
+\end{tabular}
+\end{center}
+The first 2 spectra agreed after scaling to about $10^{-9}$, including the 209 values at 7. At $(3,0,2)$ the moments begin $c_2,c_3,c_4=4,18,90$, and the annular fixed counts at levels 3 through 7 are $1,12,39,152,559$. The spectrum gives candidates $1,2,3,4,4/3,10/3$ at 4 and $3\pm1/\sqrt3$ at 5. At $(0,1,1)$ and $(0,2,3)$ the computed spectra agreed with those at $(0,4,1)$ through 7 and 6 respectively. At $(0,3,1)$ they agreed with those at $(0,2,1)$ through 5 and gave the same normalized minimum at 6. The spectrum at $(0,4,1)$ agreed with 4 times part of that at $(0,2,1)$ at levels 3 through 5; at 7 that matching failed.
+
+The larger sweep with \texttt{kodkod.py} compared all 36 Di\c t\u a grid points in the $\theta$ direction at levels 3 through 5, with a representative of each class computed at 6. Up to the observed rescaling there were 6 classes.
+\begin{center}\small
+\begin{tabular}{rll}
+\toprule
+number of points & representative or members & annular counts or feature\\ \midrule
+18 & $(0,4,1),(0,0,1)$ among them & $1,8,19,66$\\
+7 & $H_{lim}=(0,2,1)$ & $1,10,29,114$\\
+6 & $(3,0,2),(0,2,0)$ among them & $1,12,39,152$\\
+1 & $(0,3,0)$ & Fourier point, $c_2=6$\\
+2 & $(1,3,0),(5,3,0)$ & same counts as the first row\\
+2 & $(2,3,0),(4,3,0)$ & same counts as the third row\\ \bottomrule
+\end{tabular}
+\end{center}
+The derivative diagnostic stored by the grid program measures the compression to the fixed space. The positive form minima at the transverse points thus require the reduced-resolvent qualification above when interpreted as eigenvalue motion.
+
+The last 2 rows lie on a Di\c t\u a curve. With $(\phi,\psi)=(\pi/2,0)$ and $t=e^{-i\theta}$, the phase equations give $z_3^2=z_4^2=t^2$ and, after permutation, the matrix is $F_3\otimes_Q F_2$ with parameter column $(1,t,t)$. The row pairs grouped by their outer difference give $c_2=4$ for $t\ne\pm1$ and $c_2=6$ at the 2 Fourier points. This was checked at 72 points in \texttt{k6points.py}. Along this direction the partition persists. The finite-order specializations can still have further fixed vectors that disappear along the curve, as one sees from the dimension formula of \cite[Section 4.3]{bo}.
+
+\subsection{Comparison at order 8}
+For the affine families $M_{8,1},K_{8,2},F_{8,2}$ the paths can be written exactly as $H_0\circ e^{i\tau\Phi}$. Take respectively $a=1$ and vary $a$; $a=e^{2\pi i/8},b=1$ and vary $b$; $a=1,b=e^{2\pi i/8}$ and vary $a$. The pairs $(c_2,c_3)$ are respectively $(4,19),(4,19),(5,28)$. At levels 3 through 6, \texttt{manul.py} and \texttt{khabib.py} gave
+\begin{center}\small
+\begin{tabular}{lcc}
+\toprule
+family & annular fixed counts & smallest derivative-form values\\ \midrule
+$M_{8,1}$&$2,12,39,160$&$5.625,3.779,4.291,4.400$\\
+$K_{8,2}$&$2,14,49,206$&$1.125,.756,.858,.898$\\
+$F_{8,2}$&$5,29,119,561$&$1.500,1.196,1.724,1.347$\\ \bottomrule
+\end{tabular}
+\end{center}
+Candidate values include $45/8,25/2,(35\pm5\sqrt5)/4$ for $M_{8,1}$ and $21/4$ for $F_{8,2}$ at level 6. Through 5 the $K_{8,2}$ spectrum contains the $M_{8,1}$ spectrum divided by 5 and a few extra values; at 6 this relation fails. These observations concern the derivative forms. The exact order-6 argument used a specific 6-point action and its planar walk model.
+
+\subsection{Generation beyond the 2 triples}
+Several generation questions depend on which second group one adjoins to $G_H$. Adjoining $S_N$ brings in the maximality question for $S_N\subset S_N^+$: a non-Fourier Hadamard matrix has nonclassical $G_H$ \cite{banicaHM}, so maximality would give $\langle G_H,S_N\rangle=S_N^+$. Finite-level results in this direction are given in \cite{bcm}. Smaller groups suggest other tests. Can adjoining $S_{N-2}^+$ to a quantum $2$-transitive group suffice? What information is supplied by a copy of $\widehat{D}_\infty\subset S_4^+$ on 4 points? Classical primitive groups containing a transposition and the topological generation results of \cite{bcf} give points of comparison.
+
+In our 6-point action the boundary supplies the graph of 2 disjoint triangles and an explicit group acting on its 2 triples. A prime-order analogue would require other boundary data. Indeed, a vertex-transitive graph on $p$ vertices is circulant, since its automorphism group contains a $p$-cycle. The regular cyclic group can already lie in the proper doubly transitive group $AGL(1,p)$ for $p\geq5$. At orders 7 and 11 the particular boundary action of a Hadamard family would therefore matter.
+
+\subsection{The remaining odd levels}
+The first unresolved degree is $19$. In the other progression, $k=4m+1$, the reference mean of the staircase table is strictly negative for every $m$. Proposition~\ref{prop:stair} checks its cyclic score through $m=8$. For a closed walk $w$, let $N_-(w)$ and $N_+(w)$ count the windows of respective weights $-1$ and $2$, marked by their starting positions. Does every such walk satisfy
+\[
+ N_-(w)\leq 2N_+(w)\,?
+\]
+A marked negative window takes $2m$ steps in 2 adjacent directions. A linear functional taking value $1$ on both directions totals $-2m$ on the $2m+1$ steps home. Each return step has value $-1,0$ or $1$, so precisely one has value zero. It is either a pause or a sideways step. Can this distinguished step match each negative window to a positive one, using each positive window at most twice, even when the marked windows overlap? Such a matching would exclude every first exceptional level in the progression $1\bmod4$.
+
+{\hypersetup{allcolors=black}
+\begin{thebibliography}{99}
+
+\bibitem{ba2} T. Banica, Quantum automorphism groups of homogeneous graphs, {\em J. Funct. Anal.} {\bf 224} (2005), 243--280.
+
+\bibitem{banicaHM} T. Banica, Invitation to Hadamard matrices, \arx{1910.06911} (2024).
+
+\bibitem{bb1} T. Banica and J. Bichon, Hopf images and inner faithful representations, {\em Glasg. Math. J.} {\bf 52} (2010), 677--703.
+
+\bibitem{bb3} T. Banica and J. Bichon, Random walk questions for linear quantum groups, {\em Int. Math. Res. Not.} {\bf 2015} (2015), no. 24, 13406--13436.
+
+\bibitem{bbs} T. Banica, J. Bichon and J.-M. Schlenker, Representations of quantum permutation algebras, {\em J. Funct. Anal.} {\bf 257} (2009), 2864--2910.
+
+\bibitem{bo} T. Banica and C. Opus, Higher invariants of complex Hadamard matrices, \href{https://zenodo.org/records/24185801}{zenodo:24185801} (2026).
+
+\bibitem{bjo} D. Bisch and V. Jones, Algebras associated to intermediate subfactors, {\em Invent. Math.} {\bf 128} (1997), 89--157.
+
+\bibitem{bjl} D. Bisch, V. Jones and Z. Liu, Singly generated planar algebras of small dimension, Part III, {\em Trans. Amer. Math. Soc.} {\bf 369} (2017), 2461--2476.
+
+\bibitem{bcf} M. Brannan, A. Chirvasitu and A. Freslon, Topological generation and matrix models for quantum reflection groups, {\em Adv. Math.} {\bf 363} (2020), 106982.
+
+\bibitem{bcm} Claude and Teo, On the maximality conjecture for quantum permutation groups, \href{https://zenodo.org/records/23858973}{zenodo:23858973} (2026).
+
+\bibitem{cmo} H.S.M. Coxeter and W.O.J. Moser, Generators and relations for discrete groups, Springer (1980).
+
+\bibitem{gt} GPT and Teo, Regular complex Hadamard matrices of order 7,8, \href{https://zenodo.org/records/23934849}{zenodo:23934849} (2026).
+
+\bibitem{jon} V.F.R. Jones, Planar algebras I, {\em New Zealand J. Math.} {\bf 52} (2021), 1--107.
+
+\bibitem{kar} B.R. Karlsson, Three-parameter complex Hadamard matrices of order 6, {\em Linear Algebra Appl.} {\bf 434} (2011), 247--258.
+
+\bibitem{mek} M. Mekata, Kagome: the story of the basketweave lattice, {\em Phys. Today} {\bf 56} (2003), no. 2, 12--13.
+
+\bibitem{ni} R. Nicoara, Subfactors and Hadamard matrices, {\em J. Operator Theory} {\bf 64} (2010), 453--468.
+
+\bibitem{norman} M.R. Norman, Colloquium: Herbertsmithite and the search for the quantum spin liquid, {\em Rev. Mod. Phys.} {\bf 88} (2016), 041002.
+
+\bibitem{pop} S. Popa, Orthogonal pairs of $*$-subalgebras in finite von Neumann algebras, {\em J. Operator Theory} {\bf 9} (1983), 253--268.
+
+\bibitem{wo2} S.L. Woronowicz, Tannaka--Krein duality for compact matrix pseudogroups. Twisted SU(N) groups, {\em Invent. Math.} {\bf 93} (1988), 35--76.
+
+\bibitem{bkw} R.J. Baxter, S.B. Kelland and F.Y. Wu, Equivalence of the Potts model or Whitney polynomial with an ice-type model, {\em J. Phys. A} {\bf 9} (1976), 397--406.
+
+\bibitem{ww} F. Wang and F.Y. Wu, Exact solution of close-packed dimers on the kagom\'e lattice, {\em Phys. Rev. E} {\bf 75} (2007), 040105(R).
+
+\bibitem{bwb} D.L. Bergman, C. Wu and L. Balents, Band touching from real-space topology in frustrated hopping models, {\em Phys. Rev. B} {\bf 78} (2008), 125104.
+
+\bibitem{syozi} I. Sy\^ozi, Statistics of kagom\'e lattice, {\em Prog. Theor. Phys.} {\bf 6} (1951), 306--308.
+
+\end{thebibliography}}
+
+\end{document}

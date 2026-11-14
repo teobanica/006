@@ -1,0 +1,23 @@
+limit point: max |HH* - 6| = 7.2e-10
+level 3 sector 0: dim 1, residual 3.7e-09, next Ritz 0.8696, certificate 0.7071, 0 s
+level 3 sector 1: dim 0, residual 0.0e+00, next Ritz 0.8838, certificate inf, 0 s
+level 3 sector 2: dim 0, residual 0.0e+00, next Ritz 0.8696, certificate inf, 0 s
+level 3: dim L_k = 1, worst certificate 0.7071
+level 4 sector 0: dim 3, residual 2.6e-11, next Ritz 0.3612, certificate 0.1838, 0 s
+level 4 sector 1: dim 1, residual 1.3e-11, next Ritz 0.2089, certificate 0.7071, 0 s
+level 4 sector 2: dim 3, residual 2.2e-11, next Ritz 0.3089, certificate 0.3722, 1 s
+level 4 sector 3: dim 1, residual 9.3e-12, next Ritz 0.2532, certificate 0.7071, 1 s
+level 4: dim L_k = 8, worst certificate 0.1838
+level 5 sector 0: dim 3, residual 1.8e-11, next Ritz 0.178, certificate 0.4082, 9 s
+level 5 sector 1: dim 4, residual 1.8e-11, next Ritz 0.1509, certificate 0.3536, 9 s
+level 5 sector 2: dim 4, residual 1.9e-11, next Ritz 0.2106, certificate 0.3535, 9 s
+level 5 sector 3: dim 4, residual 2.1e-11, next Ritz 0.1879, certificate 0.3535, 9 s
+level 5 sector 4: dim 4, residual 2.1e-11, next Ritz 0.1899, certificate 0.3535, 9 s
+level 5: dim L_k = 19, worst certificate 0.3535
+level 6 sector 0: dim 16, residual 3.6e-11, next Ritz 0.11, certificate 0.1309, 123 s
+level 6 sector 1: dim 9, residual 1.8e-11, next Ritz 0.1354, certificate 0.2037, 116 s
+level 6 sector 2: dim 11, residual 2.3e-11, next Ritz 0.1126, certificate 0.1799, 120 s
+level 6 sector 3: dim 10, residual 3.2e-11, next Ritz 0.1099, certificate 0.1834, 117 s
+level 6 sector 4: dim 11, residual 2.3e-11, next Ritz 0.1168, certificate 0.1799, 107 s
+level 6 sector 5: dim 9, residual 2.1e-11, next Ritz 0.1156, certificate 0.2037, 105 s
+level 6: dim L_k = 66, worst certificate 0.1309

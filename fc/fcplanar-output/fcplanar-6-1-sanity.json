@@ -1,0 +1,21 @@
+{
+ "3": {
+  "TL": 5,
+  "FC": 5,
+  "FC-TL": 0,
+  "linear": 0,
+  "seconds": 0,
+  "verdict": "C_k = TL_k (linear)"
+ },
+ "4": {
+  "TL": 14,
+  "FC": 15,
+  "FC-TL": 1,
+  "linear": 1,
+  "forms": 0,
+  "certificate": null,
+  "min": 0.0,
+  "seconds": 0,
+  "verdict": "no quadratic constraint"
+ }
+}

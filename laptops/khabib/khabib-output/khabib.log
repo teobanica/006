@@ -1,0 +1,12 @@
+[04:11:48 |   0.0 min] start; numpy 2.5.4, python 3.14.10. Second order coefficients, order 8 families at Dita points.
+[04:11:48 |   0.0 min] base point F82: |H0| - 1 = 0.0e+00, H0 H0^* - N = 7.8e-17
+[04:36:45 |  24.9 min] F82, level 6, sector 2: 104 fixed vectors (1496 s)
+[05:35:01 |  83.2 min] F82, level 6, sector 2: a_min = 1.6296545239, a_max = 6.501199, fixed check 3.5e-11, T' check 2.7e-17, 4993 s
+[05:45:46 |  94.0 min] F82, level 6, sector 3: 82 fixed vectors (645 s)
+[06:25:53 | 134.1 min] F82, level 6, sector 3: a_min = 1.8574735414, a_max = 6.633166, fixed check 1.3e-10, T' check 2.7e-17, 3052 s
+[06:50:49 | 159.0 min] F82, level 6, sector 4: 104 fixed vectors (1495 s)
+[07:49:37 | 217.8 min] F82, level 6, sector 4: a_min = 1.6296545236, a_max = 6.501199, fixed check 2.9e-11, T' check 2.5e-17, 5024 s
+[08:00:28 | 228.7 min] F82, level 6, sector 5: 82 fixed vectors (650 s)
+[08:40:17 | 268.5 min] F82, level 6, sector 5: a_min = 1.7445212775, a_max = 6.912158, fixed check 9.3e-11, T' check 3.5e-17, 3040 s
+[08:40:17 | 268.5 min] F82 LEVEL 6: f = 372, a_min = 1.6296545236, smallest values [1.629655, 1.629655, 1.629655, 1.629655, 1.721067, 1.721067]
+[08:40:17 | 268.5 min] all done.

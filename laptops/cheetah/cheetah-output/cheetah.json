@@ -1,0 +1,37 @@
+{
+ "level 7, sector 0": {
+  "dim": 29,
+  "lambda_min": 0.06734032148453725,
+  "seconds": 577
+ },
+ "level 7, sector 1": {
+  "dim": 30,
+  "lambda_min": 0.06758240145977228,
+  "seconds": 605
+ },
+ "level 7, sector 2": {
+  "dim": 30,
+  "lambda_min": 0.060309593020082576,
+  "seconds": 604
+ },
+ "level 7, sector 3": {
+  "dim": 30,
+  "lambda_min": 0.0588494440466401,
+  "seconds": 604
+ },
+ "level 7, sector 4": {
+  "dim": 30,
+  "lambda_min": 0.05884115240266042,
+  "seconds": 606
+ },
+ "level 7, sector 5": {
+  "dim": 30,
+  "lambda_min": 0.06031516272044039,
+  "seconds": 606
+ },
+ "level 7, sector 6": {
+  "dim": 30,
+  "lambda_min": 0.06757741356683253,
+  "seconds": 606
+ }
+}

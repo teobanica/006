@@ -1,0 +1,150 @@
+[01:30:34 |   0.0 min] start; numpy 2.0.2, python 3.9.6. Second order coefficients, K_6 at other Dita points.
+[01:30:34 |   0.0 min] base point (0, 4, 1): |H0| - 1 = 7.2e-14, H0 H0^* - N = 3.0e-13
+[01:30:34 |   0.0 min] point (0, 4, 1), level 3, sector 0: 1 fixed vectors (0 s)
+[01:30:34 |   0.0 min] point (0, 4, 1), level 3, sector 0: a_min = 5.9999999783, a_max = 6.000000, fixed check 1.2e-08, T' check 1.2e-16, 0 s
+[01:30:34 |   0.0 min] point (0, 4, 1), level 3, sector 1: 0 fixed vectors (0 s)
+[01:30:35 |   0.0 min] point (0, 4, 1), level 3, sector 2: 1 fixed vectors (0 s)
+[01:30:35 |   0.0 min] point (0, 4, 1), level 3, sector 2: 1 spurious vector(s) dropped
+[01:30:35 |   0.0 min] POINT (0, 4, 1) LEVEL 3: f = 1, a_min = 5.9999999783, smallest values [6.0]
+[01:30:35 |   0.0 min] point (0, 4, 1), level 4, sector 0: 3 fixed vectors (1 s)
+[01:30:35 |   0.0 min] point (0, 4, 1), level 4, sector 0: a_min = 3.1294148758, a_max = 14.491019, fixed check 2.4e-11, T' check 2.6e-16, 1 s
+[01:30:36 |   0.0 min] point (0, 4, 1), level 4, sector 1: 1 fixed vectors (1 s)
+[01:30:36 |   0.0 min] point (0, 4, 1), level 4, sector 1: a_min = 10.0000000221, a_max = 10.000000, fixed check 1.5e-11, T' check 2.2e-16, 1 s
+[01:30:36 |   0.0 min] point (0, 4, 1), level 4, sector 2: 3 fixed vectors (1 s)
+[01:30:37 |   0.0 min] point (0, 4, 1), level 4, sector 2: a_min = 4.9999999946, a_max = 12.000000, fixed check 2.0e-11, T' check 2.0e-16, 1 s
+[01:30:37 |   0.0 min] point (0, 4, 1), level 4, sector 3: 1 fixed vectors (1 s)
+[01:30:37 |   0.0 min] point (0, 4, 1), level 4, sector 3: a_min = 10.0000000103, a_max = 10.000000, fixed check 1.0e-11, T' check 2.1e-16, 1 s
+[01:30:37 |   0.0 min] POINT (0, 4, 1) LEVEL 4: f = 8, a_min = 3.1294148758, smallest values [3.129415, 5.0, 8.379566, 9.0, 10.0, 10.0]
+[01:30:42 |   0.1 min] point (0, 4, 1), level 5, sector 0: 3 fixed vectors (5 s)
+[01:30:43 |   0.1 min] point (0, 4, 1), level 5, sector 0: a_min = 7.9999999986, a_max = 17.123106, fixed check 2.1e-11, T' check 3.3e-16, 5 s
+[01:30:47 |   0.2 min] point (0, 4, 1), level 5, sector 1: 4 fixed vectors (5 s)
+[01:30:48 |   0.2 min] point (0, 4, 1), level 5, sector 1: a_min = 5.8028537882, a_max = 13.124197, fixed check 2.1e-11, T' check 2.2e-16, 6 s
+[01:30:53 |   0.3 min] point (0, 4, 1), level 5, sector 2: 4 fixed vectors (5 s)
+[01:30:54 |   0.3 min] point (0, 4, 1), level 5, sector 2: a_min = 5.3873270268, a_max = 12.185622, fixed check 2.0e-11, T' check 2.0e-16, 6 s
+[01:30:58 |   0.4 min] point (0, 4, 1), level 5, sector 3: 4 fixed vectors (5 s)
+[01:31:00 |   0.4 min] point (0, 4, 1), level 5, sector 3: a_min = 5.3873270255, a_max = 12.185622, fixed check 2.0e-11, T' check 2.1e-16, 6 s
+[01:31:04 |   0.5 min] point (0, 4, 1), level 5, sector 4: 4 fixed vectors (5 s)
+[01:31:05 |   0.5 min] point (0, 4, 1), level 5, sector 4: a_min = 5.8028537863, a_max = 13.124197, fixed check 1.9e-11, T' check 2.4e-16, 6 s
+[01:31:05 |   0.5 min] POINT (0, 4, 1) LEVEL 5: f = 19, a_min = 5.3873270255, smallest values [5.387327, 5.387327, 5.77725, 5.77725, 5.802854, 5.802854]
+[01:31:05 |   0.5 min] base point (0, 0, 1): |H0| - 1 = 7.9e-14, H0 H0^* - N = 3.4e-13
+[01:31:05 |   0.5 min] point (0, 0, 1), level 3, sector 0: 1 fixed vectors (0 s)
+[01:31:05 |   0.5 min] point (0, 0, 1), level 3, sector 0: a_min = 10.4999999882, a_max = 10.500000, fixed check 3.7e-09, T' check 4.9e-16, 0 s
+[01:31:05 |   0.5 min] point (0, 0, 1), level 3, sector 1: 0 fixed vectors (0 s)
+[01:31:05 |   0.5 min] point (0, 0, 1), level 3, sector 2: 0 fixed vectors (0 s)
+[01:31:05 |   0.5 min] POINT (0, 0, 1) LEVEL 3: f = 1, a_min = 10.4999999882, smallest values [10.5]
+[01:31:06 |   0.5 min] point (0, 0, 1), level 4, sector 0: 3 fixed vectors (1 s)
+[01:31:06 |   0.5 min] point (0, 0, 1), level 4, sector 0: a_min = 5.4764760239, a_max = 25.359284, fixed check 2.4e-11, T' check 8.0e-16, 1 s
+[01:31:07 |   0.5 min] point (0, 0, 1), level 4, sector 1: 1 fixed vectors (1 s)
+[01:31:07 |   0.5 min] point (0, 0, 1), level 4, sector 1: a_min = 17.5000000105, a_max = 17.500000, fixed check 1.6e-11, T' check 8.3e-16, 1 s
+[01:31:07 |   0.6 min] point (0, 0, 1), level 4, sector 2: 3 fixed vectors (1 s)
+[01:31:07 |   0.6 min] point (0, 0, 1), level 4, sector 2: a_min = 8.7500000007, a_max = 21.000000, fixed check 2.1e-11, T' check 8.1e-16, 1 s
+[01:31:08 |   0.6 min] point (0, 0, 1), level 4, sector 3: 1 fixed vectors (1 s)
+[01:31:08 |   0.6 min] point (0, 0, 1), level 4, sector 3: a_min = 17.4999999864, a_max = 17.500000, fixed check 1.4e-11, T' check 8.3e-16, 1 s
+[01:31:08 |   0.6 min] POINT (0, 0, 1) LEVEL 4: f = 8, a_min = 5.4764760239, smallest values [5.476476, 8.75, 14.66424, 15.75, 17.5, 17.5]
+[01:31:13 |   0.6 min] point (0, 0, 1), level 5, sector 0: 3 fixed vectors (5 s)
+[01:31:14 |   0.7 min] point (0, 0, 1), level 5, sector 0: a_min = 13.9999999964, a_max = 29.965435, fixed check 2.0e-11, T' check 1.2e-15, 5 s
+[01:31:18 |   0.7 min] point (0, 0, 1), level 5, sector 1: 4 fixed vectors (5 s)
+[01:31:19 |   0.8 min] point (0, 0, 1), level 5, sector 1: a_min = 10.1549941212, a_max = 22.967345, fixed check 2.3e-11, T' check 9.8e-16, 6 s
+[01:31:24 |   0.8 min] point (0, 0, 1), level 5, sector 2: 4 fixed vectors (5 s)
+[01:31:25 |   0.8 min] point (0, 0, 1), level 5, sector 2: a_min = 9.4278222963, a_max = 21.324838, fixed check 2.2e-11, T' check 8.3e-16, 6 s
+[01:31:29 |   0.9 min] point (0, 0, 1), level 5, sector 3: 4 fixed vectors (5 s)
+[01:31:30 |   0.9 min] point (0, 0, 1), level 5, sector 3: a_min = 9.4278222927, a_max = 21.324838, fixed check 2.3e-11, T' check 7.7e-16, 6 s
+[01:31:35 |   1.0 min] point (0, 0, 1), level 5, sector 4: 4 fixed vectors (5 s)
+[01:31:36 |   1.0 min] point (0, 0, 1), level 5, sector 4: a_min = 10.1549941287, a_max = 22.967345, fixed check 2.1e-11, T' check 9.3e-16, 6 s
+[01:31:36 |   1.0 min] POINT (0, 0, 1) LEVEL 5: f = 19, a_min = 9.4278222927, smallest values [9.427822, 9.427822, 10.110188, 10.110188, 10.154994, 10.154994]
+[01:31:36 |   1.0 min] base point (3, 0, 2): |H0| - 1 = 4.4e-16, H0 H0^* - N = 1.8e-15
+[01:31:36 |   1.0 min] point (3, 0, 2), level 3, sector 0: 1 fixed vectors (0 s)
+[01:31:36 |   1.0 min] point (3, 0, 2), level 3, sector 0: a_min = 2.0000000260, a_max = 2.000000, fixed check 7.4e-09, T' check 7.6e-17, 0 s
+[01:31:36 |   1.0 min] point (3, 0, 2), level 3, sector 1: 0 fixed vectors (0 s)
+[01:31:36 |   1.0 min] point (3, 0, 2), level 3, sector 2: 0 fixed vectors (0 s)
+[01:31:36 |   1.0 min] POINT (3, 0, 2) LEVEL 3: f = 1, a_min = 2.0000000260, smallest values [2.0]
+[01:31:37 |   1.0 min] point (3, 0, 2), level 4, sector 0: 4 fixed vectors (1 s)
+[01:31:37 |   1.0 min] point (3, 0, 2), level 4, sector 0: a_min = 0.7676367702, a_max = 4.830974, fixed check 3.0e-11, T' check 1.2e-16, 1 s
+[01:31:38 |   1.1 min] point (3, 0, 2), level 4, sector 1: 2 fixed vectors (1 s)
+[01:31:38 |   1.1 min] point (3, 0, 2), level 4, sector 1: a_min = 1.3333333349, a_max = 3.333333, fixed check 2.1e-11, T' check 1.1e-16, 1 s
+[01:31:38 |   1.1 min] point (3, 0, 2), level 4, sector 2: 4 fixed vectors (1 s)
+[01:31:39 |   1.1 min] point (3, 0, 2), level 4, sector 2: a_min = 0.9999999992, a_max = 4.000000, fixed check 3.0e-11, T' check 1.2e-16, 1 s
+[01:31:39 |   1.1 min] point (3, 0, 2), level 4, sector 3: 2 fixed vectors (1 s)
+[01:31:39 |   1.1 min] point (3, 0, 2), level 4, sector 3: a_min = 1.3333333312, a_max = 3.333333, fixed check 2.4e-11, T' check 1.0e-16, 1 s
+[01:31:39 |   1.1 min] POINT (3, 0, 2) LEVEL 4: f = 12, a_min = 0.7676367702, smallest values [0.767637, 1.0, 1.333333, 1.333333, 1.556197, 2.0]
+[01:31:44 |   1.2 min] point (3, 0, 2), level 5, sector 0: 7 fixed vectors (5 s)
+[01:31:46 |   1.2 min] point (3, 0, 2), level 5, sector 0: a_min = 1.3333333339, a_max = 5.720759, fixed check 2.7e-11, T' check 1.5e-16, 6 s
+[01:31:50 |   1.3 min] point (3, 0, 2), level 5, sector 1: 8 fixed vectors (5 s)
+[01:31:52 |   1.3 min] point (3, 0, 2), level 5, sector 1: a_min = 1.1858081433, a_max = 4.409260, fixed check 2.9e-11, T' check 1.2e-16, 7 s
+[01:31:57 |   1.4 min] point (3, 0, 2), level 5, sector 2: 8 fixed vectors (5 s)
+[01:31:59 |   1.4 min] point (3, 0, 2), level 5, sector 2: a_min = 1.3473281967, a_max = 4.140043, fixed check 2.2e-11, T' check 1.3e-16, 7 s
+[01:32:04 |   1.5 min] point (3, 0, 2), level 5, sector 3: 8 fixed vectors (5 s)
+[01:32:06 |   1.5 min] point (3, 0, 2), level 5, sector 3: a_min = 1.3473281956, a_max = 4.140043, fixed check 2.2e-11, T' check 1.1e-16, 7 s
+[01:32:10 |   1.6 min] point (3, 0, 2), level 5, sector 4: 8 fixed vectors (5 s)
+[01:32:12 |   1.6 min] point (3, 0, 2), level 5, sector 4: a_min = 1.1858081426, a_max = 4.409260, fixed check 2.6e-11, T' check 1.3e-16, 7 s
+[01:32:12 |   1.6 min] POINT (3, 0, 2) LEVEL 5: f = 39, a_min = 1.1858081426, smallest values [1.185808, 1.185808, 1.321332, 1.321332, 1.333333, 1.347328]
+[01:32:52 |   2.3 min] point (0, 4, 1), level 6, sector 0: 16 fixed vectors (39 s)
+[01:33:21 |   2.8 min] point (0, 4, 1), level 6, sector 0: a_min = 3.7651514595, a_max = 27.744647, fixed check 3.9e-11, T' check 3.0e-16, 68 s
+[01:34:00 |   3.4 min] point (0, 4, 1), level 6, sector 1: 9 fixed vectors (39 s)
+[01:34:16 |   3.7 min] point (0, 4, 1), level 6, sector 1: a_min = 4.2553116284, a_max = 20.995909, fixed check 2.2e-11, T' check 2.7e-16, 55 s
+[01:34:55 |   4.3 min] point (0, 4, 1), level 6, sector 2: 11 fixed vectors (39 s)
+[01:35:14 |   4.7 min] point (0, 4, 1), level 6, sector 2: a_min = 5.1867656368, a_max = 22.259332, fixed check 2.2e-11, T' check 2.9e-16, 59 s
+[01:35:53 |   5.3 min] point (0, 4, 1), level 6, sector 3: 10 fixed vectors (39 s)
+[01:36:11 |   5.6 min] point (0, 4, 1), level 6, sector 3: a_min = 4.5853425866, a_max = 24.836000, fixed check 3.3e-11, T' check 3.3e-16, 57 s
+[01:36:50 |   6.3 min] point (0, 4, 1), level 6, sector 4: 11 fixed vectors (39 s)
+[01:37:10 |   6.6 min] point (0, 4, 1), level 6, sector 4: a_min = 5.1867656365, a_max = 22.259332, fixed check 2.3e-11, T' check 2.9e-16, 59 s
+[01:37:49 |   7.3 min] point (0, 4, 1), level 6, sector 5: 9 fixed vectors (39 s)
+[01:38:06 |   7.5 min] point (0, 4, 1), level 6, sector 5: a_min = 4.2553116280, a_max = 20.995909, fixed check 2.1e-11, T' check 3.4e-16, 55 s
+[01:38:06 |   7.5 min] POINT (0, 4, 1) LEVEL 6: f = 66, a_min = 3.7651514595, smallest values [3.765151, 4.255312, 4.255312, 4.502071, 4.585343, 4.616308]
+[01:38:45 |   8.2 min] point (0, 0, 1), level 6, sector 0: 16 fixed vectors (39 s)
+[01:39:14 |   8.7 min] point (0, 0, 1), level 6, sector 0: a_min = 6.5890150538, a_max = 48.553132, fixed check 3.1e-11, T' check 1.1e-15, 68 s
+[01:39:53 |   9.3 min] point (0, 0, 1), level 6, sector 1: 9 fixed vectors (39 s)
+[01:40:09 |   9.6 min] point (0, 0, 1), level 6, sector 1: a_min = 7.4467953485, a_max = 36.742840, fixed check 2.2e-11, T' check 1.2e-15, 56 s
+[01:40:48 |  10.2 min] point (0, 0, 1), level 6, sector 2: 11 fixed vectors (39 s)
+[01:41:08 |  10.6 min] point (0, 0, 1), level 6, sector 2: a_min = 9.0768398608, a_max = 38.953831, fixed check 2.3e-11, T' check 1.2e-15, 59 s
+[01:41:47 |  11.2 min] point (0, 0, 1), level 6, sector 3: 10 fixed vectors (39 s)
+[01:42:06 |  11.5 min] point (0, 0, 1), level 6, sector 3: a_min = 8.0243495212, a_max = 43.463001, fixed check 3.4e-11, T' check 1.4e-15, 57 s
+[01:42:44 |  12.2 min] point (0, 0, 1), level 6, sector 4: 11 fixed vectors (39 s)
+[01:43:05 |  12.5 min] point (0, 0, 1), level 6, sector 4: a_min = 9.0768398622, a_max = 38.953831, fixed check 2.3e-11, T' check 1.2e-15, 59 s
+[01:43:44 |  13.2 min] point (0, 0, 1), level 6, sector 5: 9 fixed vectors (39 s)
+[01:44:01 |  13.4 min] point (0, 0, 1), level 6, sector 5: a_min = 7.4467953486, a_max = 36.742840, fixed check 2.3e-11, T' check 1.2e-15, 56 s
+[01:44:01 |  13.4 min] POINT (0, 0, 1) LEVEL 6: f = 66, a_min = 6.5890150538, smallest values [6.589015, 7.446795, 7.446795, 7.878625, 8.02435, 8.078539]
+[01:44:40 |  14.1 min] point (3, 0, 2), level 6, sector 0: 31 fixed vectors (40 s)
+[01:45:37 |  15.0 min] point (3, 0, 2), level 6, sector 0: a_min = 0.6474965482, a_max = 9.257486, fixed check 5.4e-11, T' check 1.5e-16, 96 s
+[01:46:16 |  15.7 min] point (3, 0, 2), level 6, sector 1: 23 fixed vectors (39 s)
+[01:46:58 |  16.4 min] point (3, 0, 2), level 6, sector 1: a_min = 1.2506123267, a_max = 7.027830, fixed check 3.4e-11, T' check 1.5e-16, 81 s
+[01:47:37 |  17.0 min] point (3, 0, 2), level 6, sector 2: 25 fixed vectors (39 s)
+[01:48:23 |  17.8 min] point (3, 0, 2), level 6, sector 2: a_min = 1.1273767515, a_max = 7.436274, fixed check 4.4e-11, T' check 1.5e-16, 85 s
+[01:49:03 |  18.5 min] point (3, 0, 2), level 6, sector 3: 25 fixed vectors (40 s)
+[01:49:49 |  19.2 min] point (3, 0, 2), level 6, sector 3: a_min = 1.1555870373, a_max = 8.299406, fixed check 4.7e-11, T' check 1.6e-16, 86 s
+[01:50:28 |  19.9 min] point (3, 0, 2), level 6, sector 4: 25 fixed vectors (39 s)
+[01:51:14 |  20.7 min] point (3, 0, 2), level 6, sector 4: a_min = 1.1273767515, a_max = 7.436274, fixed check 4.4e-11, T' check 1.6e-16, 85 s
+[01:51:54 |  21.3 min] point (3, 0, 2), level 6, sector 5: 23 fixed vectors (40 s)
+[01:52:36 |  22.0 min] point (3, 0, 2), level 6, sector 5: a_min = 1.2506123270, a_max = 7.027830, fixed check 3.5e-11, T' check 1.5e-16, 82 s
+[01:52:36 |  22.0 min] POINT (3, 0, 2) LEVEL 6: f = 152, a_min = 0.6474965482, smallest values [0.647497, 0.991286, 1.127377, 1.127377, 1.155587, 1.205583]
+[01:57:44 |  27.2 min] point (0, 4, 1), level 7, sector 0: 29 fixed vectors (308 s)
+[02:04:00 |  33.4 min] point (0, 4, 1), level 7, sector 0: a_min = 5.2237491082, a_max = 32.424729, fixed check 3.5e-11, T' check 3.4e-16, 685 s
+[02:09:08 |  38.6 min] point (0, 4, 1), level 7, sector 1: 30 fixed vectors (308 s)
+[02:15:41 |  45.1 min] point (0, 4, 1), level 7, sector 1: a_min = 4.7955846584, a_max = 26.360651, fixed check 3.5e-11, T' check 3.0e-16, 700 s
+[02:20:48 |  50.2 min] point (0, 4, 1), level 7, sector 2: 30 fixed vectors (307 s)
+[02:27:22 |  56.8 min] point (0, 4, 1), level 7, sector 2: a_min = 4.5784749210, a_max = 25.679898, fixed check 3.2e-11, T' check 3.1e-16, 701 s
+[02:32:33 |  62.0 min] point (0, 4, 1), level 7, sector 3: 30 fixed vectors (311 s)
+[02:39:09 |  68.6 min] point (0, 4, 1), level 7, sector 3: a_min = 5.0866942939, a_max = 26.541555, fixed check 3.6e-11, T' check 3.1e-16, 706 s
+[02:44:17 |  73.7 min] point (0, 4, 1), level 7, sector 4: 30 fixed vectors (309 s)
+[02:50:48 |  80.2 min] point (0, 4, 1), level 7, sector 4: a_min = 5.0866942933, a_max = 26.541555, fixed check 3.5e-11, T' check 3.3e-16, 699 s
+[02:55:57 |  85.4 min] point (0, 4, 1), level 7, sector 5: 30 fixed vectors (310 s)
+[03:02:33 |  92.0 min] point (0, 4, 1), level 7, sector 5: a_min = 4.5784749208, a_max = 25.679898, fixed check 3.9e-11, T' check 3.2e-16, 705 s
+[03:07:43 |  97.1 min] point (0, 4, 1), level 7, sector 6: 30 fixed vectors (310 s)
+[03:14:18 | 103.7 min] point (0, 4, 1), level 7, sector 6: a_min = 4.7955846582, a_max = 26.360651, fixed check 3.4e-11, T' check 3.2e-16, 705 s
+[03:14:18 | 103.7 min] POINT (0, 4, 1) LEVEL 7: f = 209, a_min = 4.5784749208, smallest values [4.578475, 4.578475, 4.795585, 4.795585, 4.943933, 4.943933]
+[03:29:47 | 119.2 min] point (3, 0, 2), level 7, sector 0: 79 fixed vectors (929 s)
+[03:47:53 | 137.3 min] point (3, 0, 2), level 7, sector 0: a_min = 1.1283514393, a_max = 10.845059, fixed check 5.4e-11, T' check 1.8e-16, 2016 s
+[04:03:22 | 152.8 min] point (3, 0, 2), level 7, sector 1: 80 fixed vectors (928 s)
+[04:21:42 | 171.1 min] point (3, 0, 2), level 7, sector 1: a_min = 1.1143792538, a_max = 8.882400, fixed check 6.0e-11, T' check 1.7e-16, 2028 s
+[04:37:10 | 186.6 min] point (3, 0, 2), level 7, sector 2: 80 fixed vectors (928 s)
+[04:55:37 | 205.1 min] point (3, 0, 2), level 7, sector 2: a_min = 1.1213215778, a_max = 8.602956, fixed check 5.5e-11, T' check 1.7e-16, 2036 s
+[05:11:07 | 220.5 min] point (3, 0, 2), level 7, sector 3: 80 fixed vectors (929 s)
+[05:29:27 | 238.9 min] point (3, 0, 2), level 7, sector 3: a_min = 0.8747307440, a_max = 8.970148, fixed check 6.4e-11, T' check 1.8e-16, 2029 s
+[05:44:55 | 254.4 min] point (3, 0, 2), level 7, sector 4: 80 fixed vectors (929 s)
+[06:03:18 | 272.7 min] point (3, 0, 2), level 7, sector 4: a_min = 0.8747307440, a_max = 8.970148, fixed check 4.3e-11, T' check 1.7e-16, 2031 s
+[06:18:46 | 288.2 min] point (3, 0, 2), level 7, sector 5: 80 fixed vectors (928 s)
+[06:37:15 | 306.7 min] point (3, 0, 2), level 7, sector 5: a_min = 1.1213215777, a_max = 8.602956, fixed check 4.9e-11, T' check 1.7e-16, 2037 s
+[06:52:45 | 322.2 min] point (3, 0, 2), level 7, sector 6: 80 fixed vectors (930 s)
+[07:11:32 | 341.0 min] point (3, 0, 2), level 7, sector 6: a_min = 1.1143792538, a_max = 8.882400, fixed check 7.4e-11, T' check 1.7e-16, 2056 s
+[07:11:32 | 341.0 min] POINT (3, 0, 2) LEVEL 7: f = 559, a_min = 0.8747307440, smallest values [0.874731, 0.874731, 1.114379, 1.114379, 1.121322, 1.121322]
+[07:11:32 | 341.0 min] all done.

@@ -1,0 +1,43 @@
+{
+ "3": {
+  "TL": 5,
+  "FC": 11,
+  "FC-TL": 6,
+  "linear": 0,
+  "seconds": 0,
+  "verdict": "C_k = TL_k (linear)"
+ },
+ "4": {
+  "TL": 14,
+  "FC": 45,
+  "FC-TL": 31,
+  "linear": 3,
+  "forms": 13,
+  "certificate": 0.37757605777717385,
+  "min": 0.38524487891209114,
+  "seconds": 0,
+  "verdict": "C_k = TL_k (certified)"
+ },
+ "5": {
+  "TL": 42,
+  "FC": 196,
+  "FC-TL": 154,
+  "linear": 4,
+  "forms": 36,
+  "certificate": 0.3535522964557692,
+  "min": 0.9999999999999994,
+  "seconds": 1,
+  "verdict": "C_k = TL_k (certified)"
+ },
+ "6": {
+  "TL": 132,
+  "FC": 887,
+  "FC-TL": 755,
+  "linear": 14,
+  "forms": 332,
+  "certificate": 0.18655599552847793,
+  "min": 0.2423260572031261,
+  "seconds": 111,
+  "verdict": "C_k = TL_k (certified)"
+ }
+}

@@ -1,0 +1,212 @@
+[03:09:55 |   0.0 min] start; numpy 2.5.4, python 3.14.10. Second order coefficients, K_6 at all the Dita points of the grid.
+[03:09:56 |   0.0 min] stage 1: 36 valid Dita points on the grid: [((0, 0, 1), 4, 18), ((0, 0, 3), 4, 18), ((0, 0, 5), 4, 18), ((0, 1, 0), 4, 18), ((0, 1, 1), 4, 18), ((0, 1, 3), 4, 18), ((0, 1, 5), 4, 18), ((0, 2, 0), 4, 18), ((0, 2, 1), 4, 18), ((0, 2, 3), 4, 18), ((0, 2, 5), 4, 18), ((0, 3, 0), 6, 36), ((0, 3, 1), 4, 18), ((0, 3, 5), 4, 18), ((0, 4, 0), 4, 18), ((0, 4, 1), 4, 18), ((0, 4, 3), 4, 18), ((0, 4, 5), 4, 18), ((0, 5, 0), 4, 18), ((0, 5, 1), 4, 18), ((0, 5, 3), 4, 18), ((0, 5, 5), 4, 18), ((1, 3, 0), 4, 18), ((2, 3, 0), 4, 18), ((3, 0, 1), 4, 18), ((3, 0, 2), 4, 18), ((3, 0, 3), 4, 18), ((3, 0, 4), 4, 18), ((3, 0, 5), 4, 18), ((3, 1, 5), 4, 18), ((3, 2, 4), 4, 18), ((3, 3, 3), 4, 18), ((3, 4, 2), 4, 18), ((3, 5, 1), 4, 18), ((4, 3, 0), 4, 18), ((5, 3, 0), 4, 18)]
+[03:09:56 |   0.0 min] POINT (0, 0, 1) LEVEL 3: f = 1, a_min = 10.4999999917, smallest [10.5]
+[03:09:58 |   0.1 min] POINT (0, 0, 1) LEVEL 4: f = 8, a_min = 5.4764760421, smallest [5.476476, 8.75, 14.66424, 15.75, 17.5, 17.5]
+[03:10:26 |   0.5 min] POINT (0, 0, 1) LEVEL 5: f = 19, a_min = 9.4278223018, smallest [9.427822, 9.427822, 10.110188, 10.110188, 10.154994, 10.154994]
+[03:10:26 |   0.5 min] POINT (0, 0, 3) LEVEL 3: f = 1, a_min = 6.0000000787, smallest [6.0]
+[03:10:29 |   0.6 min] POINT (0, 0, 3) LEVEL 4: f = 10, a_min = 3.1294148711, smallest [3.129415, 4.0, 4.0, 5.0, 8.379566, 9.0]
+[03:10:59 |   1.1 min] POINT (0, 0, 3) LEVEL 5: f = 29, a_min = 3.9999999973, smallest [4.0, 5.072949, 5.072949, 5.387327, 5.387327, 5.77725]
+[03:11:00 |   1.1 min] POINT (0, 0, 5) LEVEL 3: f = 1, a_min = 10.4999999733, smallest [10.5]
+[03:11:02 |   1.1 min] POINT (0, 0, 5) LEVEL 4: f = 8, a_min = 5.4764760258, smallest [5.476476, 8.75, 14.66424, 15.75, 17.5, 17.5]
+[03:11:29 |   1.6 min] POINT (0, 0, 5) LEVEL 5: f = 19, a_min = 9.4278222953, smallest [9.427822, 9.427822, 10.110188, 10.110188, 10.154994, 10.154994]
+[03:11:30 |   1.6 min] POINT (0, 1, 0) LEVEL 3: f = 1, a_min = 4.6666666680, smallest [4.666667]
+[03:11:32 |   1.6 min] POINT (0, 1, 0) LEVEL 4: f = 8, a_min = 2.4339893492, smallest [2.433989, 3.888889, 6.51744, 7.0, 7.777778, 7.777778]
+[03:12:00 |   2.1 min] POINT (0, 1, 0) LEVEL 5: f = 19, a_min = 4.1901432444, smallest [4.190143, 4.190143, 4.493417, 4.493417, 4.513331, 4.513331]
+[03:12:00 |   2.1 min] POINT (0, 1, 1) LEVEL 3: f = 1, a_min = 6.0000000040, smallest [6.0]
+[03:12:03 |   2.1 min] POINT (0, 1, 1) LEVEL 4: f = 8, a_min = 3.1294148774, smallest [3.129415, 5.0, 8.379566, 9.0, 10.0, 10.0]
+[03:12:31 |   2.6 min] POINT (0, 1, 1) LEVEL 5: f = 19, a_min = 5.3873270256, smallest [5.387327, 5.387327, 5.77725, 5.77725, 5.802854, 5.802854]
+[03:12:31 |   2.6 min] POINT (0, 1, 3) LEVEL 3: f = 1, a_min = 5.9999999895, smallest [6.0]
+[03:12:34 |   2.6 min] POINT (0, 1, 3) LEVEL 4: f = 8, a_min = 3.1294148847, smallest [3.129415, 5.0, 8.379566, 9.0, 10.0, 10.0]
+[03:13:01 |   3.1 min] POINT (0, 1, 3) LEVEL 5: f = 19, a_min = 5.3873270257, smallest [5.387327, 5.387327, 5.77725, 5.77725, 5.802854, 5.802854]
+[03:13:02 |   3.1 min] POINT (0, 1, 5) LEVEL 3: f = 1, a_min = 10.4999999457, smallest [10.5]
+[03:13:04 |   3.1 min] POINT (0, 1, 5) LEVEL 4: f = 8, a_min = 5.4764760329, smallest [5.476476, 8.75, 14.66424, 15.75, 17.5, 17.5]
+[03:13:32 |   3.6 min] POINT (0, 1, 5) LEVEL 5: f = 19, a_min = 9.4278222948, smallest [9.427822, 9.427822, 10.110188, 10.110188, 10.154994, 10.154994]
+[03:13:32 |   3.6 min] POINT (0, 2, 0) LEVEL 3: f = 1, a_min = 1.9999999871, smallest [2.0]
+[03:13:35 |   3.7 min] POINT (0, 2, 0) LEVEL 4: f = 12, a_min = 0.7676367745, smallest [0.767637, 1.0, 1.333333, 1.333333, 1.556197, 2.0]
+[03:14:07 |   4.2 min] POINT (0, 2, 0) LEVEL 5: f = 39, a_min = 1.1858081446, smallest [1.185808, 1.185808, 1.321332, 1.321332, 1.333333, 1.347328]
+[03:14:08 |   4.2 min] POINT (0, 2, 1) LEVEL 3: f = 1, a_min = 1.5000000009, smallest [1.5]
+[03:14:10 |   4.3 min] POINT (0, 2, 1) LEVEL 4: f = 10, a_min = 0.7823537181, smallest [0.782354, 1.0, 1.0, 1.25, 2.094891, 2.25]
+[03:14:41 |   4.8 min] POINT (0, 2, 1) LEVEL 5: f = 29, a_min = 0.9999999990, smallest [1.0, 1.268237, 1.268237, 1.346832, 1.346832, 1.444313]
+[03:14:41 |   4.8 min] POINT (0, 2, 3) LEVEL 3: f = 1, a_min = 6.0000000086, smallest [6.0]
+[03:14:44 |   4.8 min] POINT (0, 2, 3) LEVEL 4: f = 8, a_min = 3.1294148690, smallest [3.129415, 5.0, 8.379566, 9.0, 10.0, 10.0]
+[03:15:12 |   5.3 min] POINT (0, 2, 3) LEVEL 5: f = 19, a_min = 5.3873270240, smallest [5.387327, 5.387327, 5.77725, 5.77725, 5.802854, 5.802854]
+[03:15:12 |   5.3 min] POINT (0, 2, 5) LEVEL 3: f = 1, a_min = 6.0000000153, smallest [6.0]
+[03:15:14 |   5.3 min] POINT (0, 2, 5) LEVEL 4: f = 8, a_min = 3.1294148786, smallest [3.129415, 5.0, 8.379566, 9.0, 10.0, 10.0]
+[03:15:42 |   5.8 min] POINT (0, 2, 5) LEVEL 5: f = 19, a_min = 5.3873270255, smallest [5.387327, 5.387327, 5.77725, 5.77725, 5.802854, 5.802854]
+[03:15:42 |   5.8 min]   point (0, 3, 0), level 3, sector 0: f = 3, a_min = -0.0000000000, fixed check 2.7e-09, T' check 1.7e-17, 0 s   <<< FLAG
+[03:15:43 |   5.8 min] POINT (0, 3, 0) LEVEL 3: f = 7, a_min = -0.0000000000, smallest [-0.0, 0.666667, 0.666667, 0.666667, 0.666667, 0.666667]
+[03:15:43 |   5.8 min]   point (0, 3, 0), level 4, sector 0: f = 10, a_min = -0.0000000000, fixed check 3.9e-11, T' check 4.8e-17, 1 s   <<< FLAG
+[03:15:44 |   5.8 min]   point (0, 3, 0), level 4, sector 1: f = 7, a_min = 0.0000000000, fixed check 1.8e-11, T' check 4.5e-17, 1 s   <<< FLAG
+[03:15:45 |   5.8 min]   point (0, 3, 0), level 4, sector 2: f = 10, a_min = -0.0000000000, fixed check 4.2e-11, T' check 5.1e-17, 1 s   <<< FLAG
+[03:15:46 |   5.8 min]   point (0, 3, 0), level 4, sector 3: f = 7, a_min = -0.0000000000, fixed check 1.7e-11, T' check 5.4e-17, 1 s   <<< FLAG
+[03:15:46 |   5.8 min] POINT (0, 3, 0) LEVEL 4: f = 34, a_min = -0.0000000000, smallest [-0.0, -0.0, -0.0, 0.0, 0.0, 0.0]
+[03:15:46 |   5.9 min] POINT (0, 3, 1) LEVEL 3: f = 1, a_min = 1.4999999961, smallest [1.5]
+[03:15:49 |   5.9 min] POINT (0, 3, 1) LEVEL 4: f = 10, a_min = 0.7823537143, smallest [0.782354, 1.0, 1.0, 1.25, 2.094891, 2.25]
+[03:16:20 |   6.4 min] POINT (0, 3, 1) LEVEL 5: f = 29, a_min = 1.0000000006, smallest [1.0, 1.268237, 1.268237, 1.346832, 1.346832, 1.444313]
+[03:16:20 |   6.4 min] POINT (0, 3, 5) LEVEL 3: f = 1, a_min = 1.5000000046, smallest [1.5]
+[03:16:23 |   6.5 min] POINT (0, 3, 5) LEVEL 4: f = 10, a_min = 0.7823537174, smallest [0.782354, 1.0, 1.0, 1.25, 2.094891, 2.25]
+[03:16:53 |   7.0 min] POINT (0, 3, 5) LEVEL 5: f = 29, a_min = 0.9999999999, smallest [1.0, 1.268237, 1.268237, 1.346832, 1.346832, 1.444313]
+[03:16:53 |   7.0 min] POINT (0, 4, 0) LEVEL 3: f = 1, a_min = 2.0000000199, smallest [2.0]
+[03:16:56 |   7.0 min] POINT (0, 4, 0) LEVEL 4: f = 12, a_min = 0.7676367720, smallest [0.767637, 1.0, 1.333333, 1.333333, 1.556197, 2.0]
+[03:17:28 |   7.6 min] POINT (0, 4, 0) LEVEL 5: f = 39, a_min = 1.1858081442, smallest [1.185808, 1.185808, 1.321332, 1.321332, 1.333333, 1.347328]
+[03:17:29 |   7.6 min] POINT (0, 4, 1) LEVEL 3: f = 1, a_min = 6.0000000167, smallest [6.0]
+[03:17:31 |   7.6 min] POINT (0, 4, 1) LEVEL 4: f = 8, a_min = 3.1294148801, smallest [3.129415, 5.0, 8.379566, 9.0, 10.0, 10.0]
+[03:17:59 |   8.1 min] POINT (0, 4, 1) LEVEL 5: f = 19, a_min = 5.3873270280, smallest [5.387327, 5.387327, 5.77725, 5.77725, 5.802854, 5.802854]
+[03:17:59 |   8.1 min] POINT (0, 4, 3) LEVEL 3: f = 1, a_min = 5.9999999802, smallest [6.0]
+[03:18:02 |   8.1 min] POINT (0, 4, 3) LEVEL 4: f = 8, a_min = 3.1294148742, smallest [3.129415, 5.0, 8.379566, 9.0, 10.0, 10.0]
+[03:18:30 |   8.6 min] POINT (0, 4, 3) LEVEL 5: f = 19, a_min = 5.3873270264, smallest [5.387327, 5.387327, 5.77725, 5.77725, 5.802854, 5.802854]
+[03:18:30 |   8.6 min] POINT (0, 4, 5) LEVEL 3: f = 1, a_min = 1.4999999876, smallest [1.5]
+[03:18:33 |   8.6 min] POINT (0, 4, 5) LEVEL 4: f = 10, a_min = 0.7823537183, smallest [0.782354, 1.0, 1.0, 1.25, 2.094891, 2.25]
+[03:19:03 |   9.1 min] POINT (0, 4, 5) LEVEL 5: f = 29, a_min = 0.9999999997, smallest [1.0, 1.268237, 1.268237, 1.346832, 1.346832, 1.444313]
+[03:19:03 |   9.1 min] POINT (0, 5, 0) LEVEL 3: f = 1, a_min = 4.6666666900, smallest [4.666667]
+[03:19:06 |   9.2 min] POINT (0, 5, 0) LEVEL 4: f = 8, a_min = 2.4339893490, smallest [2.433989, 3.888889, 6.51744, 7.0, 7.777778, 7.777778]
+[03:19:34 |   9.6 min] POINT (0, 5, 0) LEVEL 5: f = 19, a_min = 4.1901432442, smallest [4.190143, 4.190143, 4.493417, 4.493417, 4.513331, 4.513331]
+[03:19:34 |   9.7 min] POINT (0, 5, 1) LEVEL 3: f = 1, a_min = 10.4999999415, smallest [10.5]
+[03:19:37 |   9.7 min] POINT (0, 5, 1) LEVEL 4: f = 8, a_min = 5.4764760338, smallest [5.476476, 8.75, 14.66424, 15.75, 17.5, 17.5]
+[03:20:05 |  10.2 min] POINT (0, 5, 1) LEVEL 5: f = 19, a_min = 9.4278222986, smallest [9.427822, 9.427822, 10.110188, 10.110188, 10.154994, 10.154994]
+[03:20:05 |  10.2 min] POINT (0, 5, 3) LEVEL 3: f = 1, a_min = 5.9999999846, smallest [6.0]
+[03:20:08 |  10.2 min] POINT (0, 5, 3) LEVEL 4: f = 8, a_min = 3.1294148616, smallest [3.129415, 5.0, 8.379566, 9.0, 10.0, 10.0]
+[03:20:35 |  10.7 min] POINT (0, 5, 3) LEVEL 5: f = 19, a_min = 5.3873270277, smallest [5.387327, 5.387327, 5.77725, 5.77725, 5.802854, 5.802854]
+[03:20:35 |  10.7 min] POINT (0, 5, 5) LEVEL 3: f = 1, a_min = 5.9999999994, smallest [6.0]
+[03:20:38 |  10.7 min] POINT (0, 5, 5) LEVEL 4: f = 8, a_min = 3.1294148824, smallest [3.129415, 5.0, 8.379566, 9.0, 10.0, 10.0]
+[03:21:05 |  11.2 min] POINT (0, 5, 5) LEVEL 5: f = 19, a_min = 5.3873270235, smallest [5.387327, 5.387327, 5.77725, 5.77725, 5.802854, 5.802854]
+[03:21:05 |  11.2 min]   point (1, 3, 0), level 3, sector 0: f = 1, a_min = 0.0000000000, fixed check 6.1e-09, T' check 1.2e-17, 0 s   <<< FLAG
+[03:21:05 |  11.2 min] POINT (1, 3, 0) LEVEL 3: f = 1, a_min = 0.0000000000, smallest [0.0]
+[03:21:06 |  11.2 min]   point (1, 3, 0), level 4, sector 0: f = 3, a_min = 0.0000000000, fixed check 2.0e-11, T' check 3.0e-18, 1 s   <<< FLAG
+[03:21:07 |  11.2 min]   point (1, 3, 0), level 4, sector 1: f = 1, a_min = 0.0000000000, fixed check 1.4e-11, T' check 1.3e-18, 1 s   <<< FLAG
+[03:21:08 |  11.2 min]   point (1, 3, 0), level 4, sector 2: f = 3, a_min = 0.0000000000, fixed check 2.3e-11, T' check 2.4e-18, 1 s   <<< FLAG
+[03:21:08 |  11.2 min]   point (1, 3, 0), level 4, sector 3: f = 1, a_min = 0.0000000000, fixed check 1.2e-11, T' check 9.6e-19, 1 s   <<< FLAG
+[03:21:08 |  11.2 min] POINT (1, 3, 0) LEVEL 4: f = 8, a_min = 0.0000000000, smallest [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[03:21:13 |  11.3 min]   point (1, 3, 0), level 5, sector 0: f = 3, a_min = 0.0000000000, fixed check 2.2e-11, T' check 2.8e-18, 5 s   <<< FLAG
+[03:21:19 |  11.4 min]   point (1, 3, 0), level 5, sector 1: f = 4, a_min = 0.0000000000, fixed check 2.5e-11, T' check 1.4e-18, 6 s   <<< FLAG
+[03:21:25 |  11.5 min]   point (1, 3, 0), level 5, sector 2: f = 4, a_min = 0.0000000000, fixed check 2.3e-11, T' check 8.7e-19, 6 s   <<< FLAG
+[03:21:30 |  11.6 min]   point (1, 3, 0), level 5, sector 3: f = 4, a_min = 0.0000000000, fixed check 2.3e-11, T' check 1.2e-18, 6 s   <<< FLAG
+[03:21:36 |  11.7 min]   point (1, 3, 0), level 5, sector 4: f = 4, a_min = 0.0000000000, fixed check 1.6e-11, T' check 1.1e-18, 6 s   <<< FLAG
+[03:21:36 |  11.7 min] POINT (1, 3, 0) LEVEL 5: f = 19, a_min = 0.0000000000, smallest [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[03:21:36 |  11.7 min]   point (2, 3, 0), level 3, sector 0: f = 1, a_min = 0.0000000000, fixed check 5.3e-09, T' check 9.3e-18, 0 s   <<< FLAG
+[03:21:36 |  11.7 min] POINT (2, 3, 0) LEVEL 3: f = 1, a_min = 0.0000000000, smallest [0.0]
+[03:21:37 |  11.7 min]   point (2, 3, 0), level 4, sector 0: f = 4, a_min = -0.0000000000, fixed check 2.8e-11, T' check 2.1e-16, 1 s   <<< FLAG
+[03:21:37 |  11.7 min]   point (2, 3, 0), level 4, sector 1: f = 2, a_min = -0.0000000000, fixed check 1.8e-11, T' check 4.0e-16, 1 s   <<< FLAG
+[03:21:38 |  11.7 min]   point (2, 3, 0), level 4, sector 2: f = 4, a_min = -0.0000000000, fixed check 2.9e-11, T' check 2.4e-16, 1 s   <<< FLAG
+[03:21:39 |  11.7 min]   point (2, 3, 0), level 4, sector 3: f = 2, a_min = -0.0000000000, fixed check 1.9e-11, T' check 4.3e-16, 1 s   <<< FLAG
+[03:21:39 |  11.7 min] POINT (2, 3, 0) LEVEL 4: f = 12, a_min = -0.0000000000, smallest [-0.0, -0.0, -0.0, -0.0, -0.0, 0.0]
+[03:21:45 |  11.8 min]   point (2, 3, 0), level 5, sector 0: f = 7, a_min = 0.0000000000, fixed check 2.3e-11, T' check 4.6e-16, 6 s   <<< FLAG
+[03:21:52 |  11.9 min]   point (2, 3, 0), level 5, sector 1: f = 8, a_min = 0.0000000000, fixed check 2.3e-11, T' check 4.2e-16, 7 s   <<< FLAG
+[03:21:58 |  12.0 min]   point (2, 3, 0), level 5, sector 2: f = 8, a_min = 0.0000000000, fixed check 2.7e-11, T' check 3.3e-16, 7 s   <<< FLAG
+[03:22:05 |  12.2 min]   point (2, 3, 0), level 5, sector 3: f = 8, a_min = 0.0000000000, fixed check 2.6e-11, T' check 3.8e-16, 7 s   <<< FLAG
+[03:22:11 |  12.3 min]   point (2, 3, 0), level 5, sector 4: f = 8, a_min = -0.0000000000, fixed check 2.3e-11, T' check 4.3e-16, 7 s   <<< FLAG
+[03:22:11 |  12.3 min] POINT (2, 3, 0) LEVEL 5: f = 39, a_min = -0.0000000000, smallest [-0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[03:22:12 |  12.3 min] POINT (3, 0, 1) LEVEL 3: f = 1, a_min = 6.0000000013, smallest [6.0]
+[03:22:14 |  12.3 min] POINT (3, 0, 1) LEVEL 4: f = 8, a_min = 3.1294148806, smallest [3.129415, 5.0, 8.379566, 9.0, 10.0, 10.0]
+[03:22:42 |  12.8 min] POINT (3, 0, 1) LEVEL 5: f = 19, a_min = 5.3873270248, smallest [5.387327, 5.387327, 5.77725, 5.77725, 5.802854, 5.802854]
+[03:22:42 |  12.8 min] POINT (3, 0, 2) LEVEL 3: f = 1, a_min = 1.9999999914, smallest [2.0]
+[03:22:45 |  12.8 min] POINT (3, 0, 2) LEVEL 4: f = 12, a_min = 0.7676367702, smallest [0.767637, 1.0, 1.333333, 1.333333, 1.556197, 2.0]
+[03:23:19 |  13.4 min] POINT (3, 0, 2) LEVEL 5: f = 39, a_min = 1.1858081438, smallest [1.185808, 1.185808, 1.321332, 1.321332, 1.333333, 1.347328]
+[03:23:19 |  13.4 min] POINT (3, 0, 3) LEVEL 3: f = 1, a_min = 1.4999999968, smallest [1.5]
+[03:23:22 |  13.4 min] POINT (3, 0, 3) LEVEL 4: f = 10, a_min = 0.7823537181, smallest [0.782354, 1.0, 1.0, 1.25, 2.094891, 2.25]
+[03:23:52 |  13.9 min] POINT (3, 0, 3) LEVEL 5: f = 29, a_min = 0.9999999995, smallest [1.0, 1.268237, 1.268237, 1.346832, 1.346832, 1.444313]
+[03:23:52 |  13.9 min] POINT (3, 0, 4) LEVEL 3: f = 1, a_min = 2.0000000043, smallest [2.0]
+[03:23:55 |  14.0 min] POINT (3, 0, 4) LEVEL 4: f = 12, a_min = 0.7676367727, smallest [0.767637, 1.0, 1.333333, 1.333333, 1.556197, 2.0]
+[03:24:28 |  14.5 min] POINT (3, 0, 4) LEVEL 5: f = 39, a_min = 1.1858081427, smallest [1.185808, 1.185808, 1.321332, 1.321332, 1.333333, 1.347328]
+[03:24:28 |  14.5 min] POINT (3, 0, 5) LEVEL 3: f = 1, a_min = 6.0000000028, smallest [6.0]
+[03:24:31 |  14.6 min] POINT (3, 0, 5) LEVEL 4: f = 8, a_min = 3.1294148718, smallest [3.129415, 5.0, 8.379566, 9.0, 10.0, 10.0]
+[03:24:58 |  15.0 min] POINT (3, 0, 5) LEVEL 5: f = 19, a_min = 5.3873270261, smallest [5.387327, 5.387327, 5.77725, 5.77725, 5.802854, 5.802854]
+[03:24:58 |  15.0 min] POINT (3, 1, 5) LEVEL 3: f = 1, a_min = 6.0000000072, smallest [6.0]
+[03:25:01 |  15.1 min] POINT (3, 1, 5) LEVEL 4: f = 8, a_min = 3.1294148771, smallest [3.129415, 5.0, 8.379566, 9.0, 10.0, 10.0]
+[03:25:29 |  15.6 min] POINT (3, 1, 5) LEVEL 5: f = 19, a_min = 5.3873270235, smallest [5.387327, 5.387327, 5.77725, 5.77725, 5.802854, 5.802854]
+[03:25:29 |  15.6 min] POINT (3, 2, 4) LEVEL 3: f = 1, a_min = 1.9999999748, smallest [2.0]
+[03:25:32 |  15.6 min] POINT (3, 2, 4) LEVEL 4: f = 12, a_min = 0.7676367709, smallest [0.767637, 1.0, 1.333333, 1.333333, 1.556197, 2.0]
+[03:26:05 |  16.2 min] POINT (3, 2, 4) LEVEL 5: f = 39, a_min = 1.1858081434, smallest [1.185808, 1.185808, 1.321332, 1.321332, 1.333333, 1.347328]
+[03:26:05 |  16.2 min] POINT (3, 3, 3) LEVEL 3: f = 1, a_min = 1.4999999975, smallest [1.5]
+[03:26:08 |  16.2 min] POINT (3, 3, 3) LEVEL 4: f = 10, a_min = 0.7823537185, smallest [0.782354, 1.0, 1.0, 1.25, 2.094891, 2.25]
+[03:26:38 |  16.7 min] POINT (3, 3, 3) LEVEL 5: f = 29, a_min = 0.9999999996, smallest [1.0, 1.268237, 1.268237, 1.346832, 1.346832, 1.444313]
+[03:26:38 |  16.7 min] POINT (3, 4, 2) LEVEL 3: f = 1, a_min = 2.0000000031, smallest [2.0]
+[03:26:41 |  16.8 min] POINT (3, 4, 2) LEVEL 4: f = 12, a_min = 0.7676367718, smallest [0.767637, 1.0, 1.333333, 1.333333, 1.556197, 2.0]
+[03:27:14 |  17.3 min] POINT (3, 4, 2) LEVEL 5: f = 39, a_min = 1.1858081434, smallest [1.185808, 1.185808, 1.321332, 1.321332, 1.333333, 1.347328]
+[03:27:14 |  17.3 min] POINT (3, 5, 1) LEVEL 3: f = 1, a_min = 5.9999999998, smallest [6.0]
+[03:27:17 |  17.4 min] POINT (3, 5, 1) LEVEL 4: f = 8, a_min = 3.1294148811, smallest [3.129415, 5.0, 8.379566, 9.0, 10.0, 10.0]
+[03:27:44 |  17.8 min] POINT (3, 5, 1) LEVEL 5: f = 19, a_min = 5.3873270260, smallest [5.387327, 5.387327, 5.77725, 5.77725, 5.802854, 5.802854]
+[03:27:44 |  17.8 min]   point (4, 3, 0), level 3, sector 0: f = 1, a_min = 0.0000000000, fixed check 6.6e-07, T' check 3.7e-13, 0 s   <<< FLAG
+[03:27:44 |  17.8 min] POINT (4, 3, 0) LEVEL 3: f = 1, a_min = 0.0000000000, smallest [0.0]
+[03:27:45 |  17.8 min]   point (4, 3, 0), level 4, sector 0: f = 4, a_min = -0.0000000000, fixed check 2.7e-11, T' check 5.6e-16, 1 s   <<< FLAG
+[03:27:46 |  17.8 min]   point (4, 3, 0), level 4, sector 1: f = 2, a_min = -0.0000000000, fixed check 1.6e-11, T' check 8.4e-16, 1 s   <<< FLAG
+[03:27:46 |  17.9 min]   point (4, 3, 0), level 4, sector 2: f = 4, a_min = -0.0000000000, fixed check 2.6e-11, T' check 4.4e-16, 1 s   <<< FLAG
+[03:27:47 |  17.9 min]   point (4, 3, 0), level 4, sector 3: f = 2, a_min = -0.0000000000, fixed check 2.1e-11, T' check 8.2e-16, 1 s   <<< FLAG
+[03:27:47 |  17.9 min] POINT (4, 3, 0) LEVEL 4: f = 12, a_min = -0.0000000000, smallest [-0.0, -0.0, -0.0, -0.0, -0.0, 0.0]
+[03:27:53 |  18.0 min]   point (4, 3, 0), level 5, sector 0: f = 7, a_min = -0.0000000000, fixed check 2.4e-11, T' check 8.9e-16, 6 s   <<< FLAG
+[03:28:00 |  18.1 min]   point (4, 3, 0), level 5, sector 1: f = 8, a_min = -0.0000000000, fixed check 2.6e-11, T' check 7.9e-16, 7 s   <<< FLAG
+[03:28:06 |  18.2 min]   point (4, 3, 0), level 5, sector 2: f = 8, a_min = 0.0000000000, fixed check 2.6e-11, T' check 1.1e-15, 7 s   <<< FLAG
+[03:28:13 |  18.3 min]   point (4, 3, 0), level 5, sector 3: f = 8, a_min = 0.0000000000, fixed check 2.4e-11, T' check 8.6e-16, 7 s   <<< FLAG
+[03:28:20 |  18.4 min]   point (4, 3, 0), level 5, sector 4: f = 8, a_min = -0.0000000000, fixed check 2.0e-11, T' check 6.7e-16, 7 s   <<< FLAG
+[03:28:20 |  18.4 min] POINT (4, 3, 0) LEVEL 5: f = 39, a_min = -0.0000000000, smallest [-0.0, -0.0, -0.0, 0.0, 0.0, 0.0]
+[03:28:20 |  18.4 min]   point (5, 3, 0), level 3, sector 0: f = 1, a_min = 0.0000000000, fixed check 4.2e-09, T' check 1.4e-17, 0 s   <<< FLAG
+[03:28:20 |  18.4 min] POINT (5, 3, 0) LEVEL 3: f = 1, a_min = 0.0000000000, smallest [0.0]
+[03:28:21 |  18.4 min]   point (5, 3, 0), level 4, sector 0: f = 3, a_min = 0.0000000000, fixed check 2.0e-11, T' check 2.9e-18, 1 s   <<< FLAG
+[03:28:21 |  18.4 min]   point (5, 3, 0), level 4, sector 1: f = 1, a_min = 0.0000000000, fixed check 1.5e-11, T' check 8.4e-19, 1 s   <<< FLAG
+[03:28:22 |  18.4 min]   point (5, 3, 0), level 4, sector 2: f = 3, a_min = 0.0000000000, fixed check 2.8e-11, T' check 2.6e-18, 1 s   <<< FLAG
+[03:28:23 |  18.5 min]   point (5, 3, 0), level 4, sector 3: f = 1, a_min = 0.0000000000, fixed check 1.7e-11, T' check 1.3e-18, 1 s   <<< FLAG
+[03:28:23 |  18.5 min] POINT (5, 3, 0) LEVEL 4: f = 8, a_min = 0.0000000000, smallest [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[03:28:28 |  18.5 min]   point (5, 3, 0), level 5, sector 0: f = 3, a_min = 0.0000000000, fixed check 2.1e-11, T' check 2.1e-18, 5 s   <<< FLAG
+[03:28:34 |  18.6 min]   point (5, 3, 0), level 5, sector 1: f = 4, a_min = 0.0000000000, fixed check 2.7e-11, T' check 9.1e-19, 6 s   <<< FLAG
+[03:28:39 |  18.7 min]   point (5, 3, 0), level 5, sector 2: f = 4, a_min = 0.0000000000, fixed check 2.2e-11, T' check 1.0e-18, 5 s   <<< FLAG
+[03:28:45 |  18.8 min]   point (5, 3, 0), level 5, sector 3: f = 4, a_min = 0.0000000000, fixed check 2.5e-11, T' check 1.2e-18, 5 s   <<< FLAG
+[03:28:50 |  18.9 min]   point (5, 3, 0), level 5, sector 4: f = 4, a_min = 0.0000000000, fixed check 1.7e-11, T' check 1.7e-18, 5 s   <<< FLAG
+[03:28:50 |  18.9 min] POINT (5, 3, 0) LEVEL 5: f = 19, a_min = 0.0000000000, smallest [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[03:28:50 |  18.9 min] CLASS 1: 18 points [(0, 0, 1), (0, 0, 5), (0, 1, 0), (0, 1, 1), (0, 1, 3), (0, 1, 5), (0, 2, 3), (0, 2, 5), (0, 4, 1), (0, 4, 3), (0, 5, 0), (0, 5, 1), (0, 5, 3), (0, 5, 5), (3, 0, 1), (3, 0, 5), (3, 1, 5), (3, 5, 1)]; dims [1, 8, 19]; a_min at levels 3,4,5 = [10.5, 5.476476, 9.427822]
+[03:28:50 |  18.9 min] CLASS 2: 7 points [(0, 0, 3), (0, 2, 1), (0, 3, 1), (0, 3, 5), (0, 4, 5), (3, 0, 3), (3, 3, 3)]; dims [1, 10, 29]; a_min at levels 3,4,5 = [6.0, 3.129415, 4.0]
+[03:28:50 |  18.9 min] CLASS 3: 6 points [(0, 2, 0), (0, 4, 0), (3, 0, 2), (3, 0, 4), (3, 2, 4), (3, 4, 2)]; dims [1, 12, 39]; a_min at levels 3,4,5 = [2.0, 0.767637, 1.185808]
+[03:28:50 |  18.9 min] CLASS 4: 1 points [(0, 3, 0)]; dims [7, 34]; a_min at levels 3,4,5 = [-0.0, -0.0]
+[03:28:50 |  18.9 min] CLASS 5: 2 points [(1, 3, 0), (5, 3, 0)]; dims [1, 8, 19]; a_min at levels 3,4,5 = [0.0, 0.0, 0.0]
+[03:28:50 |  18.9 min] CLASS 6: 2 points [(2, 3, 0), (4, 3, 0)]; dims [1, 12, 39]; a_min at levels 3,4,5 = [0.0, -0.0, -0.0]
+[03:29:59 |  20.1 min]   point (0, 0, 1), level 6, sector 0: f = 16, a_min = 6.5890150535, fixed check 3.3e-11, T' check 1.2e-15, 69 s
+[03:30:55 |  21.0 min]   point (0, 0, 1), level 6, sector 1: f = 9, a_min = 7.4467953487, fixed check 2.0e-11, T' check 1.3e-15, 56 s
+[03:31:55 |  22.0 min]   point (0, 0, 1), level 6, sector 2: f = 11, a_min = 9.0768398629, fixed check 2.1e-11, T' check 1.3e-15, 59 s
+[03:32:53 |  23.0 min]   point (0, 0, 1), level 6, sector 3: f = 10, a_min = 8.0243495241, fixed check 3.2e-11, T' check 1.2e-15, 58 s
+[03:33:52 |  23.9 min]   point (0, 0, 1), level 6, sector 4: f = 11, a_min = 9.0768398629, fixed check 2.4e-11, T' check 1.3e-15, 59 s
+[03:34:48 |  24.9 min]   point (0, 0, 1), level 6, sector 5: f = 9, a_min = 7.4467953492, fixed check 2.4e-11, T' check 1.2e-15, 55 s
+[03:34:48 |  24.9 min] POINT (0, 0, 1) LEVEL 6: f = 66, a_min = 6.5890150535, smallest [6.589015, 7.446795, 7.446795, 7.878625, 8.02435, 8.078539]
+[03:36:14 |  26.3 min]   point (0, 0, 3), level 6, sector 0: f = 25, a_min = 3.2566485317, fixed check 5.8e-11, T' check 2.1e-16, 86 s
+[03:37:23 |  27.5 min]   point (0, 0, 3), level 6, sector 1: f = 16, a_min = 4.0269712800, fixed check 2.7e-11, T' check 1.7e-16, 69 s
+[03:38:39 |  28.7 min]   point (0, 0, 3), level 6, sector 2: f = 20, a_min = 4.7336418361, fixed check 3.0e-11, T' check 1.9e-16, 76 s
+[03:39:51 |  29.9 min]   point (0, 0, 3), level 6, sector 3: f = 17, a_min = 3.6558620719, fixed check 4.3e-11, T' check 2.0e-16, 72 s
+[03:41:07 |  31.2 min]   point (0, 0, 3), level 6, sector 4: f = 20, a_min = 4.7336418363, fixed check 3.2e-11, T' check 1.9e-16, 76 s
+[03:42:16 |  32.3 min]   point (0, 0, 3), level 6, sector 5: f = 16, a_min = 4.0269712800, fixed check 3.0e-11, T' check 1.8e-16, 69 s
+[03:42:16 |  32.3 min] POINT (0, 0, 3) LEVEL 6: f = 114, a_min = 3.2566485317, smallest [3.256649, 3.655862, 4.0, 4.026971, 4.026971, 4.408738]
+[03:43:55 |  34.0 min]   point (0, 2, 0), level 6, sector 0: f = 31, a_min = 0.6474965485, fixed check 7.5e-11, T' check 1.9e-16, 99 s
+[03:45:19 |  35.4 min]   point (0, 2, 0), level 6, sector 1: f = 23, a_min = 1.2506123266, fixed check 3.3e-11, T' check 1.7e-16, 84 s
+[03:46:45 |  36.8 min]   point (0, 2, 0), level 6, sector 2: f = 25, a_min = 1.1273767520, fixed check 3.6e-11, T' check 1.9e-16, 87 s
+[03:48:12 |  38.3 min]   point (0, 2, 0), level 6, sector 3: f = 25, a_min = 1.1555870373, fixed check 4.6e-11, T' check 1.8e-16, 87 s
+[03:49:39 |  39.7 min]   point (0, 2, 0), level 6, sector 4: f = 25, a_min = 1.1273767517, fixed check 4.0e-11, T' check 1.9e-16, 87 s
+[03:51:01 |  41.1 min]   point (0, 2, 0), level 6, sector 5: f = 23, a_min = 1.2506123272, fixed check 3.8e-11, T' check 1.8e-16, 82 s
+[03:51:01 |  41.1 min] POINT (0, 2, 0) LEVEL 6: f = 152, a_min = 0.6474965485, smallest [0.647497, 0.991286, 1.127377, 1.127377, 1.155587, 1.205583]
+[03:52:11 |  42.3 min]   point (1, 3, 0), level 6, sector 0: f = 16, a_min = 0.0000000000, fixed check 2.9e-11, T' check 1.3e-18, 70 s   <<< FLAG
+[03:53:06 |  43.2 min]   point (1, 3, 0), level 6, sector 1: f = 9, a_min = 0.0000000000, fixed check 2.1e-11, T' check 1.6e-18, 56 s   <<< FLAG
+[03:54:07 |  44.2 min]   point (1, 3, 0), level 6, sector 2: f = 11, a_min = 0.0000000000, fixed check 2.4e-11, T' check 1.0e-18, 60 s   <<< FLAG
+[03:55:05 |  45.2 min]   point (1, 3, 0), level 6, sector 3: f = 10, a_min = 0.0000000000, fixed check 2.8e-11, T' check 1.8e-18, 58 s   <<< FLAG
+[03:56:04 |  46.1 min]   point (1, 3, 0), level 6, sector 4: f = 11, a_min = 0.0000000000, fixed check 2.2e-11, T' check 9.0e-19, 59 s   <<< FLAG
+[03:57:00 |  47.1 min]   point (1, 3, 0), level 6, sector 5: f = 9, a_min = 0.0000000000, fixed check 2.0e-11, T' check 1.4e-18, 56 s   <<< FLAG
+[03:57:00 |  47.1 min] POINT (1, 3, 0) LEVEL 6: f = 66, a_min = 0.0000000000, smallest [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[03:58:39 |  48.7 min]   point (2, 3, 0), level 6, sector 0: f = 31, a_min = -0.0000000000, fixed check 4.6e-11, T' check 4.0e-16, 99 s   <<< FLAG
+[04:00:02 |  50.1 min]   point (2, 3, 0), level 6, sector 1: f = 23, a_min = -0.0000000000, fixed check 4.6e-11, T' check 4.1e-16, 83 s   <<< FLAG
+[04:01:28 |  51.5 min]   point (2, 3, 0), level 6, sector 2: f = 25, a_min = -0.0000000000, fixed check 3.1e-11, T' check 3.8e-16, 86 s   <<< FLAG
+[04:02:53 |  53.0 min]   point (2, 3, 0), level 6, sector 3: f = 25, a_min = -0.0000000000, fixed check 5.9e-11, T' check 5.0e-16, 86 s   <<< FLAG
+[04:04:21 |  54.4 min]   point (2, 3, 0), level 6, sector 4: f = 25, a_min = -0.0000000000, fixed check 3.5e-11, T' check 3.8e-16, 87 s   <<< FLAG
+[04:05:44 |  55.8 min]   point (2, 3, 0), level 6, sector 5: f = 23, a_min = -0.0000000000, fixed check 4.5e-11, T' check 3.7e-16, 83 s   <<< FLAG
+[04:05:44 |  55.8 min] POINT (2, 3, 0) LEVEL 6: f = 152, a_min = -0.0000000000, smallest [-0.0, -0.0, -0.0, -0.0, -0.0, -0.0]
+[04:17:38 |  67.7 min]   point (1, 3, 0), level 7, sector 0: f = 29, a_min = 0.0000000000, fixed check 3.7e-11, T' check 9.6e-19, 715 s   <<< FLAG
+[04:29:48 |  79.9 min]   point (1, 3, 0), level 7, sector 1: f = 30, a_min = 0.0000000000, fixed check 3.5e-11, T' check 1.1e-18, 730 s   <<< FLAG
+[04:41:57 |  92.0 min]   point (1, 3, 0), level 7, sector 2: f = 30, a_min = 0.0000000000, fixed check 3.3e-11, T' check 9.2e-19, 729 s   <<< FLAG
+[04:54:01 | 104.1 min]   point (1, 3, 0), level 7, sector 3: f = 30, a_min = 0.0000000000, fixed check 3.7e-11, T' check 1.0e-18, 725 s   <<< FLAG
+[05:06:10 | 116.2 min]   point (1, 3, 0), level 7, sector 4: f = 30, a_min = 0.0000000000, fixed check 3.7e-11, T' check 9.8e-19, 729 s   <<< FLAG
+[05:18:18 | 128.4 min]   point (1, 3, 0), level 7, sector 5: f = 30, a_min = 0.0000000000, fixed check 4.8e-11, T' check 1.1e-18, 728 s   <<< FLAG
+[05:30:27 | 140.5 min]   point (1, 3, 0), level 7, sector 6: f = 30, a_min = 0.0000000000, fixed check 3.8e-11, T' check 1.1e-18, 729 s   <<< FLAG
+[05:30:27 | 140.5 min] POINT (1, 3, 0) LEVEL 7: f = 209, a_min = 0.0000000000, smallest [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[06:05:15 | 175.3 min]   point (2, 3, 0), level 7, sector 0: f = 79, a_min = -0.0000000000, fixed check 4.9e-11, T' check 4.0e-16, 2088 s   <<< FLAG
+[06:40:36 | 210.7 min]   point (2, 3, 0), level 7, sector 1: f = 80, a_min = 0.0000000000, fixed check 6.3e-11, T' check 4.1e-16, 2121 s   <<< FLAG
+[07:15:45 | 245.8 min]   point (2, 3, 0), level 7, sector 2: f = 80, a_min = 0.0000000000, fixed check 4.8e-11, T' check 4.3e-16, 2109 s   <<< FLAG
+[07:50:59 | 281.1 min]   point (2, 3, 0), level 7, sector 3: f = 80, a_min = 0.0000000000, fixed check 5.0e-11, T' check 4.2e-16, 2114 s   <<< FLAG
+[08:26:19 | 316.4 min]   point (2, 3, 0), level 7, sector 4: f = 80, a_min = 0.0000000000, fixed check 5.5e-11, T' check 4.1e-16, 2119 s   <<< FLAG
+[09:01:19 | 351.4 min]   point (2, 3, 0), level 7, sector 5: f = 80, a_min = 0.0000000000, fixed check 4.8e-11, T' check 4.4e-16, 2100 s   <<< FLAG
+[09:36:53 | 387.0 min]   point (2, 3, 0), level 7, sector 6: f = 80, a_min = 0.0000000000, fixed check 5.3e-11, T' check 4.3e-16, 2134 s   <<< FLAG
+[09:36:53 | 387.0 min] POINT (2, 3, 0) LEVEL 7: f = 559, a_min = -0.0000000000, smallest [-0.0, -0.0, -0.0, -0.0, -0.0, -0.0]
+[09:36:53 | 387.0 min] all done.

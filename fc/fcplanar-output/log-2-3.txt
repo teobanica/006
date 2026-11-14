@@ -1,0 +1,6 @@
+n=2 m=3 level 1: TL 1, FC 1, FC-TL 0 (C_2 = TL_2 by hypothesis)
+n=2 m=3 level 2: TL 2, FC 3, FC-TL 1 (C_2 = TL_2 by hypothesis)
+n=2 m=3 level 3: {'TL': 5, 'FC': 11, 'FC-TL': 6, 'linear': 0, 'seconds': 0, 'verdict': 'C_k = TL_k (linear)'} -> C_k = TL_k (linear)
+n=2 m=3 level 4: {'TL': 14, 'FC': 45, 'FC-TL': 31, 'linear': 3, 'forms': 13, 'certificate': 0.3775758348097683, 'min': 0.38524487891138987, 'seconds': 0, 'verdict': 'C_k = TL_k (certified)'} -> C_k = TL_k (certified)
+n=2 m=3 level 5: {'TL': 42, 'FC': 196, 'FC-TL': 154, 'linear': 4, 'forms': 36, 'certificate': 0.3535514800349503, 'min': 0.9999999999999993, 'seconds': 1, 'verdict': 'C_k = TL_k (certified)'} -> C_k = TL_k (certified)
+n=2 m=3 level 6: {'TL': 132, 'FC': 887, 'FC-TL': 755, 'linear': 14, 'forms': 332, 'certificate': 0.18655548818067635, 'min': 0.2423259631227318, 'seconds': 111, 'verdict': 'C_k = TL_k (certified)'} -> C_k = TL_k (certified)
